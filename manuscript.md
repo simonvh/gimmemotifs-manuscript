@@ -1,14 +1,14 @@
 ---
 author-meta:
-- John Doe
-- Jane Roe
+- Simon J. van Heeringen
 date-meta: '2018-08-01'
 keywords:
-- markdown
-- publishing
-- manubot
+- transcription factor
+- ChIP-seq
+- regulatory motif
+- TF motif
 lang: en-US
-title: 'Manubot Rootstock: Manuscript Title'
+title: 'GimmeMotifs: '
 ...
 
 
@@ -18,9 +18,9 @@ title: 'Manubot Rootstock: Manuscript Title'
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/3b000d98850a9345b656bbc1af3f19480b0dfbb8/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/b8efae039bdd034a13c18d4cbdeb4736ec37ffa3/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@3b000d9](https://github.com/simonvh/gimmemotifs-manuscript/tree/3b000d98850a9345b656bbc1af3f19480b0dfbb8)
+from [simonvh/gimmemotifs-manuscript@b8efae0](https://github.com/simonvh/gimmemotifs-manuscript/tree/b8efae039bdd034a13c18d4cbdeb4736ec37ffa3)
 on August 1, 2018.
 </em></small>
 
@@ -28,25 +28,16 @@ on August 1, 2018.
 
 
 
-+ **John Doe**<br>
++ **Simon J. van Heeringen**<br>
     ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-0411-3219](https://orcid.org/0000-0002-0411-3219)
     · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [johndoe](https://github.com/johndoe)
+    [simonvh](https://github.com/simonvh)
     · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [svheeringen](https://twitter.com/svheeringen)<br>
   <small>
-     Department of Something, University of Whatever
+     Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands
      · Funded by Grant XXXXXXXX
-  </small>
-
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [janeroe](https://github.com/janeroe)<br>
-  <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
 
 

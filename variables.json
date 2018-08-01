@@ -2,51 +2,32 @@
   "date": "August 1, 2018",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
+      "github": "simonvh",
+      "name": "Simon J. van Heeringen",
+      "initials": "SJvH",
+      "orcid": "0000-0002-0411-3219",
+      "twitter": "svheeringen",
+      "email": "s.vanheeringen@science.ru.nl",
       "affiliations": [
-        "Department of Something, University of Whatever"
+        "Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands"
       ],
       "funders": "Grant XXXXXXXX",
       "affiliation_numbers": [
         1
       ]
-    },
-    {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
-      "affiliations": [
-        "Department of Something, University of Whatever",
-        "Department of Whatever, University of Something"
-      ],
-      "affiliation_numbers": [
-        1,
-        2
-      ]
     }
   ],
   "affiliations": [
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands",
       "affiliation_number": 1
-    },
-    {
-      "affiliation": "Department of Whatever, University of Something",
-      "affiliation_number": 2
     }
   ],
   "ci_source": {
     "repo_slug": "simonvh/gimmemotifs-manuscript",
     "repo_owner": "simonvh",
     "repo_name": "gimmemotifs-manuscript",
-    "commit": "3b000d98850a9345b656bbc1af3f19480b0dfbb8"
+    "commit": "b8efae039bdd034a13c18d4cbdeb4736ec37ffa3"
   },
   "manuscript_stats": {
     "reference_counts": {
