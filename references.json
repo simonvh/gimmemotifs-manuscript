@@ -1,0 +1,803 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          4,
+          17
+        ]
+      ],
+      "date-time": "2018-04-17T18:48:42Z",
+      "timestamp": 1523990922756
+    },
+    "reference-count": 15,
+    "publisher": "Oxford University Press (OUP)",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1093/bioinformatics/btw689",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2016-10-27T19:06:40Z",
+      "timestamp": 1477595200000
+    },
+    "page": "btw689",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "InMoDe: tools for learning and visualizing intra-motif dependencies of DNA binding sites",
+    "prefix": "10.1093",
+    "author": [
+      {
+        "given": "Ralf",
+        "family": "Eggeling",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Ivo",
+        "family": "Grosse",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jan",
+        "family": "Grau",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          28
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/33/4/580/10408241/btw689.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2017-08-25T03:43:16Z",
+      "timestamp": 1503632596000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          28
+        ]
+      ]
+    },
+    "references-count": 15,
+    "alternative-id": [
+      "10.1093/bioinformatics/btw689"
+    ],
+    "URL": "https://doi.org/10.1093/bioinformatics/btw689",
+    "relation": {
+      "cites": []
+    },
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/gdwsfq",
+    "id": "nswYGz33"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          1
+        ]
+      ],
+      "date-time": "2018-08-01T05:22:31Z",
+      "timestamp": 1533100951671
+    },
+    "reference-count": 70,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "18",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              7
+            ]
+          ],
+          "date-time": "2016-11-07T00:00:00Z",
+          "timestamp": 1478476800000
+        },
+        "delay-in-days": 500,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkv577",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          27
+        ]
+      ],
+      "date-time": "2015-06-27T11:55:54Z",
+      "timestamp": 1435406154000
+    },
+    "page": "e119-e119",
+    "source": "Crossref",
+    "is-referenced-by-count": 10,
+    "title": "Varying levels of complexity in transcription factor binding motifs",
+    "prefix": "10.1093",
+    "volume": "43",
+    "author": [
+      {
+        "given": "Jens",
+        "family": "Keilwagen",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Jan",
+        "family": "Grau",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          26
+        ]
+      ]
+    },
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/43/18/e119/17433972/gkv577.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          4,
+          2
+        ]
+      ],
+      "date-time": "2018-04-02T14:43:08Z",
+      "timestamp": 1522680188000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          26
+        ]
+      ]
+    },
+    "references-count": 70,
+    "journal-issue": {
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            14
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            15
+          ]
+        ]
+      },
+      "issue": "18"
+    },
+    "alternative-id": [
+      "10.1093/nar/gkv577"
+    ],
+    "URL": "https://doi.org/10.1093/nar/gkv577",
+    "relation": {
+      "cites": []
+    },
+    "container-title-short": "Nucleic Acids Res",
+    "short_url": "https://doi.org/f73vb2",
+    "id": "7nxD51Mq"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          1
+        ]
+      ],
+      "date-time": "2018-08-01T05:22:31Z",
+      "timestamp": 1533100951675
+    },
+    "reference-count": 21,
+    "publisher": "World Scientific Pub Co Pte Lt",
+    "issue": "01",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1142/s0219720013400040",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          17
+        ]
+      ],
+      "date-time": "2013-01-17T01:01:10Z",
+      "timestamp": 1358384470000
+    },
+    "page": "1340004",
+    "source": "Crossref",
+    "is-referenced-by-count": 25,
+    "title": "FROM BINDING MOTIFS IN CHIP-SEQ DATA TO IMPROVED MODELS OF TRANSCRIPTION FACTOR BINDING SITES",
+    "prefix": "10.1142",
+    "volume": "11",
+    "author": [
+      {
+        "given": "IVAN",
+        "family": "KULAKOVSKIY",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": " Laboratory of Bioinformatics and Systems Biology, Engelhardt Institute of Molecular Biology, Russian Academy of Sciences, Vavilov Street 32, Moscow 119991, GSP-1, Russia"
+          },
+          {
+            "name": "Department of Computational Systems Biology, Vavilov Institute of General Genetics, Russian Academy of Sciences, Gubkina Street 3, Moscow 119991, Russia"
+          }
+        ]
+      },
+      {
+        "given": "VICTOR",
+        "family": "LEVITSKY",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Laboratory of Molecular Genetics Systems, Institute of Cytology and Genetics of the Siberian Division of Russian, Academy of Sciences, Lavrentiev Prospect 6, Novosibirsk 630090, Russia"
+          },
+          {
+            "name": "Faculty of Natural Sciences, Novosibirsk State University, Pirogova Street 2, Novosibirsk 630090, Russia"
+          }
+        ]
+      },
+      {
+        "given": "DMITRY",
+        "family": "OSHCHEPKOV",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Laboratory of Molecular Genetics Systems, Institute of Cytology and Genetics of the Siberian Division of Russian Academy of Sciences, Lavrentiev Prospect 6, Novosibirsk 630090, Russia"
+          }
+        ]
+      },
+      {
+        "given": "LEONID",
+        "family": "BRYZGALOV",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Laboratory of Regulation of Gene Expression, Institute of Cytology and Genetics of the Siberian Division of Russian Academy of Sciences, Lavrentiev Prospect 6, Novosibirsk 630090, Russia"
+          }
+        ]
+      },
+      {
+        "given": "ILYA",
+        "family": "VORONTSOV",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computational Systems Biology, Vavilov Institute of General Genetics, Russian Academy of Sciences, Gubkina Street 3, Moscow 119991, Russia"
+          },
+          {
+            "name": "Yandex Data Analysis School, Data Analysis Department, Moscow Institute of Physics and Technology, Leo Tolstoy Street 16, Moscow 119021, Russia"
+          }
+        ]
+      },
+      {
+        "given": "VSEVOLOD",
+        "family": "MAKEEV",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computational Systems Biology, Vavilov Institute of General Genetics, Russian Academy of Sciences, Gubkina Street 3, Moscow 119991, Russia"
+          },
+          {
+            "name": "State Research Institute of Genetics and Selection of Industrial Microorganisms, 1st Dorozhny proezd, 1 Moscow 117545, Russia"
+          },
+          {
+            "name": "Moscow Institute of Physics and Technology, Institutskii per. 9, Dolgoprudny 141700, Moscow Region, Russia"
+          }
+        ]
+      }
+    ],
+    "member": "219",
+    "container-title": "Journal of Bioinformatics and Computational Biology",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.worldscientific.com/doi/pdf/10.1142/S0219720013400040",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          29
+        ]
+      ],
+      "date-time": "2017-08-29T07:47:55Z",
+      "timestamp": 1503992875000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          2
+        ]
+      ]
+    },
+    "references-count": 21,
+    "journal-issue": {
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            2
+          ]
+        ]
+      },
+      "issue": "01"
+    },
+    "alternative-id": [
+      "10.1142/S0219720013400040"
+    ],
+    "URL": "https://doi.org/10.1142/s0219720013400040",
+    "relation": {
+      "cites": []
+    },
+    "container-title-short": "J. Bioinform. Comput. Biol.",
+    "short_url": "https://doi.org/gdwsfr",
+    "id": "Jc96vlRF"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          1
+        ]
+      ],
+      "date-time": "2018-08-01T05:22:31Z",
+      "timestamp": 1533100951677
+    },
+    "reference-count": 68,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "9",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              9,
+              5
+            ]
+          ],
+          "date-time": "2013-09-05T00:00:00Z",
+          "timestamp": 1378339200000
+        },
+        "delay-in-days": 0,
+        "content-version": "unspecified"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1371/journal.pcbi.1003214",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          5
+        ]
+      ],
+      "date-time": "2013-09-05T20:57:21Z",
+      "timestamp": 1378414641000
+    },
+    "page": "e1003214",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 63,
+    "title": "The Next Generation of Transcription Factor Binding Site Prediction",
+    "prefix": "10.1371",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Anthony",
+        "family": "Mathelier",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Wyeth W.",
+        "family": "Wasserman",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          5
+        ]
+      ]
+    },
+    "container-title": "PLoS Computational Biology",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pcbi.1003214",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T21:24:13Z",
+      "timestamp": 1498080253000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Ilya",
+        "family": "Ioshikhes",
+        "sequence": "first",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          5
+        ]
+      ]
+    },
+    "references-count": 68,
+    "journal-issue": {
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            9,
+            5
+          ]
+        ]
+      },
+      "issue": "9"
+    },
+    "URL": "https://doi.org/10.1371/journal.pcbi.1003214",
+    "relation": {
+      "cites": []
+    },
+    "container-title-short": "PLoS Comput Biol",
+    "short_url": "https://doi.org/f5g773",
+    "id": "1F4IFj9vd"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          1
+        ]
+      ],
+      "date-time": "2018-08-01T05:22:31Z",
+      "timestamp": 1533100951684
+    },
+    "update-to": [
+      {
+        "updated": {
+          "date-parts": [
+            [
+              2017,
+              8,
+              9
+            ]
+          ],
+          "date-time": "2017-08-09T00:00:00Z",
+          "timestamp": 1502236800000
+        },
+        "DOI": "10.1371/journal.pcbi.1005176",
+        "type": "new_version",
+        "label": "New version"
+      }
+    ],
+    "reference-count": 36,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "7",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              7,
+              28
+            ]
+          ],
+          "date-time": "2017-07-28T00:00:00Z",
+          "timestamp": 1501200000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001711",
+        "name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "Cellplasticity, SystemsX.ch"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1371/journal.pcbi.1005176",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          28
+        ]
+      ],
+      "date-time": "2017-07-28T18:14:45Z",
+      "timestamp": 1501265685000
+    },
+    "page": "e1005176",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Automated incorporation of pairwise dependency in transcription factor binding site prediction using dinucleotide weight tensors",
+    "prefix": "10.1371",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Saeed",
+        "family": "Omidi",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Mihaela",
+        "family": "Zavolan",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Mikhail",
+        "family": "Pachkov",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jeremie",
+        "family": "Breda",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Severin",
+        "family": "Berger",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6338-1312",
+        "authenticated-orcid": true,
+        "given": "Erik",
+        "family": "van Nimwegen",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          28
+        ]
+      ]
+    },
+    "container-title": "PLOS Computational Biology",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pcbi.1005176",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          9
+        ]
+      ],
+      "date-time": "2017-08-09T22:25:15Z",
+      "timestamp": 1502317515000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Teresa M.",
+        "family": "Przytycka",
+        "sequence": "first",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          28
+        ]
+      ]
+    },
+    "references-count": 36,
+    "journal-issue": {
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            28
+          ]
+        ]
+      },
+      "issue": "7"
+    },
+    "URL": "https://doi.org/10.1371/journal.pcbi.1005176",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/078212",
+          "asserted-by": "object"
+        }
+      ],
+      "cites": []
+    },
+    "container-title-short": "PLoS Comput Biol",
+    "short_url": "https://doi.org/gbqdxz",
+    "id": "1FTeX7ahA"
+  }
+]
