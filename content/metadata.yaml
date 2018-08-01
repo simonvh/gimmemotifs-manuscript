@@ -1,27 +1,19 @@
 ---
-title: "Manubot Rootstock: Manuscript Title"
+title: "GimmeMotifs: "
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - transcription factor
+  - ChIP-seq
+  - regulatory motif
+  - TF motif
 lang: en-US
 author_info:
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    github: simonvh
+    name: Simon J. van Heeringen
+    initials: SJvH
+    orcid: 0000-0002-0411-3219
+    twitter: svheeringen
+    email: s.vanheeringen@science.ru.nl
     affiliations:
-      - Department of Something, University of Whatever
+      - Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands
     funders: Grant XXXXXXXX
-  -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
