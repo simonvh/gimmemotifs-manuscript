@@ -1,5 +1,5 @@
 {
-  "date": "August 1, 2018",
+  "date": "August 21, 2018",
   "authors": [
     {
       "github": "simonvh",
@@ -27,13 +27,15 @@
     "repo_slug": "simonvh/gimmemotifs-manuscript",
     "repo_owner": "simonvh",
     "repo_name": "gimmemotifs-manuscript",
-    "commit": "b8efae039bdd034a13c18d4cbdeb4736ec37ffa3"
+    "commit": "7dbdb0863bb9e74bd8853eb262e78b1b285ea828"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 5,
-      "total": 5
+      "doi": 50,
+      "pmid": 7,
+      "url": 8,
+      "total": 65
     },
-    "word_count": 430
+    "word_count": 3785
   }
 }
