@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/7dbdb0863bb9e74bd8853eb262e78b1b285ea828/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/efb5a0b96a28b962556f0a68ecfb2a74fa95afd9/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@7dbdb08](https://github.com/simonvh/gimmemotifs-manuscript/tree/7dbdb0863bb9e74bd8853eb262e78b1b285ea828)
+from [simonvh/gimmemotifs-manuscript@efb5a0b](https://github.com/simonvh/gimmemotifs-manuscript/tree/efb5a0b96a28b962556f0a68ecfb2a74fa95afd9)
 on August 21, 2018.
 </em></small>
 
@@ -122,7 +122,7 @@ peaks are relatively easy to classify using a single PWM motif. Other factors
 don't have a peaks with a consistently enriched motif, or do not contain a
 sequence-specific DNA-binding domain, such as EP300 or CD2 for example.
 
-![Figure 1: Benchmark of transcription factor motif databases](src/case_study1/figure_dbs.png)
+![Figure 1: Benchmark of transcription factor motif databases](content/images/figure_dbs.png)
 
 The difference in maximum ROC AUC between databases is on average not very
 large, with a mean maximum difference of 0.05. The largest difference (~0.24) is
@@ -271,7 +271,7 @@ cells were removed. We can observe five main clusters 1) non-hematopoietic
 cells, megakaryocyte and erothrocytes 2), lymphoid cells, 3) neutrophilic cells,
 4) macrophages and dendritic cells and 5) monocytes. The lymphoid cluster furthermore seperates between B-cells and T- and NK cells and non-hematopoietic cells are distinct from the megakaryocytes and erythroblasts. We can conclude that the H3K27ac profile within this enhancers set recapitulates a cell type-spefific regulatory signal.
 
-![Figure 3: Benchmark of transcription factor motif databases](src/case_study3/figure_blueprint.png)
+![Figure 3: Benchmark of transcription factor motif databases](content/images/figure_blueprint.png)
 
 To determine differential motif activity from these dynamic enhancers we used
 maelstrom. We combined Bayesian ridge regression, multi-class regression using
