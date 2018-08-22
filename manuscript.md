@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Simon J. van Heeringen
-date-meta: '2018-08-21'
+date-meta: '2018-08-22'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -18,10 +18,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/efb5a0b96a28b962556f0a68ecfb2a74fa95afd9/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/221f61690c1fbac994deeba93850b07edd20411c/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@efb5a0b](https://github.com/simonvh/gimmemotifs-manuscript/tree/efb5a0b96a28b962556f0a68ecfb2a74fa95afd9)
-on August 21, 2018.
+from [simonvh/gimmemotifs-manuscript@221f616](https://github.com/simonvh/gimmemotifs-manuscript/tree/221f61690c1fbac994deeba93850b07edd20411c)
+on August 22, 2018.
 </em></small>
 
 ## Authors
@@ -80,7 +80,7 @@ examples.
 We have developed GimmeMotifs to provide an comprehensive framework for
 transcription factor motif analysis. It includes both command-line tools as well
 as a Python API to perform all routine motif analysis experiments. Notably, we
-developed a new ensemble approach to determine differential motif activity
+present maelstrom, a new ensemble approach to determine differential motif activity
 between two or more experiments. We illustrate the functionality of GimmeMotifs
 using three examples.
 
@@ -128,7 +128,7 @@ The difference in maximum ROC AUC between databases is on average not very
 large, with a mean maximum difference of 0.05. The largest difference (~0.24) is
 found for factors that were not assayed by ENCODE, such as ONECUT1, SIX2 and
 TP73, and are therefore not present in the Factorbook motif database.
-Unsuprisingly, the databases that were based on motif collections of different
+Unsurprisingly, the databases that were based on motif collections of different
 sources (Kheradpour, Madsen, RSAT and Gimme) generally perform best.  It should
 be noted that motif databases that were based on motif identification from
 ChIP-seq peaks are expected to have an edge in this analysis.
@@ -149,9 +149,10 @@ similar performance.
 These results illustrate how `gimme roc` can be used for evaluation of motifs.
 The choice of a motif database can greatly influence the results of an analysis.
 The default database included with GimmeMotifs shows good performance on the
-metric evaluated here. However, this analysis is only one possible example.
-Especially well-curated databases, such as JASPAR, can be beneficial, for
-instance when linking motifs to binding proteins. 
+metric evaluated here. However, this analysis illustrates only one specific use
+case of application of a motif database. Especially well-curated databases, such
+as JASPAR, can be beneficial, for instance when linking motifs to binding
+proteins. 
 
 ## Performance of de novo motif identification varies with motif quality
 
@@ -182,11 +183,9 @@ Generally, the ROC AUC distribution of all evaluated motif finders is very
 similar. However, a few outliers can be observed. Trawler, Posmo and, to a
 lesser extent, GADEM show an overall lower distribution of ROC AUC scores.
 Compared to the ROC AUC scores of the next best program, Weeder, this is
-significant (p < 1e-5, Wilcoxon signed-rank).
-
-Selecting the best motif for each experiment results in a ROC AUC distribution
-that is significantly higher than the best single method, BioProspector
-(p=4e-21, Wilcoxon signed-rank).
+significant (p < 1e-5, Wilcoxon signed-rank). Selecting the best motif for each
+experiment results in a ROC AUC distribution that is significantly higher than
+the best single method, BioProspector (p < 4e-21, Wilcoxon signed-rank).
 
 As stated in the previous section, the ROC AUC is not the best measure to
 evaluate motif quality. Therefore, we selected for every peak set the best motif
@@ -198,7 +197,7 @@ higher than 0 at 10% FDR.
 
 In line with previous results [@PNXlUYkS], there is no single tool that
 consistently predicts the best motif for each transcription factor. However, the
-motifs predicted BioProspector, MEME and Homer are, on basis of this metric,
+motifs predicted by BioProspector, MEME and Homer are, on basis of this metric,
 consistently better than motifs predicted by other methods. In 75% the cases,
 the motif predicted by BioProspector has a difference in recall smaller than
 0.026 compared to the best overall motif. In this benchmark, four programs
@@ -240,7 +239,7 @@ important, such as the ability to identify many low-abundant motifs.
 Furthermore, with ChIP-seq data there are usually many peaks available. This
 allows for other algorithms than those that work well on a few sequences.
 Interestingly, the original MEME shows consistently good performance, although
-the running tine is longer than most other tools.  On the basis of this
+the running time is longer than most other tools.  On the basis of this
 analysis, BioProspector should be the top pick for a program to identify primary
 motifs in ChIP-seq data. However, an ensemble program such as GimmeMotifs will
 report high-quality motifs more consistently than any single tool.
@@ -313,27 +312,29 @@ C module.  The software is developed on GitHub
 and documentation is available at
 [https://gimmemotifs.readthedocs.io](https://gimmemotifs.readthedocs.io).
 Functionality is covered by unit tests, which are run through continuous
-integration. GimmeMotifs can be installed via bioconda [@sYguBb3Q], see
+integration. GimmeMotifs can be installed via bioconda
+[@sYguBb3Q], see
 [https://bioconda.github.io/](https://bioconda.github.io/) for details.  All
-releases are also distributed through PyPi and stably archived using Zenodo
-[@JnK7ipTw]. For *de novo* motif search, [14] different external tools are supported
-(Table [X]). All of these are installed when conda is used for installation. By
-default, [genomepy](https://github.com/simonvh/genomepy) is used for genome
-management [@4AHAVuXG]. In addition, GimmeMotifs uses the
-following Python modules: numpy [@oGbMixLl], scipy
-[@D3KtiDQL], scikit-learn , scikit-contrib-lightning
-[@6chpTZMZ], seaborn [@WESOG7Bx], pysam
+releases are also distributed through PyPi [@ycIGJh3s] and stably
+archived using Zenodo [@JnK7ipTw]. For *de novo* motif search,
+14 different external tools are supported (Table [X]). All of these are
+installed when conda is used for installation. By default,
+[genomepy](https://github.com/simonvh/genomepy) is used for genome management
+[@4AHAVuXG]. In addition, GimmeMotifs uses the following Python
+modules: numpy [@oGbMixLl], scipy [@D3KtiDQL],
+scikit-learn, scikit-contrib-lightning [@6chpTZMZ],
+seaborn [@WESOG7Bx], pysam
 [@13M7e8OcQ;@hNfNHk9L], xgboost
-[@8w9fI63O] and pandas
-for citations].  In addition to the command
-line tools, all GimmeMotifs functionality is available through a Python API.
+[@8w9fI63O] and pandas. In addition to the
+command line tools, all GimmeMotifs functionality is available through a Python
+API.
 
 ### *De novo* motif prediction pipeline
 
 Originally, GimmeMotifs was developed to predict *de novo* motifs from ChIP-seq
 data using an ensemble of motif predictors [@11x7W2xZq]. The tools
 currently supported are listed in Table [X]. The pipeline is depicted in [Fig
-X]. An input file (BED, FASTA or narrowPeak format) is split in a prediction and
+X]. An input file (BED, FASTA or narrowPeak format) is split into a prediction and
 validation set. The prediction set is used to predict motifs, and the validation
 set is used to filter for significant motifs. All significant motifs are
 clustered to provide a collection of non-redundant *de novo* motifs.  Finally,
@@ -357,6 +358,7 @@ database of known motifs.
 | [MotifSampler](http://bioinformatics.intec.ugent.be/MotifSuite/motifsampler.php) | [@FGUIIeyX] |
 | [Posmo](https://dx.doi.org/10.1093/nar/gkr1135) | [@oL2CQf3y] |
 | [Trawler](https://trawler.erc.monash.edu.au/) | [@19jTKi9ZQ] |
+| [Weeder](http://www.beaconlab.it/modtools) | [@1G4lWf9Jf] | 
 | [XXmotif](https://github.com/soedinglab/xxmotif) | [@QzszdQqA] |
 
   : Table [X]: External *de novo* motif prediction tools supported by GimmeMotifs.
@@ -369,13 +371,13 @@ enrichment between two or more conditions. In addition, these methods can be
 combined in a single measure of *motif activity* using rank aggregation. Four
 methods work with discrete sets, such as different peak sets or clusters from a
 K-means clustering. The hypergeometric test uses motif counts with an empirical
-motif-specific FPR of 5%. All other implemented methods use the PWM log-odds
+motif-specific FPR of 5%. All other implemented methods use the PFM log-odds
 score of the best match. 
 
 The hypergeometric test is commonly used to calculate motif enrichment, for instance
 by Homer [@14naBuW39]. In GimmeMotifs, motifs in each cluster are tested against the
 union of all other clusters. The reported value is -log10(p-value) where the p-value
-adjusted by the Benjamini-Hochberg procedure [@1HL2L6Bup]. 
+is adjusted by the Benjamini-Hochberg procedure [@1HL2L6Bup]. 
 
 Using the non-parametric
 Mann-Whitney U test, GimmeMotifs tests the null hypothesis that that the motif
@@ -415,28 +417,46 @@ We downloaded all ChIP-seq peaks from Remap 2018 v1.2 [@LBF5EBTh]
 We removed all factors with fewer than 1000 peaks and created regions of 100 bp
 centered at the peak summit. Background files were created for each peak set
 using bedtools shuffle [@1HWiAHnIw], excluding the hg19 gaps and the peak regions.
-The ROC AUC and Recall at 10% FDR statistics were calculated using gimme roc.
-The workflow is implemented in snakemake [@NcYZqBux] and can be downloaded at
+The ROC AUC and Recall at 10% FDR statistics were calculated using `gimme roc`.
+The workflow is implemented in snakemake [@NcYZqBux] and is available at
 [https://github.com/simonvh/gimme_analysis](https://github.com/simonvh/gimme_analysis).
 
 
-## De novo motif benchmark
+## `De novo` motif prediction benchmark
 
 We downloaded all spp ENCODE peaks (January 2011 data freeze) from the EBI FTP
 ([http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/](http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/)).
 We selected the top 5000 peaks and created 100bp regions centered on the peak
 summit. As background we selected 100 bp regions flanking the original peaks.
-For the the novo motif search default settings for gimme motifs were used. The
-workflow is implemented in snakemake [@NcYZqBux] and can be downloaded at
+For the `de novo` motif search default settings for `gimme motifs` were used. The
+workflow is implemented in snakemake [@NcYZqBux] and is available at
 [https://github.com/simonvh/gimme_analysis](https://github.com/simonvh/gimme_analysis).
 
 ## Motif analysis of hematopoietic enhancers
 
-To illustrate the functionality of gimme maelstrom, we analyzed an integrated data set hematopoietic
-enhancers. We downloaded all H3K27ac ChIP-seq and DNase I data from BLUEPRINT
-(Supplemental Table SX) and hematopoietic DNase I data from ROADMAP (Supplemental Table SX). All DNase I data were processed using the Kundaje lab DNase pipeline version 0.3.0 [https://github.com/kundajelab/atac_dnase_pipelines](https://github.com/kundajelab/atac_dnase_pipelines) [@PPuptgFe]. 
-The ChIP-seq samples were processed using the Kundaje lab AQUAS TF and histone ChIP-seq pipeline [https://github.com/kundajelab/chipseq_pipeline](https://github.com/kundajelab/chipseq_pipeline). 
-For all experiments from BLUEPRINT we used the aligned reads provided by EBI. All ROADMAP samples were aligned using bowtie2 [@PiS0h6Mu] to the hg38 genome. DNase I peaks were called using MACS2 [@MG7PTly9]. 
+To illustrate the functionality of `gimme maelstrom` we analyzed an integrated
+collection of hematopoietic enhancers. We downloaded all H3K27ac ChIP-seq and
+DNase I data from BLUEPRINT (Supplemental Table SX) and hematopoietic DNase I
+data from ROADMAP (Supplemental Table SX). All DNase I data were processed using
+the Kundaje lab DNase pipeline version 0.3.0
+[https://github.com/kundajelab/atac_dnase_pipelines](https://github.com/kundajelab/atac_dnase_pipelines)
+[@PPuptgFe].  The ChIP-seq samples were processed using the
+Kundaje lab AQUAS TF and histone ChIP-seq pipeline
+[https://github.com/kundajelab/chipseq_pipeline](https://github.com/kundajelab/chipseq_pipeline).
+For all experiments from BLUEPRINT we used the aligned reads provided by EBI.
+All ROADMAP samples were aligned using bowtie2 [@PiS0h6Mu] to the
+hg38 genome. DNase I peaks were called using MACS2
+[@MG7PTly9]. We merge all DNase I peak files and centered
+each merged peak on the summit of the strongest individual peak. H3K27ac reads
+were counted in a region of 2kb centered at the summit (Supplementary Table SX)
+and read counts were log2-transformed and scaled. We removed all samples that
+were treated and averaged all samples from the same cell type. We then selected
+all enhancers with at least one sample with a scaled log2 read count of 2,
+sorted by the maximum difference in normalized signal between samples and
+selected the 50,000 enhancers with the largest difference. Using this enhancer
+collection as input, we ran `gimme maelstrom` using default settings. The motif
+analysis workflow is implemented in a Jupyter notebook and is available at
+[https://github.com/simonvh/gimme_analysis](https://github.com/simonvh/gimme_analysis).
 
 
 # Conclusions

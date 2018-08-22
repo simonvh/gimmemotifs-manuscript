@@ -4,6 +4,198 @@
       "date-parts": [
         [
           2018,
+          8,
+          5
+        ]
+      ],
+      "date-time": "2018-08-05T22:13:35Z",
+      "timestamp": 1533507215964
+    },
+    "reference-count": 22,
+    "publisher": "Wiley",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2014-09-01T00:00:00Z",
+          "timestamp": 1409529600000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              9,
+              8
+            ]
+          ],
+          "date-time": "2014-09-08T00:00:00Z",
+          "timestamp": 1410134400000
+        },
+        "delay-in-days": 7,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1002/0471250953.bi0211s47",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2014-09-09T03:07:49Z",
+      "timestamp": 1410232069000
+    },
+    "page": "2.11.1-2.11.31",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": "Using Weeder, Pscan, and PscanChIP for the Discovery of Enriched Transcription Factor Binding Site Motifs in Nucleotide Sequences",
+    "prefix": "10.1002",
+    "volume": "47",
+    "author": [
+      {
+        "given": "Federico",
+        "family": "Zambelli",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Dipartimento di Bioscienze, Università di Milano; Italy"
+          },
+          {
+            "name": "Istituto di Biomembrane e Bioenergetica, Consiglio Nazionale delle Ricerche; Bari Italy"
+          }
+        ]
+      },
+      {
+        "given": "Graziano",
+        "family": "Pesole",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Istituto di Biomembrane e Bioenergetica, Consiglio Nazionale delle Ricerche; Bari Italy"
+          },
+          {
+            "name": "Dipartimento di Bioscienze, Biotecnologie e Biofarmaceutica, Università di Bari; Italy"
+          }
+        ]
+      },
+      {
+        "given": "Giulio",
+        "family": "Pavesi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Dipartimento di Bioscienze, Università di Milano; Italy"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          9,
+          8
+        ]
+      ]
+    },
+    "container-title": "Current Protocols in Bioinformatics",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2F0471250953.bi0211s47",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/full/10.1002/0471250953.bi0211s47",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          5
+        ]
+      ],
+      "date-time": "2018-08-05T21:57:59Z",
+      "timestamp": 1533506279000
+    },
+    "score": 1.0,
+    "subtitle": [
+      "Using Weeder, Pscan, and PscanChIP for the Discovery of Transcription Factor Binding Site Motifs"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          9
+        ]
+      ]
+    },
+    "references-count": 22,
+    "journal-issue": {
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            9
+          ]
+        ]
+      },
+      "issue": "1"
+    },
+    "URL": "https://doi.org/10.1002/0471250953.bi0211s47",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Medicine"
+    ],
+    "container-title-short": "Current Protocols in Bioinformatics",
+    "short_url": "https://doi.org/gd2z3n",
+    "id": "1G4lWf9Jf"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
           5,
           7
         ]
@@ -9936,6 +10128,15 @@
     "greycite-scanned": "2018-08-21 14:18:14",
     "type": "webpage",
     "id": "13M7e8OcQ"
+  },
+  {
+    "URL": "https://pypi.org/",
+    "title": "PyPI &ndash; the Python Package Index",
+    "container-title": "PyPI",
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2018-08-22 19:03:20",
+    "type": "webpage",
+    "id": "ycIGJh3s"
   },
   {
     "URL": "https://users.soe.ucsc.edu/~kent/improbizer/index.html",
