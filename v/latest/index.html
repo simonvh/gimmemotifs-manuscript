@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Simon J. van Heeringen" />
-  <meta name="dcterms.date" content="2018-08-21" />
+  <meta name="dcterms.date" content="2018-08-22" />
   <meta name="keywords" content="transcription factor, ChIP-seq, regulatory motif, TF motif" />
   <title>GimmeMotifs: an analysis framework for transcription factor motif analysis</title>
   <style type="text/css">
@@ -27,7 +27,7 @@
 <header>
 <h1 class="title">GimmeMotifs: an analysis framework for transcription factor motif analysis</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/efb5a0b96a28b962556f0a68ecfb2a74fa95afd9/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/efb5a0b96a28b962556f0a68ecfb2a74fa95afd9">simonvh/gimmemotifs-manuscript@efb5a0b</a> on August 21, 2018. </em></small></p>
+<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/221f61690c1fbac994deeba93850b07edd20411c/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/221f61690c1fbac994deeba93850b07edd20411c">simonvh/gimmemotifs-manuscript@221f616</a> on August 22, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Simon J. van Heeringen</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-0411-3219">0000-0002-0411-3219</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/simonvh">simonvh</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/svheeringen">svheeringen</a><br> <small> Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands · Funded by Grant XXXXXXXX </small></li>
@@ -39,26 +39,25 @@
 <p>Even though the PFM is a convenient representation, it has certain limitations. A PFM cannot model inter-nucleotide dependencies, that are known to affect binding of certain TFs. Multiple different representations have been proposed <span class="citation" data-cites="Jc96vlRF 1F4IFj9vd 7nxD51Mq nswYGz33 1FTeX7ahA">[<a href="#ref-Jc96vlRF">1</a>,<a href="#ref-1F4IFj9vd">2</a>,<a href="#ref-7nxD51Mq">3</a>,<a href="#ref-nswYGz33">4</a>,<a href="#ref-1FTeX7ahA">5</a>]</span>, however, no single one of these has gained much traction.</p>
 <p>Here, we present GimmeMotifs, a Python module and set of command-line tools for TF motif analysis. Amongst other possibilities it can be used to perfom <em>de novo</em> motif analysis, calculate enrichment statistics and identify differential motifs. We illustrate the functionality of GimmeMotifs using three different examples.</p>
 <h1 id="findings">Findings</h1>
-<p>We have developed GimmeMotifs to provide an comprehensive framework for transcription factor motif analysis. It includes both command-line tools as well as a Python API to perform all routine motif analysis experiments. Notably, we developed a new ensemble approach to determine differential motif activity between two or more experiments. We illustrate the functionality of GimmeMotifs using three examples.</p>
+<p>We have developed GimmeMotifs to provide an comprehensive framework for transcription factor motif analysis. It includes both command-line tools as well as a Python API to perform all routine motif analysis experiments. Notably, we present maelstrom, a new ensemble approach to determine differential motif activity between two or more experiments. We illustrate the functionality of GimmeMotifs using three examples.</p>
 <h2 id="benchmark-of-transcription-factor-motif-databases">Benchmark of transcription factor motif databases</h2>
 <p>A variety of transcription factor (TF) motif databases have been published based on different data sources. One of the most established is JASPAR, which consists of a collection of non-redundant, curated binding profiles <span class="citation" data-cites="XrrO63jn">[<a href="#ref-XrrO63jn">6</a>]</span>. The JASPAR website contains many other tools and the underlying databases are also accessible via an API <span class="citation" data-cites="QMQpDahx">[<a href="#ref-QMQpDahx">7</a>]</span>. Other databases are based on protein binding micorarrays <span class="citation" data-cites="ZfeCID7o">[<a href="#ref-ZfeCID7o">8</a>]</span>, HT-SELEX <span class="citation" data-cites="ZFIFozC9">[<a href="#ref-ZFIFozC9">9</a>]</span> or ChIP-seq profiles <span class="citation" data-cites="YuvogFWT jUNvk96Q 1FStCACaF 14naBuW39">[<a href="#ref-YuvogFWT">10</a>,<a href="#ref-jUNvk96Q">11</a>,<a href="#ref-1FStCACaF">12</a>,<a href="#ref-14naBuW39">13</a>]</span>. CIS-BP integrates many individual motif databases, and includes assignments of TFs to motifs bases based on DNA binding domain homology <span class="citation" data-cites="1Df4blqEs">[<a href="#ref-1Df4blqEs">14</a>]</span>.</p>
 <p>For the purpose of motif analysis, it is beneficial to have a database that is non-redundant (i.e., similar motifs are grouped together), yet as complete as possible (i.e., covers a wide variety of TFs). To establish a quantitative measure of database quality, we evaluated how well motifs from different databases can classify ChIP-seq peaks from background sequences. We downloaded ChIP-seq peaks from ReMap 2018 <span class="citation" data-cites="LBF5EBTh">[<a href="#ref-LBF5EBTh">15</a>]</span>, and used all TFs with at least 1,000 peaks. We then evaluated [XX] motif databases to test how well they could distinguish peaks from random genomic sequences. When a data set contained more than 5,000 peaks we randomly selected 5,000 peaks for the analysis. We included the following databases: JASPAR 2018 vertebrate <span class="citation" data-cites="XrrO63jn">[<a href="#ref-XrrO63jn">6</a>]</span>, FANTOM4 [ref], Homer <span class="citation" data-cites="14naBuW39">[<a href="#ref-14naBuW39">13</a>]</span>, Factorbook <span class="citation" data-cites="YuvogFWT">[<a href="#ref-YuvogFWT">10</a>]</span>, the ENCODE motifs from Kheradpour et al <span class="citation" data-cites="jUNvk96Q">[<a href="#ref-jUNvk96Q">11</a>]</span>, HOCOMOCO <span class="citation" data-cites="1FStCACaF">[<a href="#ref-1FStCACaF">12</a>]</span>, the RSAT clustered motifs <span class="citation" data-cites="Pfmfeewp">[<a href="#ref-Pfmfeewp">16</a>]</span> and the motif database created by Madsen et al. <span class="citation" data-cites="X6uuBgy">[<a href="#ref-X6uuBgy">17</a>]</span>. Figure 3A shows distribution of the ROC AUC (area under the curve for the Receiver Operator Curve) of the best motif per database for all 294 transcription factors in a box plot. There is generally a wide distribution of ROC AUCs. For some factors, such as ELK1, CTCF, CBFB and MYOD1, peaks are relatively easy to classify using a single PWM motif. Other factors don’t have a peaks with a consistently enriched motif, or do not contain a sequence-specific DNA-binding domain, such as EP300 or CD2 for example.</p>
 <figure>
 <img src="content/images/figure_dbs.png" alt="Figure 1: Benchmark of transcription factor motif databases" /><figcaption>Figure 1: Benchmark of transcription factor motif databases</figcaption>
 </figure>
-<p>The difference in maximum ROC AUC between databases is on average not very large, with a mean maximum difference of 0.05. The largest difference (~0.24) is found for factors that were not assayed by ENCODE, such as ONECUT1, SIX2 and TP73, and are therefore not present in the Factorbook motif database. Unsuprisingly, the databases that were based on motif collections of different sources (Kheradpour, Madsen, RSAT and Gimme) generally perform best. It should be noted that motif databases that were based on motif identification from ChIP-seq peaks are expected to have an edge in this analysis.</p>
+<p>The difference in maximum ROC AUC between databases is on average not very large, with a mean maximum difference of 0.05. The largest difference (~0.24) is found for factors that were not assayed by ENCODE, such as ONECUT1, SIX2 and TP73, and are therefore not present in the Factorbook motif database. Unsurprisingly, the databases that were based on motif collections of different sources (Kheradpour, Madsen, RSAT and Gimme) generally perform best. It should be noted that motif databases that were based on motif identification from ChIP-seq peaks are expected to have an edge in this analysis.</p>
 <p>While the ROC AUC is often used to compare the sensitivity versus speficity trade-off, in this context it is not the best metric from a biological point of view. An alternative way of measuring performance is evaluating the recall (ie. how many true peaks do we recover) at a specific false discovery rate. This is one of the criteria that has been used by the ENCODE DREAM challenge for evaluation <span class="citation" data-cites="19QDk82XW">[<a href="#ref-19QDk82XW">18</a>]</span>. Figure 3B shows scatterplots for the recall at 10% FDR for all motif databases compared to the clustered, non-redundant databases that is included with GimmeMotifs. Differences of more than 0.025 are marked blue, and less then -0.025 red. The non-redundant vertebrate motif database included with GimmeMotifs shows better performance than most other databases. The non-redundant RSAT database, which was created in a very similar manner, shows similar performance.</p>
-<p>These results illustrate how <code>gimme roc</code> can be used for evaluation of motifs. The choice of a motif database can greatly influence the results of an analysis. The default database included with GimmeMotifs shows good performance on the metric evaluated here. However, this analysis is only one possible example. Especially well-curated databases, such as JASPAR, can be beneficial, for instance when linking motifs to binding proteins.</p>
+<p>These results illustrate how <code>gimme roc</code> can be used for evaluation of motifs. The choice of a motif database can greatly influence the results of an analysis. The default database included with GimmeMotifs shows good performance on the metric evaluated here. However, this analysis illustrates only one specific use case of application of a motif database. Especially well-curated databases, such as JASPAR, can be beneficial, for instance when linking motifs to binding proteins.</p>
 <h2 id="performance-of-de-novo-motif-identification-varies-with-motif-quality">Performance of de novo motif identification varies with motif quality</h2>
 <p>It has been noted that there is no <em>de novo</em> motif prediction algorithm that consistently performs well across different data sets <span class="citation" data-cites="PNXlUYkS">[<a href="#ref-PNXlUYkS">19</a>]</span>. New approaches and algorithms for <em>de novo</em> motif discovery continue to be published, however, many of them are not tested on more than a few datasets. Benchmarks that have been published since Tompa et al. <span class="citation" data-cites="NrirsKTi iW6hyGIk">[<a href="#ref-NrirsKTi">20</a>,<a href="#ref-iW6hyGIk">21</a>]</span> typically have tested only a few motif finders or used only a few datasets.</p>
 <p>Here, we used the GimmeMotifs framework to benchmark 14 different <em>de novo</em> motif finders. To evaluate the different approaches, we downloaded 495 peak files for 270 proteins from ENCODE (Supplemental Table X; <span class="citation" data-cites="6eHRNaUT">[<a href="#ref-6eHRNaUT">22</a>]</span>) and selected the 100bp sequence centered on the summit of top 5000 peaks. Of those peaks, half were randomly selected as a prediction set and the other half was used for evaluation. As a background set we selected regions of the same length flanking the original peaks. To assess the performance, we calculated two metrics, the ROC AUC and the recall at 10% FDR. Figure 4a shows the distribution of the ROC AUC scores over all ENCODE peaks in a boxplot, ordered by the mean ROC AUC. The ROC AUC is distributed between 0.58 and 0.98, with a mean of 0.75. All proteins that have low ROC AUC are not sequence-specific transcription factors such as Pol2, Taf7 and Gtf2b, the PRC2-subunit Suz12 and the H3K9 methyltransferase Setdb1. The factors with the highest ROC AUC are CTCF and members of the cohesin complex, Smc3 and Rad21, that bind at CTCF sites.</p>
-<p>Generally, the ROC AUC distribution of all evaluated motif finders is very similar. However, a few outliers can be observed. Trawler, Posmo and, to a lesser extent, GADEM show an overall lower distribution of ROC AUC scores. Compared to the ROC AUC scores of the next best program, Weeder, this is significant (p &lt; 1e-5, Wilcoxon signed-rank).</p>
-<p>Selecting the best motif for each experiment results in a ROC AUC distribution that is significantly higher than the best single method, BioProspector (p=4e-21, Wilcoxon signed-rank).</p>
+<p>Generally, the ROC AUC distribution of all evaluated motif finders is very similar. However, a few outliers can be observed. Trawler, Posmo and, to a lesser extent, GADEM show an overall lower distribution of ROC AUC scores. Compared to the ROC AUC scores of the next best program, Weeder, this is significant (p &lt; 1e-5, Wilcoxon signed-rank). Selecting the best motif for each experiment results in a ROC AUC distribution that is significantly higher than the best single method, BioProspector (p &lt; 4e-21, Wilcoxon signed-rank).</p>
 <p>As stated in the previous section, the ROC AUC is not the best measure to evaluate motif quality. Therefore, we selected for every peak set the best motif from all motifs predicted by the different motif finders on the basis of the recall at 10% FDR. We then plotted the difference between the best motif from each individual <em>de novo</em> approach with this best overall motif (Figure 4b). For this figure, we used only the data sets where at least one motif had a recall higher than 0 at 10% FDR.</p>
-<p>In line with previous results <span class="citation" data-cites="PNXlUYkS">[<a href="#ref-PNXlUYkS">19</a>]</span>, there is no single tool that consistently predicts the best motif for each transcription factor. However, the motifs predicted BioProspector, MEME and Homer are, on basis of this metric, consistently better than motifs predicted by other methods. In 75% the cases, the motif predicted by BioProspector has a difference in recall smaller than 0.026 compared to the best overall motif. In this benchmark, four programs (Trawler, Improbizer, Posmo and Weeder) generally perform worse than average, with a mean decrease in recall of [5%] to [10], as compared to the best motif. In addition, these programs tend to have a much more variable performance overall.</p>
+<p>In line with previous results <span class="citation" data-cites="PNXlUYkS">[<a href="#ref-PNXlUYkS">19</a>]</span>, there is no single tool that consistently predicts the best motif for each transcription factor. However, the motifs predicted by BioProspector, MEME and Homer are, on basis of this metric, consistently better than motifs predicted by other methods. In 75% the cases, the motif predicted by BioProspector has a difference in recall smaller than 0.026 compared to the best overall motif. In this benchmark, four programs (Trawler, Improbizer, Posmo and Weeder) generally perform worse than average, with a mean decrease in recall of [5%] to [10], as compared to the best motif. In addition, these programs tend to have a much more variable performance overall.</p>
 <p>Predicted motifs identified using MEME with different motif widths show better performance than running MEME with the <code>minw</code> and <code>maxw</code> options (MEME vs. MEMEW in fig. 4b). Of the best performing algorithms, both MEME and BioProspector were not specifically developed for ChIP-seq data, however, they consistently outperform most methods created for ChIP-seq data. Of the ChIP-seq motif finders Homer consistently shows good performance.</p>
 <p>Finally, to gain further insight into <em>de novo</em> motif finder performance, we stratified the ChIP-seq datasets by motif “quality”. We divided the transcription factors into five bins on basis of the ROC AUC score of the best motif. For each bin we ranked the tools on basis of the average of three metrics (ROC AUC, recall at 10% FDR and MNCP <span class="citation" data-cites="s6kAz7UG">[<a href="#ref-s6kAz7UG">23</a>]</span>). The results are visualized as a heatmap in Figure 4c. From this visualization, it is again clear that BioProspector, MEME and Homer produce consistently high-ranking motifs, while the motifs identified by Trawler, Posmo, GADEM and Improbizer generally have the lowest rank. Interestingly, for some motif finders, there is a relation between motif presence and the relative rank. Weeder, XXMotif and MDmodule yield relatively high-ranking motifs when the ROC AUC of the best motif for the data set is low. On the other hand, ChIPMunk shows the opposite pattern. Apparently this algorithm works well when a motif is present in significant fraction of the data set [TODO: check oop param].</p>
-<p>These results illustrate that motif finders need to be evaluated along a broad range of data sets with different motif presence and quality. Another interesting observation is that this ChIP-seq benchmark shows a lower-than-average performance for Weeder, which actually was one of the highest scoring in the Tompa et al. benchmark. It should be noted that our metric specifically evaluates how well <em>de novo</em> motif finders identify the primary motif in the context of ChIP-seq peaks. It does not evaluate other aspects that might be important, such as the ability to identify many low-abundant motifs. Furthermore, with ChIP-seq data there are usually many peaks available. This allows for other algorithms than those that work well on a few sequences. Interestingly, the original MEME shows consistently good performance, although the running tine is longer than most other tools. On the basis of this analysis, BioProspector should be the top pick for a program to identify primary motifs in ChIP-seq data. However, an ensemble program such as GimmeMotifs will report high-quality motifs more consistently than any single tool.</p>
+<p>These results illustrate that motif finders need to be evaluated along a broad range of data sets with different motif presence and quality. Another interesting observation is that this ChIP-seq benchmark shows a lower-than-average performance for Weeder, which actually was one of the highest scoring in the Tompa et al. benchmark. It should be noted that our metric specifically evaluates how well <em>de novo</em> motif finders identify the primary motif in the context of ChIP-seq peaks. It does not evaluate other aspects that might be important, such as the ability to identify many low-abundant motifs. Furthermore, with ChIP-seq data there are usually many peaks available. This allows for other algorithms than those that work well on a few sequences. Interestingly, the original MEME shows consistently good performance, although the running time is longer than most other tools. On the basis of this analysis, BioProspector should be the top pick for a program to identify primary motifs in ChIP-seq data. However, an ensemble program such as GimmeMotifs will report high-quality motifs more consistently than any single tool.</p>
 <h2 id="differential-motif-analysis-of-hematopoietic-enhancers-identifies-cell-type-specific-regulators">Differential motif analysis of hematopoietic enhancers identifies cell type-specific regulators</h2>
 <p>While many motif scanners and methods to calculate enrichment exist, there are few methods to compare motif enrichment or activity between two or more data sets. The CentriMo algorithm from the MEME suite implements a differential enrichment method to compare to samples <span class="citation" data-cites="eQM67dJD">[<a href="#ref-eQM67dJD">24</a>]</span>. The regression approach MARA <span class="citation" data-cites="KGmXK8UO">[<a href="#ref-KGmXK8UO">25</a>]</span>, as implemented in ISMARA <span class="citation" data-cites="3d6POy0h">[<a href="#ref-3d6POy0h">26</a>]</span> normalizes between data sets before regression. Here we present the maelstrom algorithm that integrates different methods to determine motif relevance or activity in an ensemble approach (Fig. 5A).</p>
 <p>To demonstrate the utility of maelstrom we identified motif activity based on enhancers in hematopoietic cells. We downloaded 72 human hematopoietc DNAseI experiments (Supplemental Table X), called peaks, and created a combined peak set as a collection of putative enhancers. In addition we downloaded 193 hematopoietic H3K27ac ChIP-seq experiments, mainly from BLUEPRINT <span class="citation" data-cites="MzCvXTgB">[<a href="#ref-MzCvXTgB">27</a>]</span> (Supplemental Table X). We determined the number of H3K27ac reads per enhancer. After log2 transformation and scaling, we selected the 50,000 most dynamic peaks. Figure 5B shows the correlation of the H3K27ac enrichment in these 50,000 enhancers between cell types. For this plot, replicates were combined by taking the mean value and all experiments corresponding to treated cells were removed. We can observe five main clusters 1) non-hematopoietic cells, megakaryocyte and erothrocytes 2), lymphoid cells, 3) neutrophilic cells, 4) macrophages and dendritic cells and 5) monocytes. The lymphoid cluster furthermore seperates between B-cells and T- and NK cells and non-hematopoietic cells are distinct from the megakaryocytes and erythroblasts. We can conclude that the H3K27ac profile within this enhancers set recapitulates a cell type-spefific regulatory signal.</p>
@@ -72,9 +71,9 @@
 <h1 id="methods">Methods</h1>
 <h2 id="gimmemotifs">GimmeMotifs</h2>
 <h3 id="implementation">Implementation</h3>
-<p>GimmeMotifs is implemented in Python, with the motif scanning incorporated as a C module. The software is developed on GitHub (<a href="https://github.com/simonvh/gimmemotifs/" class="uri">https://github.com/simonvh/gimmemotifs/</a>) and documentation is available at <a href="https://gimmemotifs.readthedocs.io" class="uri">https://gimmemotifs.readthedocs.io</a>. Functionality is covered by unit tests, which are run through continuous integration. GimmeMotifs can be installed via bioconda <span class="citation" data-cites="sYguBb3Q">[<a href="#ref-sYguBb3Q">38</a>]</span>, see <a href="https://bioconda.github.io/" class="uri">https://bioconda.github.io/</a> for details. All releases are also distributed through PyPi and stably archived using Zenodo <span class="citation" data-cites="JnK7ipTw">[<a href="#ref-JnK7ipTw">39</a>]</span>. For <em>de novo</em> motif search, [14] different external tools are supported (Table [X]). All of these are installed when conda is used for installation. By default, <a href="https://github.com/simonvh/genomepy">genomepy</a> is used for genome management <span class="citation" data-cites="4AHAVuXG">[<a href="#ref-4AHAVuXG">40</a>]</span>. In addition, GimmeMotifs uses the following Python modules: numpy <span class="citation" data-cites="oGbMixLl">[<a href="#ref-oGbMixLl">41</a>]</span>, scipy <span class="citation" data-cites="D3KtiDQL">[<a href="#ref-D3KtiDQL">42</a>]</span>, scikit-learn , scikit-contrib-lightning <span class="citation" data-cites="6chpTZMZ">[<a href="#ref-6chpTZMZ">28</a>]</span>, seaborn <span class="citation" data-cites="WESOG7Bx">[<a href="#ref-WESOG7Bx">43</a>]</span>, pysam <span class="citation" data-cites="13M7e8OcQ hNfNHk9L">[<a href="#ref-13M7e8OcQ">44</a>,<a href="#ref-hNfNHk9L">45</a>]</span>, xgboost <span class="citation" data-cites="8w9fI63O">[<a href="#ref-8w9fI63O">29</a>]</span> and pandas for citations]. In addition to the command line tools, all GimmeMotifs functionality is available through a Python API.</p>
+<p>GimmeMotifs is implemented in Python, with the motif scanning incorporated as a C module. The software is developed on GitHub (<a href="https://github.com/simonvh/gimmemotifs/" class="uri">https://github.com/simonvh/gimmemotifs/</a>) and documentation is available at <a href="https://gimmemotifs.readthedocs.io" class="uri">https://gimmemotifs.readthedocs.io</a>. Functionality is covered by unit tests, which are run through continuous integration. GimmeMotifs can be installed via bioconda <span class="citation" data-cites="sYguBb3Q">[<a href="#ref-sYguBb3Q">38</a>]</span>, see <a href="https://bioconda.github.io/" class="uri">https://bioconda.github.io/</a> for details. All releases are also distributed through PyPi <span class="citation" data-cites="ycIGJh3s">[<a href="#ref-ycIGJh3s">39</a>]</span> and stably archived using Zenodo <span class="citation" data-cites="JnK7ipTw">[<a href="#ref-JnK7ipTw">40</a>]</span>. For <em>de novo</em> motif search, 14 different external tools are supported (Table [X]). All of these are installed when conda is used for installation. By default, <a href="https://github.com/simonvh/genomepy">genomepy</a> is used for genome management <span class="citation" data-cites="4AHAVuXG">[<a href="#ref-4AHAVuXG">41</a>]</span>. In addition, GimmeMotifs uses the following Python modules: numpy <span class="citation" data-cites="oGbMixLl">[<a href="#ref-oGbMixLl">42</a>]</span>, scipy <span class="citation" data-cites="D3KtiDQL">[<a href="#ref-D3KtiDQL">43</a>]</span>, scikit-learn, scikit-contrib-lightning <span class="citation" data-cites="6chpTZMZ">[<a href="#ref-6chpTZMZ">28</a>]</span>, seaborn <span class="citation" data-cites="WESOG7Bx">[<a href="#ref-WESOG7Bx">44</a>]</span>, pysam <span class="citation" data-cites="13M7e8OcQ hNfNHk9L">[<a href="#ref-13M7e8OcQ">45</a>,<a href="#ref-hNfNHk9L">46</a>]</span>, xgboost <span class="citation" data-cites="8w9fI63O">[<a href="#ref-8w9fI63O">29</a>]</span> and pandas. In addition to the command line tools, all GimmeMotifs functionality is available through a Python API.</p>
 <h3 id="de-novo-motif-prediction-pipeline"><em>De novo</em> motif prediction pipeline</h3>
-<p>Originally, GimmeMotifs was developed to predict <em>de novo</em> motifs from ChIP-seq data using an ensemble of motif predictors <span class="citation" data-cites="11x7W2xZq">[<a href="#ref-11x7W2xZq">46</a>]</span>. The tools currently supported are listed in Table [X]. The pipeline is depicted in [Fig X]. An input file (BED, FASTA or narrowPeak format) is split in a prediction and validation set. The prediction set is used to predict motifs, and the validation set is used to filter for significant motifs. All significant motifs are clustered to provide a collection of non-redundant <em>de novo</em> motifs. Finally, significant clustered motifs are reported, along with several statistics to evaluate motif quality, calculated using the validation set. These evaluation metrics include ROC AUC, distribution of the motif location relative to the center of the input (i.e., the ChIP-seq peak summit) and the best match in a database of known motifs.</p>
+<p>Originally, GimmeMotifs was developed to predict <em>de novo</em> motifs from ChIP-seq data using an ensemble of motif predictors <span class="citation" data-cites="11x7W2xZq">[<a href="#ref-11x7W2xZq">47</a>]</span>. The tools currently supported are listed in Table [X]. The pipeline is depicted in [Fig X]. An input file (BED, FASTA or narrowPeak format) is split into a prediction and validation set. The prediction set is used to predict motifs, and the validation set is used to filter for significant motifs. All significant motifs are clustered to provide a collection of non-redundant <em>de novo</em> motifs. Finally, significant clustered motifs are reported, along with several statistics to evaluate motif quality, calculated using the validation set. These evaluation metrics include ROC AUC, distribution of the motif location relative to the center of the input (i.e., the ChIP-seq peak summit) and the best match in a database of known motifs.</p>
 <table>
 <caption>Table [X]: External <em>de novo</em> motif prediction tools supported by GimmeMotifs.</caption>
 <thead>
@@ -86,23 +85,23 @@
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/JiantaoShi/AMD">AMD</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="1BgOvt0PL">[<a href="#ref-1BgOvt0PL">47</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="1BgOvt0PL">[<a href="#ref-1BgOvt0PL">48</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="http://ai.stanford.edu/~xsliu/BioProspector/">BioProspector</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="Zg6SmzaV">[<a href="#ref-Zg6SmzaV">48</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="Zg6SmzaV">[<a href="#ref-Zg6SmzaV">49</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="http://autosome.ru/chipmunk/">ChIPMunk</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="smdkzwHK">[<a href="#ref-smdkzwHK">49</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="smdkzwHK">[<a href="#ref-smdkzwHK">50</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https://www.niehs.nih.gov/research/resources/software/biostatistics/gadem/index.cfm">GADEM</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="8xwckKK3">[<a href="#ref-8xwckKK3">50</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="8xwckKK3">[<a href="#ref-8xwckKK3">51</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://dx.doi.org/10.1093/nar/gkp1180">HMS</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="YIsvgfWU">[<a href="#ref-YIsvgfWU">51</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="YIsvgfWU">[<a href="#ref-YIsvgfWU">52</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="http://homer.ucsd.edu/homer/motif/">Homer</a></td>
@@ -110,48 +109,52 @@
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://users.soe.ucsc.edu/~kent/improbizer/improbizer.html">Improbizer</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="wUklcuxK">[<a href="#ref-wUklcuxK">52</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="wUklcuxK">[<a href="#ref-wUklcuxK">53</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https:/dx.doi.org/10.1038/nbt717">MDmodule</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="aZ8ZieVF">[<a href="#ref-aZ8ZieVF">53</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="aZ8ZieVF">[<a href="#ref-aZ8ZieVF">54</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="http://meme-suite.org/">MEME</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="KqGAZzyz">[<a href="#ref-KqGAZzyz">54</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="KqGAZzyz">[<a href="#ref-KqGAZzyz">55</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="http://bioinformatics.intec.ugent.be/MotifSuite/motifsampler.php">MotifSampler</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="FGUIIeyX">[<a href="#ref-FGUIIeyX">55</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="FGUIIeyX">[<a href="#ref-FGUIIeyX">56</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://dx.doi.org/10.1093/nar/gkr1135">Posmo</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="oL2CQf3y">[<a href="#ref-oL2CQf3y">56</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="oL2CQf3y">[<a href="#ref-oL2CQf3y">57</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https://trawler.erc.monash.edu.au/">Trawler</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="19jTKi9ZQ">[<a href="#ref-19jTKi9ZQ">57</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="19jTKi9ZQ">[<a href="#ref-19jTKi9ZQ">58</a>]</span></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;"><a href="http://www.beaconlab.it/modtools">Weeder</a></td>
+<td style="text-align: left;"><span class="citation" data-cites="1G4lWf9Jf">[<a href="#ref-1G4lWf9Jf">59</a>]</span></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><a href="https://github.com/soedinglab/xxmotif">XXmotif</a></td>
-<td style="text-align: left;"><span class="citation" data-cites="QzszdQqA">[<a href="#ref-QzszdQqA">58</a>]</span></td>
+<td style="text-align: left;"><span class="citation" data-cites="QzszdQqA">[<a href="#ref-QzszdQqA">60</a>]</span></td>
 </tr>
 </tbody>
 </table>
 <h3 id="motif-activity-by-ensemble-learning-maelstrom">Motif activity by ensemble learning: maelstrom</h3>
-<p>GimmeMotifs implements eight different methods to determine differential motif enrichment between two or more conditions. In addition, these methods can be combined in a single measure of <em>motif activity</em> using rank aggregation. Four methods work with discrete sets, such as different peak sets or clusters from a K-means clustering. The hypergeometric test uses motif counts with an empirical motif-specific FPR of 5%. All other implemented methods use the PWM log-odds score of the best match.</p>
-<p>The hypergeometric test is commonly used to calculate motif enrichment, for instance by Homer <span class="citation" data-cites="14naBuW39">[<a href="#ref-14naBuW39">13</a>]</span>. In GimmeMotifs, motifs in each cluster are tested against the union of all other clusters. The reported value is -log10(p-value) where the p-value adjusted by the Benjamini-Hochberg procedure <span class="citation" data-cites="1HL2L6Bup">[<a href="#ref-1HL2L6Bup">59</a>]</span>.</p>
+<p>GimmeMotifs implements eight different methods to determine differential motif enrichment between two or more conditions. In addition, these methods can be combined in a single measure of <em>motif activity</em> using rank aggregation. Four methods work with discrete sets, such as different peak sets or clusters from a K-means clustering. The hypergeometric test uses motif counts with an empirical motif-specific FPR of 5%. All other implemented methods use the PFM log-odds score of the best match.</p>
+<p>The hypergeometric test is commonly used to calculate motif enrichment, for instance by Homer <span class="citation" data-cites="14naBuW39">[<a href="#ref-14naBuW39">13</a>]</span>. In GimmeMotifs, motifs in each cluster are tested against the union of all other clusters. The reported value is -log10(p-value) where the p-value is adjusted by the Benjamini-Hochberg procedure <span class="citation" data-cites="1HL2L6Bup">[<a href="#ref-1HL2L6Bup">61</a>]</span>.</p>
 <p>Using the non-parametric Mann-Whitney U test, GimmeMotifs tests the null hypothesis that that the motif log-odds score distributions of two classes are equal. For each discrete class in the data, such as a cluster, it compares the score distributions of the class to the score distribution of all other classes. The value used as activity is the -log10 of the Benjamini-Hochberg adjusted p-value.</p>
 <p>The two other methods are classification algorithms: random forest using scikit-learn and a large-scale multiclass classifier using block coordinate descent <span class="citation" data-cites="6chpTZMZ">[<a href="#ref-6chpTZMZ">28</a>]</span> as implemented in the scikit-contrib-lightning module. The classifier in GimmeMotifs uses a l1/l2 penalty with squared hinge loss where the alpha and C parameters are set using grid search in 10 fold cross-validation procedure.</p>
 <p>The other four methods that are implemented relate motif score to an experimental measure such as ChIP-seq or ATAC-seq signal or expression level. These are all different forms of regression. In addition to ridge regression, which is similar to Motif Activity Response Analysis (MARA) <span class="citation" data-cites="KGmXK8UO 3d6POy0h">[<a href="#ref-KGmXK8UO">25</a>,<a href="#ref-3d6POy0h">26</a>]</span>, these methods include regression using boosted trees (XGBoost <span class="citation" data-cites="8w9fI63O">[<a href="#ref-8w9fI63O">29</a>]</span>), multiclass regression <span class="citation" data-cites="6chpTZMZ">[<a href="#ref-6chpTZMZ">28</a>]</span> and L1 regularized regression (LASSO).</p>
-<p>To combine different measures of motif significance or activity into a single score, ranks are assigned for each individual method and combined using rank aggregation based on order statistics <span class="citation" data-cites="dTwzcIZ4">[<a href="#ref-dTwzcIZ4">30</a>]</span>. This results in a probability of finding a motif at all observed postiions. We use the method implemented in the R package RobustRankAggreg <span class="citation" data-cites="15HHsoLKA">[<a href="#ref-15HHsoLKA">60</a>]</span>. The rank aggregation is performed twice, once with the ranks reversed to generate both positively and negatively associated motifs.</p>
+<p>To combine different measures of motif significance or activity into a single score, ranks are assigned for each individual method and combined using rank aggregation based on order statistics <span class="citation" data-cites="dTwzcIZ4">[<a href="#ref-dTwzcIZ4">30</a>]</span>. This results in a probability of finding a motif at all observed postiions. We use the method implemented in the R package RobustRankAggreg <span class="citation" data-cites="15HHsoLKA">[<a href="#ref-15HHsoLKA">62</a>]</span>. The rank aggregation is performed twice, once with the ranks reversed to generate both positively and negatively associated motifs.</p>
 <h2 id="clustering">Clustering</h2>
 <h2 id="transcription-factor-motif-database-benchmark">Transcription factor motif database benchmark</h2>
-<p>We downloaded all ChIP-seq peaks from Remap 2018 v1.2 <span class="citation" data-cites="LBF5EBTh">[<a href="#ref-LBF5EBTh">15</a>]</span> (<a href="http://tagc.univ-mrs.fr/remap/index.php?page=download" class="uri">http://tagc.univ-mrs.fr/remap/index.php?page=download</a>). We removed all factors with fewer than 1000 peaks and created regions of 100 bp centered at the peak summit. Background files were created for each peak set using bedtools shuffle <span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw">61</a>]</span>, excluding the hg19 gaps and the peak regions. The ROC AUC and Recall at 10% FDR statistics were calculated using gimme roc. The workflow is implemented in snakemake <span class="citation" data-cites="NcYZqBux">[<a href="#ref-NcYZqBux">62</a>]</span> and can be downloaded at <a href="https://github.com/simonvh/gimme_analysis" class="uri">https://github.com/simonvh/gimme_analysis</a>.</p>
-<h2 id="de-novo-motif-benchmark">De novo motif benchmark</h2>
-<p>We downloaded all spp ENCODE peaks (January 2011 data freeze) from the EBI FTP (<a href="http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/" class="uri">http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/</a>). We selected the top 5000 peaks and created 100bp regions centered on the peak summit. As background we selected 100 bp regions flanking the original peaks. For the the novo motif search default settings for gimme motifs were used. The workflow is implemented in snakemake <span class="citation" data-cites="NcYZqBux">[<a href="#ref-NcYZqBux">62</a>]</span> and can be downloaded at <a href="https://github.com/simonvh/gimme_analysis" class="uri">https://github.com/simonvh/gimme_analysis</a>.</p>
+<p>We downloaded all ChIP-seq peaks from Remap 2018 v1.2 <span class="citation" data-cites="LBF5EBTh">[<a href="#ref-LBF5EBTh">15</a>]</span> (<a href="http://tagc.univ-mrs.fr/remap/index.php?page=download" class="uri">http://tagc.univ-mrs.fr/remap/index.php?page=download</a>). We removed all factors with fewer than 1000 peaks and created regions of 100 bp centered at the peak summit. Background files were created for each peak set using bedtools shuffle <span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw">63</a>]</span>, excluding the hg19 gaps and the peak regions. The ROC AUC and Recall at 10% FDR statistics were calculated using <code>gimme roc</code>. The workflow is implemented in snakemake <span class="citation" data-cites="NcYZqBux">[<a href="#ref-NcYZqBux">64</a>]</span> and is available at <a href="https://github.com/simonvh/gimme_analysis" class="uri">https://github.com/simonvh/gimme_analysis</a>.</p>
+<h2 id="de-novo-motif-prediction-benchmark"><code>De novo</code> motif prediction benchmark</h2>
+<p>We downloaded all spp ENCODE peaks (January 2011 data freeze) from the EBI FTP (<a href="http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/" class="uri">http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/</a>). We selected the top 5000 peaks and created 100bp regions centered on the peak summit. As background we selected 100 bp regions flanking the original peaks. For the <code>de novo</code> motif search default settings for <code>gimme motifs</code> were used. The workflow is implemented in snakemake <span class="citation" data-cites="NcYZqBux">[<a href="#ref-NcYZqBux">64</a>]</span> and is available at <a href="https://github.com/simonvh/gimme_analysis" class="uri">https://github.com/simonvh/gimme_analysis</a>.</p>
 <h2 id="motif-analysis-of-hematopoietic-enhancers">Motif analysis of hematopoietic enhancers</h2>
-<p>To illustrate the functionality of gimme maelstrom, we analyzed an integrated data set hematopoietic enhancers. We downloaded all H3K27ac ChIP-seq and DNase I data from BLUEPRINT (Supplemental Table SX) and hematopoietic DNase I data from ROADMAP (Supplemental Table SX). All DNase I data were processed using the Kundaje lab DNase pipeline version 0.3.0 <a href="https://github.com/kundajelab/atac_dnase_pipelines" class="uri">https://github.com/kundajelab/atac_dnase_pipelines</a> <span class="citation" data-cites="PPuptgFe">[<a href="#ref-PPuptgFe">63</a>]</span>. The ChIP-seq samples were processed using the Kundaje lab AQUAS TF and histone ChIP-seq pipeline <a href="https://github.com/kundajelab/chipseq_pipeline" class="uri">https://github.com/kundajelab/chipseq_pipeline</a>. For all experiments from BLUEPRINT we used the aligned reads provided by EBI. All ROADMAP samples were aligned using bowtie2 <span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu">64</a>]</span> to the hg38 genome. DNase I peaks were called using MACS2 <span class="citation" data-cites="MG7PTly9">[<a href="#ref-MG7PTly9">65</a>]</span>.</p>
+<p>To illustrate the functionality of <code>gimme maelstrom</code> we analyzed an integrated collection of hematopoietic enhancers. We downloaded all H3K27ac ChIP-seq and DNase I data from BLUEPRINT (Supplemental Table SX) and hematopoietic DNase I data from ROADMAP (Supplemental Table SX). All DNase I data were processed using the Kundaje lab DNase pipeline version 0.3.0 <a href="https://github.com/kundajelab/atac_dnase_pipelines" class="uri">https://github.com/kundajelab/atac_dnase_pipelines</a> <span class="citation" data-cites="PPuptgFe">[<a href="#ref-PPuptgFe">65</a>]</span>. The ChIP-seq samples were processed using the Kundaje lab AQUAS TF and histone ChIP-seq pipeline <a href="https://github.com/kundajelab/chipseq_pipeline" class="uri">https://github.com/kundajelab/chipseq_pipeline</a>. For all experiments from BLUEPRINT we used the aligned reads provided by EBI. All ROADMAP samples were aligned using bowtie2 <span class="citation" data-cites="PiS0h6Mu">[<a href="#ref-PiS0h6Mu">66</a>]</span> to the hg38 genome. DNase I peaks were called using MACS2 <span class="citation" data-cites="MG7PTly9">[<a href="#ref-MG7PTly9">67</a>]</span>. We merge all DNase I peak files and centered each merged peak on the summit of the strongest individual peak. H3K27ac reads were counted in a region of 2kb centered at the summit (Supplementary Table SX) and read counts were log2-transformed and scaled. We removed all samples that were treated and averaged all samples from the same cell type. We then selected all enhancers with at least one sample with a scaled log2 read count of 2, sorted by the maximum difference in normalized signal between samples and selected the 50,000 enhancers with the largest difference. Using this enhancer collection as input, we ran <code>gimme maelstrom</code> using default settings. The motif analysis workflow is implemented in a Jupyter notebook and is available at <a href="https://github.com/simonvh/gimme_analysis" class="uri">https://github.com/simonvh/gimme_analysis</a>.</p>
 <h1 id="conclusions">Conclusions</h1>
 <h1 id="availability-and-requirements">Availability and requirements</h1>
 <ul>
@@ -358,128 +361,136 @@ E. E. Kohler, C. E. Cowan, I. Chatterjee, A. B. Malik, K. K. Wary<br />
 Björn GrüningRyan Dale, Andreas Sjödin, Brad A. Chapman, Jillian Rowe, Christopher H. Tomkins-Tinch, Renan Valieris, Johannes Köster<br />
 <em>Nature Methods</em> (2018-07) <a href="https://doi.org/10.1038/s41592-018-0046-7" class="uri">https://doi.org/10.1038/s41592-018-0046-7</a></p>
 </div>
+<div id="ref-ycIGJh3s">
+<p>39. <strong>PyPI – the Python Package Index</strong><em>PyPI</em> <a href="https://pypi.org/" class="uri">https://pypi.org/</a></p>
+</div>
 <div id="ref-JnK7ipTw">
-<p>39. <strong>Zenodo - Research. Shared.</strong><a href="https://zenodo.org/" class="uri">https://zenodo.org/</a></p>
+<p>40. <strong>Zenodo - Research. Shared.</strong><a href="https://zenodo.org/" class="uri">https://zenodo.org/</a></p>
 </div>
 <div id="ref-4AHAVuXG">
-<p>40. <strong>genomepy: download genomes the easy way</strong><br />
+<p>41. <strong>genomepy: download genomes the easy way</strong><br />
 Simon J. van Heeringen<br />
 <em>The Journal of Open Source Software</em> (2017-08-15) <a href="https://doi.org/10.21105/joss.00320" class="uri">https://doi.org/10.21105/joss.00320</a></p>
 </div>
 <div id="ref-oGbMixLl">
-<p>41. <strong>NumPy — NumPy</strong>(2018-04-26) <a href="http://www.numpy.org/" class="uri">http://www.numpy.org/</a></p>
+<p>42. <strong>NumPy — NumPy</strong>(2018-04-26) <a href="http://www.numpy.org/" class="uri">http://www.numpy.org/</a></p>
 </div>
 <div id="ref-D3KtiDQL">
-<p>42. <strong>SciPy.org — SciPy.org</strong>(2018-08-15) <a href="http://www.scipy.org/" class="uri">http://www.scipy.org/</a></p>
+<p>43. <strong>SciPy.org — SciPy.org</strong>(2018-08-15) <a href="http://www.scipy.org/" class="uri">http://www.scipy.org/</a></p>
 </div>
 <div id="ref-WESOG7Bx">
-<p>43. <strong>Mwaskom/Seaborn: V0.9.0 (July 2018)</strong><br />
+<p>44. <strong>Mwaskom/Seaborn: V0.9.0 (July 2018)</strong><br />
 Michael Waskom, Olga Botvinnik, Drew O’Kane, Paul Hobson, Joel Ostblom, Saulius Lukauskas, David C Gemperline, Tom Augspurger, Yaroslav Halchenko, John B. Cole, … Adel Qalieh<br />
 <em>Zenodo</em> (2018-07-16) <a href="https://doi.org/10.5281/zenodo.1313201" class="uri">https://doi.org/10.5281/zenodo.1313201</a></p>
 </div>
 <div id="ref-13M7e8OcQ">
-<p>44. <strong>pysam-developers/pysam</strong><br />
+<p>45. <strong>pysam-developers/pysam</strong><br />
 pysam-developers<br />
 <em>GitHub</em> <a href="https://github.com/pysam-developers/pysam" class="uri">https://github.com/pysam-developers/pysam</a></p>
 </div>
 <div id="ref-hNfNHk9L">
-<p>45. <strong>The Sequence Alignment/Map format and SAMtools.</strong><br />
+<p>46. <strong>The Sequence Alignment/Map format and SAMtools.</strong><br />
 Heng Li, Bob Handsaker, Alec Wysoker, Tim Fennell, Jue Ruan, Nils Homer, Gabor Marth, Goncalo Abecasis, Richard Durbin, <br />
 <em>Bioinformatics (Oxford, England)</em> (2009-06-08) <a href="https://www.ncbi.nlm.nih.gov/pubmed/19505943" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/19505943</a></p>
 </div>
 <div id="ref-11x7W2xZq">
-<p>46. <strong>GimmeMotifs: a de novo motif prediction pipeline for ChIP-sequencing experiments</strong><br />
+<p>47. <strong>GimmeMotifs: a de novo motif prediction pipeline for ChIP-sequencing experiments</strong><br />
 Simon J. van Heeringen, Gert Jan C. Veenstra<br />
 <em>Bioinformatics</em> (2010-11-15) <a href="https://doi.org/10.1093/bioinformatics/btq636" class="uri">https://doi.org/10.1093/bioinformatics/btq636</a></p>
 </div>
 <div id="ref-1BgOvt0PL">
-<p>47. <strong>AMD, an Automated Motif Discovery Tool Using Stepwise Refinement of Gapped Consensuses</strong><br />
+<p>48. <strong>AMD, an Automated Motif Discovery Tool Using Stepwise Refinement of Gapped Consensuses</strong><br />
 Jiantao Shi, Wentao Yang, Mingjie Chen, Yanzhi Du, Ji Zhang, Kankan Wang<br />
 <em>PLoS ONE</em> (2011-09-12) <a href="https://doi.org/10.1371/journal.pone.0024576" class="uri">https://doi.org/10.1371/journal.pone.0024576</a></p>
 </div>
 <div id="ref-Zg6SmzaV">
-<p>48. <strong>BioProspector: discovering conserved DNA motifs in upstream regulatory regions of co-expressed genes.</strong><br />
+<p>49. <strong>BioProspector: discovering conserved DNA motifs in upstream regulatory regions of co-expressed genes.</strong><br />
 X Liu, DL Brutlag, JS Liu<br />
 <em>Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing</em> (2001) <a href="https://www.ncbi.nlm.nih.gov/pubmed/11262934" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/11262934</a></p>
 </div>
 <div id="ref-smdkzwHK">
-<p>49. <strong>Deep and wide digging for binding motifs in ChIP-Seq data</strong><br />
+<p>50. <strong>Deep and wide digging for binding motifs in ChIP-Seq data</strong><br />
 I. V. Kulakovskiy, V. A. Boeva, A. V. Favorov, V. J. Makeev<br />
 <em>Bioinformatics</em> (2010-10-15) <a href="https://doi.org/10.1093/bioinformatics/btq488" class="uri">https://doi.org/10.1093/bioinformatics/btq488</a></p>
 </div>
 <div id="ref-8xwckKK3">
-<p>50. <strong>GADEM: A Genetic Algorithm Guided Formation of Spaced Dyads Coupled with an EM Algorithm for Motif Discovery</strong><br />
+<p>51. <strong>GADEM: A Genetic Algorithm Guided Formation of Spaced Dyads Coupled with an EM Algorithm for Motif Discovery</strong><br />
 Leping Li<br />
 <em>Journal of Computational Biology</em> (2009-02) <a href="https://doi.org/10.1089/cmb.2008.16tt" class="uri">https://doi.org/10.1089/cmb.2008.16tt</a></p>
 </div>
 <div id="ref-YIsvgfWU">
-<p>51. <strong>On the detection and refinement of transcription factor binding sites using ChIP-Seq data</strong><br />
+<p>52. <strong>On the detection and refinement of transcription factor binding sites using ChIP-Seq data</strong><br />
 Ming Hu, Jindan Yu, Jeremy M. G. Taylor, Arul M. Chinnaiyan, Zhaohui S. Qin<br />
 <em>Nucleic Acids Research</em> (2010-01-07) <a href="https://doi.org/10.1093/nar/gkp1180" class="uri">https://doi.org/10.1093/nar/gkp1180</a></p>
 </div>
 <div id="ref-wUklcuxK">
-<p>52. <strong>cis-Site Seeker</strong><a href="https://users.soe.ucsc.edu/~kent/improbizer/index.html" class="uri">https://users.soe.ucsc.edu/~kent/improbizer/index.html</a></p>
+<p>53. <strong>cis-Site Seeker</strong><a href="https://users.soe.ucsc.edu/~kent/improbizer/index.html" class="uri">https://users.soe.ucsc.edu/~kent/improbizer/index.html</a></p>
 </div>
 <div id="ref-aZ8ZieVF">
-<p>53. <strong>An algorithm for finding protein–DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments</strong><br />
+<p>54. <strong>An algorithm for finding protein–DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments</strong><br />
 X. Shirley Liu, Douglas L. Brutlag, Jun S. Liu<br />
 <em>Nature Biotechnology</em> (2002-07-08) <a href="https://doi.org/10.1038/nbt717" class="uri">https://doi.org/10.1038/nbt717</a></p>
 </div>
 <div id="ref-KqGAZzyz">
-<p>54. <strong>Fitting a mixture model by expectation maximization to discover motifs in biopolymers.</strong><br />
+<p>55. <strong>Fitting a mixture model by expectation maximization to discover motifs in biopolymers.</strong><br />
 TL Bailey, C Elkan<br />
 <em>Proceedings. International Conference on Intelligent Systems for Molecular Biology</em> (1994) <a href="https://www.ncbi.nlm.nih.gov/pubmed/7584402" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/7584402</a></p>
 </div>
 <div id="ref-FGUIIeyX">
-<p>55. <strong>A Gibbs Sampling Method to Detect Overrepresented Motifs in the Upstream Regions of Coexpressed Genes</strong><br />
+<p>56. <strong>A Gibbs Sampling Method to Detect Overrepresented Motifs in the Upstream Regions of Coexpressed Genes</strong><br />
 Gert Thijs, Kathleen Marchal, Magali Lescot, Stephane Rombauts, Bart De Moor, Pierre Rouzé, Yves Moreau<br />
 <em>Journal of Computational Biology</em> (2002-04) <a href="https://doi.org/10.1089/10665270252935566" class="uri">https://doi.org/10.1089/10665270252935566</a></p>
 </div>
 <div id="ref-oL2CQf3y">
-<p>56. <strong>A highly efficient and effective motif discovery method for ChIP-seq/ChIP-chip data using positional information</strong><br />
+<p>57. <strong>A highly efficient and effective motif discovery method for ChIP-seq/ChIP-chip data using positional information</strong><br />
 Xiaotu Ma, Ashwinikumar Kulkarni, Zhihua Zhang, Zhenyu Xuan, Robert Serfling, Michael Q. Zhang<br />
 <em>Nucleic Acids Research</em> (2011-01-06) <a href="https://doi.org/10.1093/nar/gkr1135" class="uri">https://doi.org/10.1093/nar/gkr1135</a></p>
 </div>
 <div id="ref-19jTKi9ZQ">
-<p>57. <strong>Trawler: de novo regulatory motif discovery pipeline for chromatin immunoprecipitation</strong><br />
+<p>58. <strong>Trawler: de novo regulatory motif discovery pipeline for chromatin immunoprecipitation</strong><br />
 Laurence Ettwiller, Benedict Paten, Mirana Ramialison, Ewan Birney, Joachim Wittbrodt<br />
 <em>Nature Methods</em> (2007-06-24) <a href="https://doi.org/10.1038/nmeth1061" class="uri">https://doi.org/10.1038/nmeth1061</a></p>
 </div>
+<div id="ref-1G4lWf9Jf">
+<p>59. <strong>Using Weeder, Pscan, and PscanChIP for the Discovery of Enriched Transcription Factor Binding Site Motifs in Nucleotide Sequences</strong><br />
+Federico Zambelli, Graziano Pesole, Giulio Pavesi<br />
+<em>Current Protocols in Bioinformatics</em> (2014-09) <a href="https://doi.org/10.1002/0471250953.bi0211s47" class="uri">https://doi.org/10.1002/0471250953.bi0211s47</a></p>
+</div>
 <div id="ref-QzszdQqA">
-<p>58. <strong>P-value-based regulatory motif discovery using positional weight matrices</strong><br />
+<p>60. <strong>P-value-based regulatory motif discovery using positional weight matrices</strong><br />
 H. Hartmann, E. W. Guthohrlein, M. Siebert, S. Luehr, J. Soding<br />
 <em>Genome Research</em> (2012-09-18) <a href="https://doi.org/10.1101/gr.139881.112" class="uri">https://doi.org/10.1101/gr.139881.112</a></p>
 </div>
 <div id="ref-1HL2L6Bup">
-<p>59. <a href="https://www.jstor.org/stable/2346101" class="uri">https://www.jstor.org/stable/2346101</a></p>
+<p>61. <a href="https://www.jstor.org/stable/2346101" class="uri">https://www.jstor.org/stable/2346101</a></p>
 </div>
 <div id="ref-15HHsoLKA">
-<p>60. <strong>Robust rank aggregation for gene list integration and meta-analysis</strong><br />
+<p>62. <strong>Robust rank aggregation for gene list integration and meta-analysis</strong><br />
 Raivo Kolde, Sven Laur, Priit Adler, Jaak Vilo<br />
 <em>Bioinformatics</em> (2012-01-12) <a href="https://doi.org/10.1093/bioinformatics/btr709" class="uri">https://doi.org/10.1093/bioinformatics/btr709</a></p>
 </div>
 <div id="ref-1HWiAHnIw">
-<p>61. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
+<p>63. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
 Aaron R. Quinlan, Ira M. Hall<br />
 <em>Bioinformatics</em> (2010-01-28) <a href="https://doi.org/10.1093/bioinformatics/btq033" class="uri">https://doi.org/10.1093/bioinformatics/btq033</a></p>
 </div>
 <div id="ref-NcYZqBux">
-<p>62. <strong>Snakemake–a scalable bioinformatics workflow engine</strong><br />
+<p>64. <strong>Snakemake–a scalable bioinformatics workflow engine</strong><br />
 J. Koster, S. Rahmann<br />
 <em>Bioinformatics</em> (2012-08-20) <a href="https://doi.org/10.1093/bioinformatics/bts480" class="uri">https://doi.org/10.1093/bioinformatics/bts480</a></p>
 </div>
 <div id="ref-PPuptgFe">
-<p>63. <strong>Kundajelab/Atac_Dnase_Pipelines: 0.3.0</strong><br />
+<p>65. <strong>Kundajelab/Atac_Dnase_Pipelines: 0.3.0</strong><br />
 Jin Lee, Grey Christoforo, Grey Christoforo, CS Foo, Chris Probert, Anshul Kundaje, Nathan Boley, Kohpangwei, Daniel Kim, Mike Dacre<br />
 <em>Zenodo</em> (2016-09-27) <a href="https://doi.org/10.5281/zenodo.156534" class="uri">https://doi.org/10.5281/zenodo.156534</a></p>
 </div>
 <div id="ref-PiS0h6Mu">
-<p>64. <strong>Fast gapped-read alignment with Bowtie 2</strong><br />
+<p>66. <strong>Fast gapped-read alignment with Bowtie 2</strong><br />
 Ben Langmead, Steven L Salzberg<br />
 <em>Nature Methods</em> (2012-03-04) <a href="https://doi.org/10.1038/nmeth.1923" class="uri">https://doi.org/10.1038/nmeth.1923</a></p>
 </div>
 <div id="ref-MG7PTly9">
-<p>65. <strong>Model-based Analysis of ChIP-Seq (MACS)</strong><br />
+<p>67. <strong>Model-based Analysis of ChIP-Seq (MACS)</strong><br />
 Yong Zhang, Tao Liu, Clifford A Meyer, Jérôme Eeckhoute, David S Johnson, Bradley E Bernstein, Chad Nussbaum, Richard M Myers, Myles Brown, Wei Li, X Shirley Liu<br />
 <em>Genome Biology</em> (2008) <a href="https://doi.org/10.1186/gb-2008-9-9-r137" class="uri">https://doi.org/10.1186/gb-2008-9-9-r137</a></p>
 </div>
