@@ -196,12 +196,12 @@
       "date-parts": [
         [
           2018,
-          5,
-          7
+          10,
+          1
         ]
       ],
-      "date-time": "2018-05-07T17:13:34Z",
-      "timestamp": 1525713214364
+      "date-time": "2018-10-01T10:02:35Z",
+      "timestamp": 1538388155563
     },
     "reference-count": 38,
     "publisher": "Springer Nature",
@@ -233,7 +233,7 @@
     },
     "page": "31-52",
     "source": "Crossref",
-    "is-referenced-by-count": 24,
+    "is-referenced-by-count": 25,
     "title": "Block coordinate descent algorithms for large-scale sparse multiclass classification",
     "prefix": "10.1007",
     "volume": "93",
@@ -329,19 +329,19 @@
       "date-parts": [
         [
           2018,
-          7,
-          31
+          10,
+          2
         ]
       ],
-      "date-time": "2018-07-31T12:22:34Z",
-      "timestamp": 1533039754412
+      "date-time": "2018-10-02T01:22:33Z",
+      "timestamp": 1538443353124
     },
     "reference-count": 70,
     "publisher": "Elsevier BV",
     "issue": "6",
     "license": [
       {
-        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
         "start": {
           "date-parts": [
             [
@@ -357,7 +357,7 @@
         "content-version": "tdm"
       },
       {
-        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "URL": "https://www.elsevier.com/open-access/userlicense/1.0/",
         "start": {
           "date-parts": [
             [
@@ -405,7 +405,7 @@
     "page": "1431-1443",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 281,
+    "is-referenced-by-count": 301,
     "title": "Determination and Inference of Eukaryotic Transcription Factor Sequence Specificity",
     "prefix": "10.1016",
     "volume": "158",
@@ -585,13 +585,13 @@
     "language": "en",
     "link": [
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S0092867414010368?httpAccept=text/xml",
+        "URL": "https://api.elsevier.com/content/article/PII:S0092867414010368?httpAccept=text/xml",
         "content-type": "text/xml",
         "content-version": "vor",
         "intended-application": "text-mining"
       },
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S0092867414010368?httpAccept=text/plain",
+        "URL": "https://api.elsevier.com/content/article/PII:S0092867414010368?httpAccept=text/plain",
         "content-type": "text/plain",
         "content-version": "vor",
         "intended-application": "text-mining"
@@ -600,13 +600,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
+          2018,
           9,
-          14
+          29
         ]
       ],
-      "date-time": "2017-09-14T17:02:15Z",
-      "timestamp": 1505408535000
+      "date-time": "2018-09-29T22:52:28Z",
+      "timestamp": 1538261548000
     },
     "score": 1.0,
     "subtitle": [],
@@ -636,6 +636,9 @@
     ],
     "URL": "https://doi.org/10.1016/j.cell.2014.08.009",
     "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology"
+    ],
     "container-title-short": "Cell",
     "assertion": [
       {
@@ -654,7 +657,7 @@
         "label": "Journal Title"
       },
       {
-        "value": "http://dx.doi.org/10.1016/j.cell.2014.08.009",
+        "value": "https://doi.org/10.1016/j.cell.2014.08.009",
         "name": "articlelink",
         "label": "CrossRef DOI link to publisher maintained version"
       },
@@ -677,19 +680,19 @@
       "date-parts": [
         [
           2018,
-          5,
-          9
+          9,
+          24
         ]
       ],
-      "date-time": "2018-05-09T09:24:16Z",
-      "timestamp": 1525857856738
+      "date-time": "2018-09-24T22:40:43Z",
+      "timestamp": 1537828843321
     },
     "reference-count": 42,
     "publisher": "Elsevier BV",
     "issue": "1",
     "license": [
       {
-        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
         "start": {
           "date-parts": [
             [
@@ -749,7 +752,7 @@
     "page": "1-18",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 3,
     "title": "Fatal autoimmunity results from the conditional deletion of Snai2 and Snai3",
     "prefix": "10.1016",
     "volume": "295",
@@ -785,13 +788,13 @@
     "language": "en",
     "link": [
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S000887491500043X?httpAccept=text/xml",
+        "URL": "https://api.elsevier.com/content/article/PII:S000887491500043X?httpAccept=text/xml",
         "content-type": "text/xml",
         "content-version": "vor",
         "intended-application": "text-mining"
       },
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S000887491500043X?httpAccept=text/plain",
+        "URL": "https://api.elsevier.com/content/article/PII:S000887491500043X?httpAccept=text/plain",
         "content-type": "text/plain",
         "content-version": "vor",
         "intended-application": "text-mining"
@@ -800,13 +803,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          6,
-          23
+          2018,
+          9,
+          24
         ]
       ],
-      "date-time": "2017-06-23T06:11:28Z",
-      "timestamp": 1498198288000
+      "date-time": "2018-09-24T22:25:19Z",
+      "timestamp": 1537827919000
     },
     "score": 1.0,
     "subtitle": [],
@@ -836,6 +839,9 @@
     ],
     "URL": "https://doi.org/10.1016/j.cellimm.2015.02.009",
     "relation": {},
+    "subject": [
+      "Immunology"
+    ],
     "container-title-short": "Cellular Immunology",
     "assertion": [
       {
@@ -854,7 +860,7 @@
         "label": "Journal Title"
       },
       {
-        "value": "http://dx.doi.org/10.1016/j.cellimm.2015.02.009",
+        "value": "https://doi.org/10.1016/j.cellimm.2015.02.009",
         "name": "articlelink",
         "label": "CrossRef DOI link to publisher maintained version"
       },
@@ -877,19 +883,19 @@
       "date-parts": [
         [
           2018,
-          8,
-          13
+          9,
+          16
         ]
       ],
-      "date-time": "2018-08-13T13:22:36Z",
-      "timestamp": 1534166556798
+      "date-time": "2018-09-16T02:10:52Z",
+      "timestamp": 1537063852774
     },
     "reference-count": 73,
     "publisher": "Elsevier BV",
     "issue": "5",
     "license": [
       {
-        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
         "start": {
           "date-parts": [
             [
@@ -1009,13 +1015,13 @@
     "language": "en",
     "link": [
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S0171298516300079?httpAccept=text/xml",
+        "URL": "https://api.elsevier.com/content/article/PII:S0171298516300079?httpAccept=text/xml",
         "content-type": "text/xml",
         "content-version": "vor",
         "intended-application": "text-mining"
       },
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S0171298516300079?httpAccept=text/plain",
+        "URL": "https://api.elsevier.com/content/article/PII:S0171298516300079?httpAccept=text/plain",
         "content-type": "text/plain",
         "content-version": "vor",
         "intended-application": "text-mining"
@@ -1024,13 +1030,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          6,
-          24
+          2018,
+          9,
+          16
         ]
       ],
-      "date-time": "2017-06-24T04:19:47Z",
-      "timestamp": 1498277987000
+      "date-time": "2018-09-16T01:50:11Z",
+      "timestamp": 1537062611000
     },
     "score": 1.0,
     "subtitle": [],
@@ -1060,6 +1066,11 @@
     ],
     "URL": "https://doi.org/10.1016/j.imbio.2016.01.007",
     "relation": {},
+    "subject": [
+      "Immunology",
+      "Immunology and Allergy",
+      "Hematology"
+    ],
     "container-title-short": "Immunobiology",
     "assertion": [
       {
@@ -1078,7 +1089,7 @@
         "label": "Journal Title"
       },
       {
-        "value": "http://dx.doi.org/10.1016/j.imbio.2016.01.007",
+        "value": "https://doi.org/10.1016/j.imbio.2016.01.007",
         "name": "articlelink",
         "label": "CrossRef DOI link to publisher maintained version"
       },
@@ -1101,12 +1112,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          1
+          10,
+          11
         ]
       ],
-      "date-time": "2018-08-01T14:22:35Z",
-      "timestamp": 1533133355882
+      "date-time": "2018-10-11T19:22:34Z",
+      "timestamp": 1539285754050
     },
     "reference-count": 49,
     "publisher": "Elsevier BV",
@@ -1172,7 +1183,7 @@
     },
     "page": "576-589",
     "source": "Crossref",
-    "is-referenced-by-count": 2058,
+    "is-referenced-by-count": 2236,
     "title": "Simple Combinations of Lineage-Determining Transcription Factors Prime cis-Regulatory Elements Required for Macrophage and B Cell Identities",
     "prefix": "10.1016",
     "volume": "38",
@@ -1304,12 +1315,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          15
+          10,
+          6
         ]
       ],
-      "date-time": "2018-08-15T02:22:36Z",
-      "timestamp": 1534299756553
+      "date-time": "2018-10-06T22:22:36Z",
+      "timestamp": 1538864556567
     },
     "reference-count": 23,
     "publisher": "Springer Nature",
@@ -1359,7 +1370,7 @@
     },
     "page": "137-144",
     "source": "Crossref",
-    "is-referenced-by-count": 572,
+    "is-referenced-by-count": 577,
     "title": "Assessing computational tools for the discovery of transcription factor binding sites",
     "prefix": "10.1038",
     "volume": "23",
@@ -1598,12 +1609,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          10
+          10,
+          9
         ]
       ],
-      "date-time": "2018-08-10T04:42:49Z",
-      "timestamp": 1533876169675
+      "date-time": "2018-10-09T08:42:42Z",
+      "timestamp": 1539074562287
     },
     "reference-count": 50,
     "publisher": "Springer Nature",
@@ -1653,7 +1664,7 @@
     },
     "page": "537-544",
     "source": "Crossref",
-    "is-referenced-by-count": 460,
+    "is-referenced-by-count": 472,
     "title": "Gene prioritization through genomic data fusion",
     "prefix": "10.1038",
     "volume": "24",
@@ -1814,12 +1825,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          15
+          10,
+          11
         ]
       ],
-      "date-time": "2018-08-15T02:22:36Z",
-      "timestamp": 1534299756547
+      "date-time": "2018-10-11T17:22:36Z",
+      "timestamp": 1539278556594
     },
     "reference-count": 20,
     "publisher": "Springer Nature",
@@ -1869,7 +1880,7 @@
     },
     "page": "835-839",
     "source": "Crossref",
-    "is-referenced-by-count": 327,
+    "is-referenced-by-count": 331,
     "title": "An algorithm for finding protein–DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments",
     "prefix": "10.1038",
     "volume": "20",
@@ -1977,12 +1988,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          11
+          9,
+          21
         ]
       ],
-      "date-time": "2018-08-11T04:22:36Z",
-      "timestamp": 1533961356127
+      "date-time": "2018-09-21T17:02:45Z",
+      "timestamp": 1537549365789
     },
     "reference-count": 49,
     "publisher": "Springer Nature",
@@ -2032,7 +2043,7 @@
     },
     "page": "553-562",
     "source": "Crossref",
-    "is-referenced-by-count": 249,
+    "is-referenced-by-count": 252,
     "title": "The transcriptional network that controls growth arrest and differentiation in a human myeloid leukemia cell line",
     "prefix": "10.1038",
     "volume": "41",
@@ -3092,12 +3103,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          21
+          10,
+          11
         ]
       ],
-      "date-time": "2018-08-21T10:02:38Z",
-      "timestamp": 1534845758464
+      "date-time": "2018-10-11T18:22:38Z",
+      "timestamp": 1539282158362
     },
     "reference-count": 14,
     "publisher": "Springer Nature",
@@ -3147,7 +3158,7 @@
     },
     "page": "357-359",
     "source": "Crossref",
-    "is-referenced-by-count": 7456,
+    "is-referenced-by-count": 8071,
     "title": "Fast gapped-read alignment with Bowtie 2",
     "prefix": "10.1038",
     "volume": "9",
@@ -3249,12 +3260,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          15
+          10,
+          10
         ]
       ],
-      "date-time": "2018-08-15T02:22:31Z",
-      "timestamp": 1534299751526
+      "date-time": "2018-10-10T22:42:35Z",
+      "timestamp": 1539211355501
     },
     "reference-count": 16,
     "publisher": "Springer Nature America, Inc",
@@ -3304,7 +3315,7 @@
     },
     "page": "563-565",
     "source": "Crossref",
-    "is-referenced-by-count": 43,
+    "is-referenced-by-count": 44,
     "title": "Trawler: de novo regulatory motif discovery pipeline for chromatin immunoprecipitation",
     "prefix": "10.1038",
     "volume": "4",
@@ -3430,12 +3441,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          10
+          9,
+          6
         ]
       ],
-      "date-time": "2018-07-10T10:10:44Z",
-      "timestamp": 1531217444543
+      "date-time": "2018-09-06T15:02:41Z",
+      "timestamp": 1536246161073
     },
     "reference-count": 6,
     "publisher": "Springer Nature",
@@ -3488,7 +3499,7 @@
     "page": "475-476",
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 1,
     "title": "Bioconda: sustainable and comprehensive software distribution for the life sciences",
     "prefix": "10.1038",
     "volume": "15",
@@ -3640,12 +3651,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          30
+          9,
+          21
         ]
       ],
-      "date-time": "2018-07-30T23:40:06Z",
-      "timestamp": 1532994006423
+      "date-time": "2018-09-21T07:22:43Z",
+      "timestamp": 1537514563603
     },
     "reference-count": 37,
     "publisher": "Mary Ann Liebert Inc",
@@ -3695,7 +3706,7 @@
     },
     "page": "447-464",
     "source": "Crossref",
-    "is-referenced-by-count": 168,
+    "is-referenced-by-count": 170,
     "title": "A Gibbs Sampling Method to Detect Overrepresented Motifs in the Upstream Regions of Coexpressed Genes",
     "prefix": "10.1089",
     "volume": "9",
@@ -3976,12 +3987,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          21
+          10,
+          11
         ]
       ],
-      "date-time": "2018-08-21T11:42:34Z",
-      "timestamp": 1534851754763
+      "date-time": "2018-10-11T19:22:34Z",
+      "timestamp": 1539285754055
     },
     "reference-count": 5,
     "publisher": "Oxford University Press (OUP)",
@@ -4014,7 +4025,7 @@
     },
     "page": "841-842",
     "source": "Crossref",
-    "is-referenced-by-count": 3747,
+    "is-referenced-by-count": 4015,
     "title": "BEDTools: a flexible suite of utilities for comparing genomic features",
     "prefix": "10.1093",
     "volume": "26",
@@ -4110,12 +4121,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          15
+          9,
+          21
         ]
       ],
-      "date-time": "2018-08-15T02:22:36Z",
-      "timestamp": 1534299756535
+      "date-time": "2018-09-21T12:02:43Z",
+      "timestamp": 1537531363252
     },
     "reference-count": 15,
     "publisher": "Oxford University Press (OUP)",
@@ -4148,7 +4159,7 @@
     },
     "page": "2622-2623",
     "source": "Crossref",
-    "is-referenced-by-count": 74,
+    "is-referenced-by-count": 75,
     "title": "Deep and wide digging for binding motifs in ChIP-Seq data",
     "prefix": "10.1093",
     "volume": "26",
@@ -4256,12 +4267,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          19
+          9,
+          21
         ]
       ],
-      "date-time": "2018-07-19T18:02:32Z",
-      "timestamp": 1532023352868
+      "date-time": "2018-09-21T04:22:48Z",
+      "timestamp": 1537503768405
     },
     "reference-count": 9,
     "publisher": "Oxford University Press (OUP)",
@@ -4294,7 +4305,7 @@
     },
     "page": "270-271",
     "source": "Crossref",
-    "is-referenced-by-count": 36,
+    "is-referenced-by-count": 39,
     "title": "GimmeMotifs: a de novo motif prediction pipeline for ChIP-sequencing experiments",
     "prefix": "10.1093",
     "volume": "27",
@@ -4390,12 +4401,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          14
+          10,
+          12
         ]
       ],
-      "date-time": "2018-08-14T10:02:32Z",
-      "timestamp": 1534240952959
+      "date-time": "2018-10-12T04:42:35Z",
+      "timestamp": 1539319355750
     },
     "reference-count": 29,
     "publisher": "Oxford University Press (OUP)",
@@ -4428,7 +4439,7 @@
     },
     "page": "573-580",
     "source": "Crossref",
-    "is-referenced-by-count": 112,
+    "is-referenced-by-count": 122,
     "title": "Robust rank aggregation for gene list integration and meta-analysis",
     "prefix": "10.1093",
     "volume": "28",
@@ -4536,12 +4547,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          15
+          10,
+          11
         ]
       ],
-      "date-time": "2018-08-15T04:22:33Z",
-      "timestamp": 1534306953126
+      "date-time": "2018-10-11T15:02:40Z",
+      "timestamp": 1539270160062
     },
     "reference-count": 12,
     "publisher": "Oxford University Press (OUP)",
@@ -4574,7 +4585,7 @@
     },
     "page": "2520-2522",
     "source": "Crossref",
-    "is-referenced-by-count": 171,
+    "is-referenced-by-count": 187,
     "title": "Snakemake--a scalable bioinformatics workflow engine",
     "prefix": "10.1093",
     "volume": "28",
@@ -5121,12 +5132,12 @@
       "date-parts": [
         [
           2018,
-          5,
-          4
+          10,
+          6
         ]
       ],
-      "date-time": "2018-05-04T22:21:29Z",
-      "timestamp": 1525472489784
+      "date-time": "2018-10-06T12:42:39Z",
+      "timestamp": 1538829759387
     },
     "reference-count": 42,
     "publisher": "Oxford University Press (OUP)",
@@ -5159,7 +5170,7 @@
     },
     "page": "4899-4913",
     "source": "Crossref",
-    "is-referenced-by-count": 96,
+    "is-referenced-by-count": 99,
     "title": "Limitations and potentials of current motif discovery algorithms",
     "prefix": "10.1093",
     "volume": "33",
@@ -5253,12 +5264,12 @@
       "date-parts": [
         [
           2018,
-          5,
-          2
+          10,
+          3
         ]
       ],
-      "date-time": "2018-05-02T21:24:52Z",
-      "timestamp": 1525296292892
+      "date-time": "2018-10-03T14:42:32Z",
+      "timestamp": 1538577752510
     },
     "reference-count": 51,
     "publisher": "Oxford University Press (OUP)",
@@ -5308,7 +5319,7 @@
     },
     "page": "2154-2167",
     "source": "Crossref",
-    "is-referenced-by-count": 58,
+    "is-referenced-by-count": 59,
     "title": "On the detection and refinement of transcription factor binding sites using ChIP-Seq data",
     "prefix": "10.1093",
     "volume": "38",
@@ -5421,12 +5432,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          1
+          10,
+          3
         ]
       ],
-      "date-time": "2018-08-01T09:14:05Z",
-      "timestamp": 1533114845666
+      "date-time": "2018-10-03T14:42:37Z",
+      "timestamp": 1538577757516
     },
     "reference-count": 51,
     "publisher": "Oxford University Press (OUP)",
@@ -5477,7 +5488,7 @@
     },
     "page": "e50-e50",
     "source": "Crossref",
-    "is-referenced-by-count": 14,
+    "is-referenced-by-count": 15,
     "title": "A highly efficient and effective motif discovery method for ChIP-seq/ChIP-chip data using positional information",
     "prefix": "10.1093",
     "volume": "40",
@@ -5627,12 +5638,12 @@
       "date-parts": [
         [
           2018,
-          5,
-          5
+          10,
+          9
         ]
       ],
-      "date-time": "2018-05-05T23:12:48Z",
-      "timestamp": 1525561968874
+      "date-time": "2018-10-09T12:02:39Z",
+      "timestamp": 1539086559096
     },
     "reference-count": 9,
     "publisher": "Oxford University Press (OUP)",
@@ -5683,7 +5694,7 @@
     },
     "page": "D171-D176",
     "source": "Crossref",
-    "is-referenced-by-count": 100,
+    "is-referenced-by-count": 107,
     "title": "Factorbook.org: a Wiki-based database for transcription factor-binding data generated by the ENCODE consortium",
     "prefix": "10.1093",
     "volume": "41",
@@ -5846,12 +5857,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          15
+          9,
+          24
         ]
       ],
-      "date-time": "2018-08-15T12:42:37Z",
-      "timestamp": 1534336957498
+      "date-time": "2018-09-24T07:42:38Z",
+      "timestamp": 1537774958836
     },
     "reference-count": 110,
     "publisher": "Oxford University Press (OUP)",
@@ -5902,7 +5913,7 @@
     },
     "page": "2976-2987",
     "source": "Crossref",
-    "is-referenced-by-count": 120,
+    "is-referenced-by-count": 126,
     "title": "Systematic discovery and characterization of regulatory motifs in ENCODE TF binding experiments",
     "prefix": "10.1093",
     "volume": "42",
@@ -5999,12 +6010,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          7
+          10,
+          4
         ]
       ],
-      "date-time": "2018-08-07T10:42:36Z",
-      "timestamp": 1533638556449
+      "date-time": "2018-10-04T17:02:39Z",
+      "timestamp": 1538672559431
     },
     "reference-count": 36,
     "publisher": "Oxford University Press (OUP)",
@@ -6055,7 +6066,7 @@
     },
     "page": "D117-D122",
     "source": "Crossref",
-    "is-referenced-by-count": 80,
+    "is-referenced-by-count": 83,
     "title": "UniPROBE, update 2015: new tools and content for the online database of protein-binding microarray data on protein–DNA interactions",
     "prefix": "10.1093",
     "volume": "43",
@@ -6165,12 +6176,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          1
+          10,
+          4
         ]
       ],
-      "date-time": "2018-08-01T05:22:31Z",
-      "timestamp": 1533100951671
+      "date-time": "2018-10-04T17:02:39Z",
+      "timestamp": 1538672559404
     },
     "reference-count": 70,
     "publisher": "Oxford University Press (OUP)",
@@ -6221,7 +6232,7 @@
     },
     "page": "e119-e119",
     "source": "Crossref",
-    "is-referenced-by-count": 10,
+    "is-referenced-by-count": 12,
     "title": "Varying levels of complexity in transcription factor binding motifs",
     "prefix": "10.1093",
     "volume": "43",
@@ -6321,12 +6332,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          24
+          8,
+          17
         ]
       ],
-      "date-time": "2018-07-24T19:42:58Z",
-      "timestamp": 1532461378598
+      "date-time": "2018-08-17T07:22:33Z",
+      "timestamp": 1534490553931
     },
     "reference-count": 26,
     "publisher": "Oxford University Press (OUP)",
@@ -6377,7 +6388,7 @@
     },
     "page": "D267-D275",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 6,
     "title": "ReMap 2018: an updated atlas of regulatory regions from an integrative analysis of DNA-binding ChIP-seq experiments",
     "prefix": "10.1093",
     "volume": "46",
@@ -6495,12 +6506,12 @@
       "date-parts": [
         [
           2018,
-          6,
-          7
+          9,
+          11
         ]
       ],
-      "date-time": "2018-06-07T13:02:31Z",
-      "timestamp": 1528376551573
+      "date-time": "2018-09-11T08:42:31Z",
+      "timestamp": 1536655351901
     },
     "reference-count": 45,
     "publisher": "Oxford University Press (OUP)",
@@ -6551,7 +6562,7 @@
     },
     "page": "D252-D259",
     "source": "Crossref",
-    "is-referenced-by-count": 10,
+    "is-referenced-by-count": 15,
     "title": "HOCOMOCO: towards a complete collection of transcription factor binding models for human and mouse via large-scale ChIP-Seq analysis",
     "prefix": "10.1093",
     "volume": "46",
@@ -6711,12 +6722,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          24
+          10,
+          10
         ]
       ],
-      "date-time": "2018-07-24T19:42:58Z",
-      "timestamp": 1532461378617
+      "date-time": "2018-10-10T18:22:40Z",
+      "timestamp": 1539195760596
     },
     "reference-count": 47,
     "publisher": "Oxford University Press (OUP)",
@@ -6767,7 +6778,7 @@
     },
     "page": "D260-D266",
     "source": "Crossref",
-    "is-referenced-by-count": 32,
+    "is-referenced-by-count": 43,
     "title": "JASPAR 2018: update of the open-access database of transcription factor binding profiles and its web framework",
     "prefix": "10.1093",
     "volume": "46",
@@ -6975,12 +6986,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          5
+          9,
+          4
         ]
       ],
-      "date-time": "2018-07-05T04:02:44Z",
-      "timestamp": 1530763364471
+      "date-time": "2018-09-04T14:02:38Z",
+      "timestamp": 1536069758967
     },
     "reference-count": 66,
     "publisher": "Oxford University Press (OUP)",
@@ -7031,7 +7042,7 @@
     },
     "page": "e119-e119",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 5,
     "title": "RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections",
     "prefix": "10.1093",
     "volume": "45",
@@ -7042,31 +7053,51 @@
         "given": "Jaime Abraham",
         "family": "Castro-Mondragon",
         "sequence": "first",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "\n        Aix Marseille Univ, INSERM, TAGC, Theory and Approaches of Genomic Complexity, UMR_S 1090, Marseille, France"
+          }
+        ]
       },
       {
         "given": "Sébastien",
         "family": "Jaeger",
         "sequence": "additional",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "\n        Aix Marseille Univ, CNRS, INSERM, CIML, Marseille, France"
+          }
+        ]
       },
       {
         "given": "Denis",
         "family": "Thieffry",
         "sequence": "additional",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "\n        IBENS, Département de Biologie, Ecole Normale Supérieure, CNRS, Inserm, PSL Research University, F-75005 Paris, France"
+          }
+        ]
       },
       {
         "given": "Morgane",
         "family": "Thomas-Chollier",
         "sequence": "additional",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "\n        IBENS, Département de Biologie, Ecole Normale Supérieure, CNRS, Inserm, PSL Research University, F-75005 Paris, France"
+          }
+        ]
       },
       {
         "given": "Jacques",
         "family": "van Helden",
         "sequence": "additional",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "\n        Aix Marseille Univ, INSERM, TAGC, Theory and Approaches of Genomic Complexity, UMR_S 1090, Marseille, France"
+          }
+        ]
       }
     ],
     "member": "286",
@@ -7084,7 +7115,7 @@
     "language": "en",
     "link": [
       {
-        "URL": "http://academic.oup.com/nar/article-pdf/45/13/e119/22893890/gkx314.pdf",
+        "URL": "http://academic.oup.com/nar/article-pdf/45/13/e119/25367647/gkx314.pdf",
         "content-type": "unspecified",
         "content-version": "vor",
         "intended-application": "similarity-checking"
@@ -7094,12 +7125,12 @@
       "date-parts": [
         [
           2018,
-          4,
-          2
+          8,
+          1
         ]
       ],
-      "date-time": "2018-04-02T14:40:57Z",
-      "timestamp": 1522680057000
+      "date-time": "2018-08-01T13:51:55Z",
+      "timestamp": 1533131515000
     },
     "score": 1.0,
     "subtitle": [],
@@ -7137,15 +7168,11 @@
     },
     "URL": "https://doi.org/10.1093/nar/gkx314",
     "relation": {
-      "has-preprint": [
-        {
-          "id-type": "doi",
-          "id": "10.1101/065565",
-          "asserted-by": "object"
-        }
-      ],
       "cites": []
     },
+    "subject": [
+      "Genetics"
+    ],
     "short_url": "https://doi.org/gdwsgq",
     "id": "Pfmfeewp"
   },
@@ -7154,12 +7181,12 @@
       "date-parts": [
         [
           2018,
-          5,
-          31
+          10,
+          9
         ]
       ],
-      "date-time": "2018-05-31T09:22:26Z",
-      "timestamp": 1527758546856
+      "date-time": "2018-10-09T08:42:42Z",
+      "timestamp": 1539074562321
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -7192,7 +7219,7 @@
     },
     "page": "861-873",
     "source": "Crossref",
-    "is-referenced-by-count": 177,
+    "is-referenced-by-count": 183,
     "title": "Multiplexed massively parallel SELEX for characterization of human transcription factor binding specificities",
     "prefix": "10.1101",
     "volume": "20",
@@ -7377,12 +7404,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          15
+          10,
+          3
         ]
       ],
-      "date-time": "2018-08-15T02:22:36Z",
-      "timestamp": 1534299756555
+      "date-time": "2018-10-03T14:42:37Z",
+      "timestamp": 1538577757522
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -7415,7 +7442,7 @@
     },
     "page": "181-194",
     "source": "Crossref",
-    "is-referenced-by-count": 26,
+    "is-referenced-by-count": 28,
     "title": "P-value-based regulatory motif discovery using positional weight matrices",
     "prefix": "10.1101",
     "volume": "23",
@@ -7528,12 +7555,12 @@
       "date-parts": [
         [
           2018,
-          8,
+          9,
           7
         ]
       ],
-      "date-time": "2018-08-07T13:02:37Z",
-      "timestamp": 1533646957866
+      "date-time": "2018-09-07T20:02:29Z",
+      "timestamp": 1536350549564
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -7566,7 +7593,7 @@
     },
     "page": "869-884",
     "source": "Crossref",
-    "is-referenced-by-count": 61,
+    "is-referenced-by-count": 62,
     "title": "ISMARA: automated modeling of genomic signals as a democracy of regulatory motifs",
     "prefix": "10.1101",
     "volume": "24",
@@ -7685,12 +7712,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          26
+          9,
+          14
         ]
       ],
-      "date-time": "2018-07-26T15:22:33Z",
-      "timestamp": 1532618553437
+      "date-time": "2018-09-14T20:40:58Z",
+      "timestamp": 1536957658543
     },
     "reference-count": 72,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -7829,12 +7856,12 @@
       "date-parts": [
         [
           2018,
-          3,
-          29
+          9,
+          14
         ]
       ],
-      "date-time": "2018-03-29T13:43:19Z",
-      "timestamp": 1522330999000
+      "date-time": "2018-09-14T20:20:03Z",
+      "timestamp": 1536956403000
     },
     "score": 1.0,
     "subtitle": [],
@@ -7876,6 +7903,10 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
     "container-title-short": "Genome Res.",
     "short_url": "https://doi.org/gctvqj",
     "id": "X6uuBgy"
@@ -7885,12 +7916,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          1
+          10,
+          3
         ]
       ],
-      "date-time": "2018-08-01T05:22:31Z",
-      "timestamp": 1533100951675
+      "date-time": "2018-10-03T14:42:37Z",
+      "timestamp": 1538577757500
     },
     "reference-count": 21,
     "publisher": "World Scientific Pub Co Pte Lt",
@@ -7922,7 +7953,7 @@
     },
     "page": "1340004",
     "source": "Crossref",
-    "is-referenced-by-count": 25,
+    "is-referenced-by-count": 27,
     "title": "FROM BINDING MOTIFS IN CHIP-SEQ DATA TO IMPROVED MODELS OF TRANSCRIPTION FACTOR BINDING SITES",
     "prefix": "10.1142",
     "volume": "11",
@@ -8065,12 +8096,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          21
+          10,
+          10
         ]
       ],
-      "date-time": "2018-08-21T12:42:32Z",
-      "timestamp": 1534855352122
+      "date-time": "2018-10-10T18:42:43Z",
+      "timestamp": 1539196963930
     },
     "publisher-location": "New York, New York, USA",
     "reference-count": 25,
@@ -8136,7 +8167,7 @@
       "timestamp": 1470681226000
     },
     "source": "Crossref",
-    "is-referenced-by-count": 345,
+    "is-referenced-by-count": 381,
     "title": "XGBoost",
     "prefix": "10.1145",
     "author": [
@@ -8349,7 +8380,9 @@
       "issue": "5"
     },
     "URL": "https://doi.org/10.1182/blood-2010-07-295261",
-    "relation": {},
+    "relation": {
+      "cites": []
+    },
     "container-title-short": "Blood",
     "short_url": "https://doi.org/c4jvh7",
     "id": "dWdvt1AI"
@@ -8477,12 +8510,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          20
+          10,
+          11
         ]
       ],
-      "date-time": "2018-08-20T12:22:31Z",
-      "timestamp": 1534767751191
+      "date-time": "2018-10-11T15:02:40Z",
+      "timestamp": 1539270160055
     },
     "reference-count": 0,
     "publisher": "Springer Nature",
@@ -8513,7 +8546,7 @@
     },
     "page": "R137",
     "source": "Crossref",
-    "is-referenced-by-count": 2972,
+    "is-referenced-by-count": 3145,
     "title": "Model-based Analysis of ChIP-Seq (MACS)",
     "prefix": "10.1186",
     "volume": "9",
@@ -8635,12 +8668,12 @@
       "date-parts": [
         [
           2018,
-          7,
-          19
+          10,
+          4
         ]
       ],
-      "date-time": "2018-07-19T18:02:32Z",
-      "timestamp": 1532023352867
+      "date-time": "2018-10-04T17:02:39Z",
+      "timestamp": 1538672559449
     },
     "reference-count": 96,
     "publisher": "Springer Nature",
@@ -8675,7 +8708,7 @@
     },
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 8,
+    "is-referenced-by-count": 10,
     "title": "Evaluating tools for transcription factor binding site prediction",
     "prefix": "10.1186",
     "author": [
@@ -8761,12 +8794,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          1
+          9,
+          22
         ]
       ],
-      "date-time": "2018-08-01T05:22:31Z",
-      "timestamp": 1533100951677
+      "date-time": "2018-09-22T09:22:40Z",
+      "timestamp": 1537608160988
     },
     "reference-count": 68,
     "publisher": "Public Library of Science (PLoS)",
@@ -8811,7 +8844,7 @@
     "page": "e1003214",
     "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 63,
+    "is-referenced-by-count": 65,
     "title": "The Next Generation of Transcription Factor Binding Site Prediction",
     "prefix": "10.1371",
     "volume": "9",
@@ -9462,12 +9495,12 @@
       "date-parts": [
         [
           2018,
-          8,
-          10
+          9,
+          12
         ]
       ],
-      "date-time": "2018-08-10T10:02:31Z",
-      "timestamp": 1533895351767
+      "date-time": "2018-09-12T04:42:39Z",
+      "timestamp": 1536727359747
     },
     "reference-count": 0,
     "publisher": "Ferrata Storti Foundation (Haematologica)",
@@ -9500,7 +9533,7 @@
     },
     "page": "1487-1489",
     "source": "Crossref",
-    "is-referenced-by-count": 37,
+    "is-referenced-by-count": 40,
     "title": "BLUEPRINT: mapping human blood cell epigenomes",
     "prefix": "10.3324",
     "volume": "98",

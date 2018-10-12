@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Simon J. van Heeringen
-date-meta: '2018-08-22'
+date-meta: '2018-10-12'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -18,10 +18,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/298812cb01c5dc6f30d7c5dbf8083cda6fdbe927/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/7e4a31fc6cea9a852a7520035fdac75c9aea8d09/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@298812c](https://github.com/simonvh/gimmemotifs-manuscript/tree/298812cb01c5dc6f30d7c5dbf8083cda6fdbe927)
-on August 22, 2018.
+from [simonvh/gimmemotifs-manuscript@7e4a31f](https://github.com/simonvh/gimmemotifs-manuscript/tree/7e4a31fc6cea9a852a7520035fdac75c9aea8d09)
+on October 12, 2018.
 </em></small>
 
 ## Authors
@@ -60,19 +60,19 @@ The most widely adopted representation of TF binding is the position frequency
 matrix (PFM). This matrix, a TF motif, contains (normalized) frequencies of each
 nucleotide at each position in a collection of aligned binding sites. These PFMs
 can be derived from high-throughput experiments such as ChIP-sequencing,
-HT-SELEX or Protein Binding Microarrays (PBMs). 
+HT-SELEX or Protein Binding Microarrays (PBMs). Through straightforward transformations PFMs can be expressed as a weight matrix, using log likelihoods, or information content, using the Kullback-Leibler divergence.
 
 Even though the PFM is a convenient representation, it has certain limitations.
 A PFM cannot model inter-nucleotide dependencies, that are known to affect
 binding of certain TFs. Multiple different representations have been proposed
 [@Jc96vlRF; @1F4IFj9vd; @7nxD51Mq; @nswYGz33; @1FTeX7ahA],
-however, no single one of these has gained much traction.  
+however, no single one of these has gained much traction. Ultimately we
+will need these types of advanced models to accurately represent TF binding. However, PFMs still serve as a useful abstraction that enables an intuitive understanding of TF binding.
 
 Here, we present GimmeMotifs, a Python module and set of command-line tools for
 TF motif analysis. Amongst other possibilities it can be used to perfom *de
 novo* motif analysis, calculate enrichment statistics and identify differential
-motifs. We illustrate the functionality of GimmeMotifs using three different
-examples.
+motifs between two or more experiments. We illustrate the functionality of GimmeMotifs using three different examples.
 
 
 # Findings
