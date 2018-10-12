@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/7e4a31fc6cea9a852a7520035fdac75c9aea8d09/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/8d38f82ac73387168fd04f6afd069243855f30e6/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@7e4a31f](https://github.com/simonvh/gimmemotifs-manuscript/tree/7e4a31fc6cea9a852a7520035fdac75c9aea8d09)
+from [simonvh/gimmemotifs-manuscript@8d38f82](https://github.com/simonvh/gimmemotifs-manuscript/tree/8d38f82ac73387168fd04f6afd069243855f30e6)
 on October 12, 2018.
 </em></small>
 
@@ -66,7 +66,7 @@ Even though the PFM is a convenient representation, it has certain limitations.
 A PFM cannot model inter-nucleotide dependencies, that are known to affect
 binding of certain TFs. Multiple different representations have been proposed
 [@Jc96vlRF; @1F4IFj9vd; @7nxD51Mq; @nswYGz33; @1FTeX7ahA],
-however, no single one of these has gained much traction. Ultimately we
+but no single one of these has gained much traction. Ultimately we
 will need these types of advanced models to accurately represent TF binding. However, PFMs still serve as a useful abstraction that enables an intuitive understanding of TF binding.
 
 Here, we present GimmeMotifs, a Python module and set of command-line tools for
@@ -103,9 +103,9 @@ For the purpose of motif analysis, it is beneficial to have a database that is
 non-redundant (i.e., similar motifs are grouped together), yet as complete as
 possible (i.e., covers a wide variety of TFs). To establish a quantitative
 measure of database quality, we evaluated how well motifs from different
-databases can classify ChIP-seq peaks from background sequences. We downloaded
+databases can classify ChIP-seq peaks from background sequences using the GimmeMotifs tool `gimme roc`. We downloaded
 ChIP-seq peaks from ReMap 2018 [@LBF5EBTh], and used all TFs with at least 1,000
-peaks. We then evaluated [XX] motif databases to test how well they could
+peaks. We then evaluated 8 motif databases to test how well they could
 distinguish peaks from random genomic sequences. When a data set contained more
 than 5,000 peaks we randomly selected 5,000 peaks for the analysis. We included
 the following databases: JASPAR 2018 vertebrate [@XrrO63jn],
@@ -122,26 +122,27 @@ peaks are relatively easy to classify using a single PWM motif. Other factors
 don't have a peaks with a consistently enriched motif, or do not contain a
 sequence-specific DNA-binding domain, such as EP300 or CD2 for example.
 
-![Figure 1: Benchmark of transcription factor motif databases](content/images/figure_dbs.png)
+![Figure 1: Benchmark of transcription factor motif databases. 
+A) Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5000 peaks were compared to background regions using each motif database. The boxplot shows the The ROC AUC of the bestt motif per database for all TFs.
+B) Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v4.0). The same data is used as in A). The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
+](content/images/figure_dbs.png)
 
 The difference in maximum ROC AUC between databases is on average not very
 large, with a mean maximum difference of 0.05. The largest difference (~0.24) is
 found for factors that were not assayed by ENCODE, such as ONECUT1, SIX2 and
 TP73, and are therefore not present in the Factorbook motif database.
 Unsurprisingly, the databases that were based on motif collections of different
-sources (Kheradpour, Madsen, RSAT and Gimme) generally perform best.  It should
-be noted that motif databases that were based on motif identification from
-ChIP-seq peaks are expected to have an edge in this analysis.
+sources (Kheradpour, Madsen, RSAT and Gimme) generally perform best. It should
+be noted that, for this task, using motif databases based on motif identification from
+ChIP-seq peaks is in some sense "overfitting", as the motifs in these databases were inferred from highly similar data. 
 
-While the ROC AUC is often used to compare the sensitivity versus speficity
-trade-off, in this context it is not the best metric from a biological point of
+While the ROC AUC is often used to compare the trade-off between sensitivity versus specificity, in this context it is not the best metric from a biological point of
 view. An alternative way of measuring performance is evaluating the recall (ie.
 how many true peaks do we recover) at a specific false discovery rate. This is
 one of the criteria that has been used by the ENCODE DREAM challenge for
 evaluation [@19QDk82XW]. Figure 3B shows scatterplots for the recall at 10% FDR for
 all motif databases compared to the clustered, non-redundant databases that is
-included with GimmeMotifs.  Differences of more than 0.025 are marked blue, and
-less then -0.025 red. The non-redundant vertebrate motif database included with
+included with GimmeMotifs. The non-redundant vertebrate motif database included with
 GimmeMotifs shows better performance than most other databases. The
 non-redundant RSAT database, which was created in a very similar manner, shows
 similar performance.
@@ -150,8 +151,8 @@ These results illustrate how `gimme roc` can be used for evaluation of motifs.
 The choice of a motif database can greatly influence the results of an analysis.
 The default database included with GimmeMotifs shows good performance on the
 metric evaluated here. However, this analysis illustrates only one specific use
-case of application of a motif database. Especially well-curated databases, such
-as JASPAR, can be beneficial, for instance when linking motifs to binding
+case of application of a motif database. In other cases well-curated databases such
+as JASPAR can be beneficial, for instance when linking motifs to binding
 proteins. 
 
 ## Performance of de novo motif identification varies with motif quality
@@ -164,7 +165,7 @@ than a few datasets. Benchmarks that have been published since Tompa et al.
 [@NrirsKTi;@iW6hyGIk]
 typically have tested only a few motif finders or used only a few datasets.
 
-Here, we used the GimmeMotifs framework to benchmark 14 different *de novo*
+Here, we used the GimmeMotifs framework as implemented in `gimme motifs` to benchmark 14 different *de novo*
 motif finders. To evaluate the different approaches, we downloaded 495 peak
 files for 270 proteins from ENCODE (Supplemental Table X; [@6eHRNaUT]) and
 selected the 100bp sequence centered on the summit of top 5000 peaks.  Of those
@@ -175,9 +176,9 @@ metrics, the ROC AUC and the recall at 10% FDR. Figure 4a shows the distribution
 of the ROC AUC scores over all ENCODE peaks in a boxplot, ordered by the mean
 ROC AUC. The ROC AUC is distributed between 0.58 and 0.98, with a mean of 0.75.
 All proteins that have low ROC AUC are not sequence-specific transcription
-factors such as Pol2, Taf7 and Gtf2b, the PRC2-subunit Suz12 and the H3K9
-methyltransferase Setdb1. The factors with the highest ROC AUC are CTCF and
-members of the cohesin complex, Smc3 and Rad21, that bind at CTCF sites. 
+factors such as POL2, TAF7 and GTF2B, the PRC2-subunit SUZ12 and the H3K9
+methyltransferase SETDB1. The factors with the highest ROC AUC are CTCF and
+members of the cohesin complex, SMC3 and RAD21, that bind at CTCF sites. 
 
 Generally, the ROC AUC distribution of all evaluated motif finders is very
 similar. However, a few outliers can be observed. Trawler, Posmo and, to a
@@ -198,7 +199,7 @@ higher than 0 at 10% FDR.
 In line with previous results [@PNXlUYkS], there is no single tool that
 consistently predicts the best motif for each transcription factor. However, the
 motifs predicted by BioProspector, MEME and Homer are, on basis of this metric,
-consistently better than motifs predicted by other methods. In 75% the cases,
+consistently better than motifs predicted by other methods. In 75% of the cases,
 the motif predicted by BioProspector has a difference in recall smaller than
 0.026 compared to the best overall motif. In this benchmark, four programs
 (Trawler, Improbizer, Posmo and Weeder) generally perform worse than average,
@@ -257,7 +258,7 @@ methods to determine motif relevance or activity in an ensemble approach (Fig.
 5A).
 
 To demonstrate the utility of maelstrom we identified motif activity based on
-enhancers in hematopoietic cells. We downloaded 72 human hematopoietc DNAseI
+enhancers in hematopoietic cells. We downloaded 72 human hematopoietic DNAseI
 experiments (Supplemental Table X), called peaks, and created a combined peak
 set as a collection of putative enhancers. In addition we downloaded 193
 hematopoietic H3K27ac ChIP-seq experiments, mainly from BLUEPRINT
@@ -265,7 +266,7 @@ hematopoietic H3K27ac ChIP-seq experiments, mainly from BLUEPRINT
 enhancer. After log2 transformation and scaling, we selected the 50,000 most
 dynamic peaks. Figure 5B shows the correlation of the H3K27ac enrichment in
 these 50,000 enhancers between cell types. For this plot, replicates were
-combined by taking the mean value and all experiments corresponding to treated
+combined by taking the mean value and all etperiments corresponding to treated
 cells were removed. We can observe five main clusters 1) non-hematopoietic
 cells, megakaryocyte and erothrocytes 2), lymphoid cells, 3) neutrophilic cells,
 4) macrophages and dendritic cells and 5) monocytes. The lymphoid cluster furthermore seperates between B-cells and T- and NK cells and non-hematopoietic cells are distinct from the megakaryocytes and erythroblasts. We can conclude that the H3K27ac profile within this enhancers set recapitulates a cell type-spefific regulatory signal.
@@ -379,34 +380,36 @@ by Homer [@14naBuW39]. In GimmeMotifs, motifs in each cluster are tested against
 union of all other clusters. The reported value is -log10(p-value) where the p-value
 is adjusted by the Benjamini-Hochberg procedure [@1HL2L6Bup]. 
 
-Using the non-parametric
-Mann-Whitney U test, GimmeMotifs tests the null hypothesis that that the motif
-log-odds score distributions of two classes are equal. For each discrete class
-in the data, such as a cluster, it compares the score distributions of the class
-to the score distribution of all other classes. The value used as activity is
-the -log10 of the Benjamini-Hochberg adjusted p-value. 
+Using the non-parametric Mann-Whitney U test, GimmeMotifs tests the null
+hypothesis that that the motif log-odds score distributions of two classes are
+equal. For each discrete class in the data, such as a cluster, it compares the
+score distributions of the class to the score distribution of all other
+classes. The value used as activity is the -log10 of the Benjamini-Hochberg
+adjusted p-value. 
 
-The two other methods are classification algorithms: random forest
-using scikit-learn and a large-scale multiclass classifier using
-block coordinate descent [@6chpTZMZ] as implemented in the 
-scikit-contrib-lightning module. The classifier in GimmeMotifs uses a l1/l2 penalty
-with squared hinge loss where the alpha and C parameters are set using grid
-search in 10 fold cross-validation procedure.
+The two other methods are classification algorithms: random forest using
+scikit-learn and a large-scale multiclass classifier using block coordinate
+descent [@6chpTZMZ] as implemented in the
+scikit-contrib-lightning module. The classifier in GimmeMotifs uses a l1/l2
+penalty with squared hinge loss where the alpha and C parameters are set using
+grid search in 10 fold cross-validation procedure.
 
 The other four methods that are implemented relate motif score to an
 experimental measure such as ChIP-seq or ATAC-seq signal or expression level.
-These are all different forms of regression. In addition to ridge regression, which  is similar to
-Motif Activity Response Analysis (MARA) [@KGmXK8UO;@3d6POy0h], these methods include
-regression using boosted trees (XGBoost [@8w9fI63O]), multiclass regression [@6chpTZMZ]
-and L1 regularized regression (LASSO).
+These are all different forms of regression. In addition to ridge regression,
+which  is similar to Motif Activity Response Analysis (MARA)
+[@KGmXK8UO;@3d6POy0h], these methods include
+regression using boosted trees (XGBoost [@8w9fI63O]),
+multiclass regression [@6chpTZMZ] and L1 regularized
+regression (LASSO).
 
 To combine different measures of motif significance or activity into a single
 score, ranks are assigned for each individual method and combined using rank
 aggregation based on order statistics [@dTwzcIZ4]. This results in a
-probability of finding a motif at all observed postiions. We use the method
-implemented in the R package RobustRankAggreg [@15HHsoLKA]. The rank aggregation
-is performed twice, once with the ranks reversed to generate both positively and
-negatively associated motifs.
+probability of finding a motif at all observed positions. We use a Python implemention based on the method used in the R package RobustRankAggreg
+[@15HHsoLKA]. The rank aggregation is performed twice,
+once with the ranks reversed to generate both positively and negatively
+associated motifs.
 
 ## Clustering
 
@@ -418,6 +421,23 @@ We removed all factors with fewer than 1000 peaks and created regions of 100 bp
 centered at the peak summit. Background files were created for each peak set
 using bedtools shuffle [@1HWiAHnIw], excluding the hg19 gaps and the peak regions.
 The ROC AUC and Recall at 10% FDR statistics were calculated using `gimme roc`.
+The motif databases included in the comparison are listed in table X. We only included public databases that can be freely accessed and downloaded.
+
+| Name          | Version  | Citation | 
+|:------------- |:---------|:---------|
+| Factorbook | | | [@YuvogFWT] 
+| FANTOM4 | http://swissregulon.unibas.ch/data/fantom4/WMs.txt.gz | | | 
+| GimmeMotifs vertebrate clusters | | v4.0 | | 
+| HOCOMOCO | http://hocomoco11.autosome.ru/ | v11 | [@1FStCACaF]
+| Homer | http://homer.ucsd.edu/homer/custom.motifs | XX | [ @14naBuW39] |
+| JASPAR | https://jaspar.genereg.net/ | 2018 | |
+| Kheradpour | | | [@jUNvk96Q]
+| Madsen | http://bioinformatik.sdu.dk/solexa/webshare/IMAGE/IMAGE_v1.1.tar.gz | 1.1 | [@X6uuBgy]
+| RSAT vertebrate clusters | | | [@Pfmfeewp] 
+ 
+    : Table [X]: Motif databases.
+
+
 The workflow is implemented in snakemake [@NcYZqBux] and is available at
 [https://github.com/simonvh/gimme_analysis](https://github.com/simonvh/gimme_analysis).
 
@@ -468,7 +488,7 @@ perform best on this benchmark are collections of motifs from different
 sources. Of the individual databases HOCOMOCO and Factorbook rank highest
 using this collection of human ChIP-seq peaks. Based on our results it is
 recommended to use a composite database, such as the RSAT clustered motifs or
-the GimmeMotifs database, for the best vertebrate motif coverage. However,
+the GimmeMotifs database (v4.0), for the best vertebrate motif coverage. However,
 these motifs are less well annotated. For instance, motifs based on ChIP-seq
 peaks from some sources might be from co-factors or cell type-specific
 regulators instead of the factor that was assayed. An example are motifs that
@@ -491,28 +511,27 @@ motif finders should be evaluated on many different data sets, as this is
 necessary to accurately judge the performance. 
 
 Finally, we presented a new ensemble approach, *maelstrom*, to
-determine motif activity in two or more epigenomic and transcriptomic data
+determine motif activity in two or more epigenomic or transcriptomic data
 sets. Using H3K27ac ChIP-seq signal as a measure for enhancer activity, we
 analyzed cell-type specific motif activity in a large collection of
 hematopoietic cell types. We identified known lineage regulators, as well as
-motifs for factors that are less well studied in the hematopoietic lineage.
-This illustrates how `gimme maelstrom` can serve to identify cell type-speficic
+motifs for factors that are less well studied in a hematopoietic context.
+This illustrates how `gimme maelstrom` can serve to identify cell type-specific
 transcription factors.
 
 In conclusion, GimmeMotifs is a flexible and highly versatile framework for
 transcription factor motif analysis. Both command line and programmatic use in
 Python are supported. One planned future improvement to GimmeMotifs is the
 support of more sophisticated motif models. Although PFMs are very informative,
-it is clear that it is an oversimplification of TF binding preferences. While
+it is clear that they represent an oversimplification of TF binding preferences. While
 several approaches that incorporate positional dependencies have been
 developed, it is still unclear how well these models perform and their use
 depends on specific tools. Supporting these different models and benchmarking
 their performance relative to high-quality PFMs will simplify their use and
-give insight into their benefits and disadvantages.  Secondly, there is a lot
-of progress in modeling TF binding using deep neural networks (DNNs). These
+give insight into their benefits and disadvantages.  Second, there is significant progress recently 
+in modeling TF binding using deep neural networks (DNNs). These
 DNNs can learn sequence motifs, as well as complex inter-dependencies, directly
-from the data. However, interpretation becomes less straightforward. Although
-it is possible, we think that analyzing and understanding a trained DNN can
+from the data. However, while biological interpretation is possible, it becomes less straightforward. We expect that analyzing and understanding a trained DNN can
 benefit from high-quality motif databases and comparative tools such as
 GimmeMotifs. 
 
