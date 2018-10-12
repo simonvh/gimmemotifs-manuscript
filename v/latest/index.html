@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Simon J. van Heeringen" />
-  <meta name="dcterms.date" content="2018-08-22" />
+  <meta name="dcterms.date" content="2018-10-12" />
   <meta name="keywords" content="transcription factor, ChIP-seq, regulatory motif, TF motif" />
   <title>GimmeMotifs: an analysis framework for transcription factor motif analysis</title>
   <style type="text/css">
@@ -27,7 +27,7 @@
 <header>
 <h1 class="title">GimmeMotifs: an analysis framework for transcription factor motif analysis</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/298812cb01c5dc6f30d7c5dbf8083cda6fdbe927/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/298812cb01c5dc6f30d7c5dbf8083cda6fdbe927">simonvh/gimmemotifs-manuscript@298812c</a> on August 22, 2018. </em></small></p>
+<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/7e4a31fc6cea9a852a7520035fdac75c9aea8d09/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/7e4a31fc6cea9a852a7520035fdac75c9aea8d09">simonvh/gimmemotifs-manuscript@7e4a31f</a> on October 12, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Simon J. van Heeringen</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-0411-3219">0000-0002-0411-3219</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/simonvh">simonvh</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/svheeringen">svheeringen</a><br> <small> Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands · Funded by Grant XXXXXXXX </small></li>
@@ -35,9 +35,9 @@
 <h2 id="abstract" class="page_break_before">Abstract</h2>
 <h1 id="introduction">Introduction</h1>
 <p>The regulatory networks that determine cell and tissue identity are robust, yet remarkably flexible. Transcription factors (TFs) control the expression of genes by binding to their cognate DNA sequences, TF motifs, in cis-regulatory elements. To understand how genetic variation affects binding and to elucidate the role of TFs in regulatory networks we need to be able to accurately model binding of TFs to the DNA sequence.</p>
-<p>The most widely adopted representation of TF binding is the position frequency matrix (PFM). This matrix, a TF motif, contains (normalized) frequencies of each nucleotide at each position in a collection of aligned binding sites. These PFMs can be derived from high-throughput experiments such as ChIP-sequencing, HT-SELEX or Protein Binding Microarrays (PBMs).</p>
-<p>Even though the PFM is a convenient representation, it has certain limitations. A PFM cannot model inter-nucleotide dependencies, that are known to affect binding of certain TFs. Multiple different representations have been proposed <span class="citation" data-cites="Jc96vlRF 1F4IFj9vd 7nxD51Mq nswYGz33 1FTeX7ahA">[<a href="#ref-Jc96vlRF">1</a>,<a href="#ref-1F4IFj9vd">2</a>,<a href="#ref-7nxD51Mq">3</a>,<a href="#ref-nswYGz33">4</a>,<a href="#ref-1FTeX7ahA">5</a>]</span>, however, no single one of these has gained much traction.</p>
-<p>Here, we present GimmeMotifs, a Python module and set of command-line tools for TF motif analysis. Amongst other possibilities it can be used to perfom <em>de novo</em> motif analysis, calculate enrichment statistics and identify differential motifs. We illustrate the functionality of GimmeMotifs using three different examples.</p>
+<p>The most widely adopted representation of TF binding is the position frequency matrix (PFM). This matrix, a TF motif, contains (normalized) frequencies of each nucleotide at each position in a collection of aligned binding sites. These PFMs can be derived from high-throughput experiments such as ChIP-sequencing, HT-SELEX or Protein Binding Microarrays (PBMs). Through straightforward transformations PFMs can be expressed as a weight matrix, using log likelihoods, or information content, using the Kullback-Leibler divergence.</p>
+<p>Even though the PFM is a convenient representation, it has certain limitations. A PFM cannot model inter-nucleotide dependencies, that are known to affect binding of certain TFs. Multiple different representations have been proposed <span class="citation" data-cites="Jc96vlRF 1F4IFj9vd 7nxD51Mq nswYGz33 1FTeX7ahA">[<a href="#ref-Jc96vlRF">1</a>,<a href="#ref-1F4IFj9vd">2</a>,<a href="#ref-7nxD51Mq">3</a>,<a href="#ref-nswYGz33">4</a>,<a href="#ref-1FTeX7ahA">5</a>]</span>, however, no single one of these has gained much traction. Ultimately we will need these types of advanced models to accurately represent TF binding. However, PFMs still serve as a useful abstraction that enables an intuitive understanding of TF binding.</p>
+<p>Here, we present GimmeMotifs, a Python module and set of command-line tools for TF motif analysis. Amongst other possibilities it can be used to perfom <em>de novo</em> motif analysis, calculate enrichment statistics and identify differential motifs between two or more experiments. We illustrate the functionality of GimmeMotifs using three different examples.</p>
 <h1 id="findings">Findings</h1>
 <p>We have developed GimmeMotifs to provide an comprehensive framework for transcription factor motif analysis. It includes both command-line tools as well as a Python API to perform all routine motif analysis experiments. Notably, we present maelstrom, a new ensemble approach to determine differential motif activity between two or more experiments. We illustrate the functionality of GimmeMotifs using three examples.</p>
 <h2 id="benchmark-of-transcription-factor-motif-databases">Benchmark of transcription factor motif databases</h2>
