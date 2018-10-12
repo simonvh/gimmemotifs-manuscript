@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/8d38f82ac73387168fd04f6afd069243855f30e6/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/5d4cfe7eff98389a9e6e9497d2da0b50fdcf539b/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@8d38f82](https://github.com/simonvh/gimmemotifs-manuscript/tree/8d38f82ac73387168fd04f6afd069243855f30e6)
+from [simonvh/gimmemotifs-manuscript@5d4cfe7](https://github.com/simonvh/gimmemotifs-manuscript/tree/5d4cfe7eff98389a9e6e9497d2da0b50fdcf539b)
 on October 12, 2018.
 </em></small>
 
@@ -179,6 +179,17 @@ All proteins that have low ROC AUC are not sequence-specific transcription
 factors such as POL2, TAF7 and GTF2B, the PRC2-subunit SUZ12 and the H3K9
 methyltransferase SETDB1. The factors with the highest ROC AUC are CTCF and
 members of the cohesin complex, SMC3 and RAD21, that bind at CTCF sites. 
+
+![**Figure 1**: Benchmark of *de novo* motif finders. 
+**A)** Comparison of the ROC AUC of the best motif of each motif finder. The
+boxplot shows the best motif per peak set of 495 peaks for 270 proteins from
+ENCODE. The best motif from all motif finders is indicated as 'Best'.
+**B)** Comparison of the best motif per motif finder compared to the best
+overall motif for each data set. Plotted is the difference in recall compared to
+the best motif. Recall is calculated at 10% FDR.
+**C)** The relative motif rank as a function of the motif quality. Rank is the
+mean overall rank of three metrics (ROC AUC, recall at 10% FDR and MNCP).
+](content/images/figure_denovo.png)
 
 Generally, the ROC AUC distribution of all evaluated motif finders is very
 similar. However, a few outliers can be observed. Trawler, Posmo and, to a
