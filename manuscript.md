@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/a4bbba78f8541783df6227029c722c706f0b93a7/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/a174868dbad87cdfbc488b1864f3915c5acb2a43/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@a4bbba7](https://github.com/simonvh/gimmemotifs-manuscript/tree/a4bbba78f8541783df6227029c722c706f0b93a7)
+from [simonvh/gimmemotifs-manuscript@a174868](https://github.com/simonvh/gimmemotifs-manuscript/tree/a174868dbad87cdfbc488b1864f3915c5acb2a43)
 on October 15, 2018.
 </em></small>
 
@@ -43,6 +43,12 @@ on October 15, 2018.
 
 
 ## Abstract {.page_break_before}
+
+**Background:** Transcription factors (TFs) bind to specific DNA sequences, TF motifs, in cis-regulatory sequences and control the expression of the diverse transcriptional programs encoded in the genome. The concerted action of TFs within the chromatin context enables precise temporal and spatial expression patterns. To understand how TFs control gene expression it is essential to model TF binding. TF motif information can help interpret exact role of individual regulatory elements, for instance to predict the functional impact of non-coding variants.
+
+**Findings:** Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. It includes tools for de novo motif discovery, motif scanning and sequence analysis, clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our de novo discovery pipeline we find large differences in performance between de novo motif finders on ChIP-seq data. Finally, we demonstrate maelstrom, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~300 H3K27ac ChIP-seq data sets we identify TFs  that play a role in hematopoietic differentiation and lineage commitment. 
+
+**Conclusion:** GimmeMotifs is a fully-featured and flexible framework for TF motif analysis. It contains both command-line tools as well as a Python API and is freely available at: https://github.com/vanheeringen-lab/gimmemotifs.
 
 
 
