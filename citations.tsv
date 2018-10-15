@@ -1,6 +1,7 @@
 string	citation	standard_citation	citation_id
 @doi:10.1002/0471250953.bi0211s47	doi:10.1002/0471250953.bi0211s47	doi:10.1002/0471250953.bi0211s47	1G4lWf9Jf
 @doi:10.1007/s10994-013-5367-2	doi:10.1007/s10994-013-5367-2	doi:10.1007/s10994-013-5367-2	6chpTZMZ
+@doi:10.1007/s40484-013-0012-4	doi:10.1007/s40484-013-0012-4	doi:10.1007/s40484-013-0012-4	yO7FsE2K
 @doi:10.1016/j.cell.2014.08.009	doi:10.1016/j.cell.2014.08.009	doi:10.1016/j.cell.2014.08.009	1Df4blqEs
 @doi:10.1016/j.cellimm.2015.02.009	doi:10.1016/j.cellimm.2015.02.009	doi:10.1016/j.cellimm.2015.02.009	60Dz9zIg
 @doi:10.1016/j.imbio.2016.01.007	doi:10.1016/j.imbio.2016.01.007	doi:10.1016/j.imbio.2016.01.007	ndDtTItn
@@ -12,6 +13,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1038/nmeth.1923	doi:10.1038/nmeth.1923	doi:10.1038/nmeth.1923	PiS0h6Mu
 @doi:10.1038/nmeth1061	doi:10.1038/nmeth1061	doi:10.1038/nmeth1061	19jTKi9ZQ
 @doi:10.1038/s41592-018-0046-7	doi:10.1038/s41592-018-0046-7	doi:10.1038/s41592-018-0046-7	sYguBb3Q
+@doi:10.1038/sj.onc.1210764	doi:10.1038/sj.onc.1210764	doi:10.1038/sj.onc.1210764	U0f0MFSJ
 @doi:10.1089/10665270252935566	doi:10.1089/10665270252935566	doi:10.1089/10665270252935566	FGUIIeyX
 @doi:10.1089/cmb.2008.16TT	doi:10.1089/cmb.2008.16TT	doi:10.1089/cmb.2008.16tt	8xwckKK3
 @doi:10.1093/bioinformatics/btq033	doi:10.1093/bioinformatics/btq033	doi:10.1093/bioinformatics/btq033	1HWiAHnIw
@@ -23,6 +25,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1093/bioinformatics/btx804	doi:10.1093/bioinformatics/btx804	doi:10.1093/bioinformatics/btx804	QMQpDahx
 @doi:10.1093/intimm/dxn143	doi:10.1093/intimm/dxn143	doi:10.1093/intimm/dxn143	vhkaSeK9
 @doi:10.1093/nar/gki791	doi:10.1093/nar/gki791	doi:10.1093/nar/gki791	iW6hyGIk
+@doi:10.1093/nar/gkl857	doi:10.1093/nar/gkl857	doi:10.1093/nar/gkl857	WubLhyiX
 @doi:10.1093/nar/gkp1180	doi:10.1093/nar/gkp1180	doi:10.1093/nar/gkp1180	YIsvgfWU
 @doi:10.1093/nar/gkr1135	doi:10.1093/nar/gkr1135	doi:10.1093/nar/gkr1135	oL2CQf3y
 @doi:10.1093/nar/gks1221	doi:10.1093/nar/gks1221	doi:10.1093/nar/gks1221	YuvogFWT
@@ -57,6 +60,7 @@ string	citation	standard_citation	citation_id
 @pmid:19505943	pmid:19505943	pmid:19505943	hNfNHk9L
 @pmid:7584402	pmid:7584402	pmid:7584402	KqGAZzyz
 @pmid:9389660	pmid:9389660	pmid:9389660	zbTimXyu
+@pmid:9694804	pmid:9694804	pmid:9694804	ou8OYkdE
 @url:http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/	url:http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/	url:http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/	19QDk82XW
 @url:http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/	url:http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/	url:http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/	6eHRNaUT
 @url:http://www.numpy.org/	url:http://www.numpy.org/	url:http://www.numpy.org/	oGbMixLl

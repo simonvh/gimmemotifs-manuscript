@@ -329,6 +329,127 @@
       "date-parts": [
         [
           2018,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2018-09-21T07:42:38Z",
+      "timestamp": 1537515758118
+    },
+    "reference-count": 95,
+    "publisher": "Springer Nature",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1007/s40484-013-0012-4",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2013-04-03T02:41:10Z",
+      "timestamp": 1364956870000
+    },
+    "page": "115-130",
+    "source": "Crossref",
+    "is-referenced-by-count": 56,
+    "title": "Modeling the specificity of protein-DNA interactions",
+    "prefix": "10.1007",
+    "volume": "1",
+    "author": [
+      {
+        "given": "Gary D.",
+        "family": "Stormo",
+        "sequence": "first",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          2
+        ]
+      ]
+    },
+    "container-title": "Quantitative Biology",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s40484-013-0012-4",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T10:29:38Z",
+      "timestamp": 1498040978000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          2
+        ]
+      ]
+    },
+    "references-count": 95,
+    "journal-issue": {
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            6
+          ]
+        ]
+      },
+      "issue": "2"
+    },
+    "alternative-id": [
+      "12"
+    ],
+    "URL": "https://doi.org/10.1007/s40484-013-0012-4",
+    "relation": {
+      "cites": []
+    },
+    "container-title-short": "Quant Biol",
+    "short_url": "https://doi.org/gfc64x",
+    "id": "yO7FsE2K"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
           10,
           2
         ]
@@ -3652,6 +3773,156 @@
         [
           2018,
           9,
+          30
+        ]
+      ],
+      "date-time": "2018-09-30T11:02:41Z",
+      "timestamp": 1538305361924
+    },
+    "reference-count": 195,
+    "publisher": "Springer Nature",
+    "issue": "47",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2007-10-01T00:00:00Z",
+          "timestamp": 1191196800000
+        },
+        "delay-in-days": 0,
+        "content-version": "unspecified"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1038/sj.onc.1210764",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          10,
+          15
+        ]
+      ],
+      "date-time": "2007-10-15T09:09:54Z",
+      "timestamp": 1192439394000
+    },
+    "page": "6816-6828",
+    "source": "Crossref",
+    "is-referenced-by-count": 219,
+    "title": "Transcriptional control of granulocyte and monocyte development",
+    "prefix": "10.1038",
+    "volume": "26",
+    "author": [
+      {
+        "given": "A D",
+        "family": "Friedman",
+        "sequence": "first",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2007,
+          10,
+          15
+        ]
+      ]
+    },
+    "container-title": "Oncogene",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/1210764.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/1210764",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/1210764.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2017-12-23T09:14:17Z",
+      "timestamp": 1514020457000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          10
+        ]
+      ]
+    },
+    "references-count": 195,
+    "journal-issue": {
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            10
+          ]
+        ]
+      },
+      "issue": "47"
+    },
+    "alternative-id": [
+      "BF1210764"
+    ],
+    "URL": "https://doi.org/10.1038/sj.onc.1210764",
+    "relation": {
+      "cites": []
+    },
+    "container-title-short": "Oncogene",
+    "short_url": "https://doi.org/cdzfmw",
+    "id": "U0f0MFSJ"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          9,
           21
         ]
       ],
@@ -5258,6 +5529,133 @@
     "container-title-short": "Nucleic Acids Research",
     "short_url": "https://doi.org/cjvmfh",
     "id": "iW6hyGIk"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2018-10-09T08:42:42Z",
+      "timestamp": 1539074562292
+    },
+    "reference-count": 0,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "Database",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkl857",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          11,
+          28
+        ]
+      ],
+      "date-time": "2006-11-28T03:35:15Z",
+      "timestamp": 1164684915000
+    },
+    "page": "D127-D131",
+    "source": "Crossref",
+    "is-referenced-by-count": 64,
+    "title": "SwissRegulon: a database of genome-wide annotations of regulatory sites",
+    "prefix": "10.1093",
+    "volume": "35",
+    "author": [
+      {
+        "given": "M.",
+        "family": "Pachkov",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "I.",
+        "family": "Erb",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "N.",
+        "family": "Molina",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "E.",
+        "family": "van Nimwegen",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/35/suppl_1/D127/3848174/gkl857.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2017-08-23T19:39:57Z",
+      "timestamp": 1503517197000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          3
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            3
+          ]
+        ]
+      },
+      "issue": "Database"
+    },
+    "URL": "https://doi.org/10.1093/nar/gkl857",
+    "relation": {},
+    "container-title-short": "Nucleic Acids Research",
+    "short_url": "https://doi.org/d573m6",
+    "id": "WubLhyiX"
   },
   {
     "indexed": {
@@ -10091,6 +10489,39 @@
     "URL": "https://www.ncbi.nlm.nih.gov/pubmed/9389660",
     "type": "article-journal",
     "id": "zbTimXyu"
+  },
+  {
+    "title": "PU.1 induces myeloid lineage commitment in multipotent hematopoietic progenitors.",
+    "volume": "12",
+    "issue": "15",
+    "page": "2403-12",
+    "container-title": "Genes & development",
+    "container-title-short": "Genes Dev.",
+    "issued": {
+      "date-parts": [
+        [
+          1998,
+          8,
+          1
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "C",
+        "family": "Nerlov"
+      },
+      {
+        "given": "T",
+        "family": "Graf"
+      }
+    ],
+    "PMID": "9694804",
+    "PMCID": "PMC317050",
+    "abstract": "Little is known about the transcription factors that mediate lineage commitment of multipotent hematopoietic precursors. One candidate is the Ets family transcription factor PU.1, which is expressed in myeloid and B cells and is required for the development of both these lineages. We show here that the factor specifically instructs transformed multipotent hematopoietic progenitors to differentiate along the myeloid lineage. This involves not only the up-regulation of myeloid-specific cell surface antigens and the acquisition of myeloid growth-factor dependence but also the down-regulation of progenitor/thrombocyte-specific cell-surface markers and GATA-1. Both effects require an intact PU.1 transactivation domain. Whereas sustained activation of an inducible form of the factor leads to myeloid lineage commitment, short-term activation leads to the formation of immature eosinophils, indicating the existence of a bilineage intermediate. Our results suggest that PU.1 induces myeloid lineage commitment by the suppression of a master regulator of nonmyeloid genes (such as GATA-1) and the concomitant activation of multiple myeloid genes.",
+    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/9694804",
+    "type": "article-journal",
+    "id": "ou8OYkdE"
   },
   {
     "URL": "http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/",

@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/f4e5d9716be1229f6ead162088a067e367dc802e/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/a4bbba78f8541783df6227029c722c706f0b93a7/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@f4e5d97](https://github.com/simonvh/gimmemotifs-manuscript/tree/f4e5d9716be1229f6ead162088a067e367dc802e)
+from [simonvh/gimmemotifs-manuscript@a4bbba7](https://github.com/simonvh/gimmemotifs-manuscript/tree/a4bbba78f8541783df6227029c722c706f0b93a7)
 on October 15, 2018.
 </em></small>
 
@@ -52,22 +52,24 @@ on October 15, 2018.
 The regulatory networks that determine cell and tissue identity are robust, yet
 remarkably flexible. Transcription factors (TFs) control the expression of genes
 by binding to their cognate DNA sequences, TF motifs, in cis-regulatory
-elements. To understand how genetic variation affects binding and to elucidate
+elements [doi:10.1016/j.cell.2018.01.029]. To understand how genetic variation affects binding and to elucidate
 the role of TFs in regulatory networks we need to be able to accurately model
 binding of TFs to the DNA sequence.
 
-The most widely adopted representation of TF binding is the position frequency
+The specificity of DNA-binding proteins can be modeled using various representations [@yO7FsE2K]. One of the most widely adopted is the position frequency
 matrix (PFM). This matrix, a TF motif, contains (normalized) frequencies of each
 nucleotide at each position in a collection of aligned binding sites. These PFMs
-can be derived from high-throughput experiments such as ChIP-sequencing,
-HT-SELEX or Protein Binding Microarrays (PBMs). Through straightforward transformations PFMs can be expressed as a weight matrix, using log likelihoods, or information content, using the Kullback-Leibler divergence.
+can be derived from high-throughput experiments such as Chromatin Immunoprecipitation followed by sequencing (ChIP-seq) [@YuvogFWT;
+@jUNvk96Q; @1FStCACaF;
+@14naBuW39],
+HT-SELEX [@ZFIFozC9] or Protein Binding Microarrays (PBMs) [@ZfeCID7o]. Through straightforward transformations a PFM can be expressed as a weight matrix, using log likelihoods, or information content, using the Kullback-Leibler divergence.
 
 Even though the PFM is a convenient representation, it has certain limitations.
-A PFM cannot model inter-nucleotide dependencies, that are known to affect
+A PFM cannot model inter-nucleotide dependencies, which are known to affect
 binding of certain TFs. Multiple different representations have been proposed
 [@Jc96vlRF; @1F4IFj9vd; @7nxD51Mq; @nswYGz33; @1FTeX7ahA],
 but no single one of these has gained much traction. Ultimately we
-will need these types of advanced models to accurately represent TF binding. However, PFMs still serve as a useful abstraction that enables an intuitive understanding of TF binding.
+will need these types of advanced models to accurately represent TF binding. However, PFMs still serve as a very useful abstraction that enables an intuitive understanding of TF binding.
 
 Here, we present GimmeMotifs, a Python module and set of command-line tools for
 TF motif analysis. Amongst other possibilities it can be used to perfom *de
@@ -109,8 +111,8 @@ peaks. We then evaluated 8 motif databases to test how well they could
 distinguish peaks from random genomic sequences. When a data set contained more
 than 5,000 peaks we randomly selected 5,000 peaks for the analysis. We included
 the following databases: JASPAR 2018 vertebrate [@XrrO63jn],
-FANTOM4 [ref], Homer [@14naBuW39], Factorbook
-[@YuvogFWT], the ENCODE motifs from Kheradpour et al
+SwissRegulon [@WubLhyiX], Homer [@14naBuW39], Factorbook
+[@YuvogFWT], the ENCODE motifs from Kheradpour et al.
 [@jUNvk96Q], HOCOMOCO [@1FStCACaF], the RSAT
 clustered motifs [@Pfmfeewp] and the motif database created by
 Madsen et al.  [@X6uuBgy]. Figure 3A shows distribution of the
@@ -118,7 +120,7 @@ ROC AUC (area
 under the curve for the Receiver Operator Curve) of the best motif per database
 for all 294 transcription factors in a box plot. There is generally a wide
 distribution of ROC AUCs. For some factors, such as ELK1, CTCF, CBFB and MYOD1,
-peaks are relatively easy to classify using a single PWM motif. Other factors
+peaks are relatively easy to classify using a single PFM motif. Other factors
 don't have a peaks with a consistently enriched motif, or do not contain a
 sequence-specific DNA-binding domain, such as EP300 or CD2 for example.
 
@@ -288,12 +290,12 @@ To determine differential motif activity from these dynamic enhancers we used
 maelstrom. We combined Bayesian ridge regression, multi-class regression using
 coordinate descent [@6chpTZMZ] and regression with boosted trees [@8w9fI63O].
 The coefficients or feature importances were ranked and combined using rank
-aggregation [@dTwzcIZ4]. A p-value was calculated for consistentily high ranking and
+aggregation [@dTwzcIZ4]. A p-value was calculated for consistently high ranking and
 consistently low ranking motifs. The results are visualized in Figure 5C. 
 
 Two of the most signicant motifs are SPI1 (PU.1) and CEBP. The motif activity
-for SPI1 is consistently high in monocytes and macrophages, consistent with its
-role in myeloid lineage commitment [refs]. The CEBP family members are important for monocytes and granulocitic cells [ref], and show a high motif activity in neutrophils and monocytes. Other strong motifs include RUNX for T cells and NK cells, GATA1 for erythroid cells. 
+for SPI1 is high in monocytes and macrophages, consistent with its
+role in myeloid lineage commitment [@ou8OYkdE]. The CEBP family members are important for monocytes and granulocitic cells [@U0f0MFSJ], and show a high motif activity in neutrophils and monocytes. Other strong motifs include RUNX for T cells and NK cells, GATA1 for erythroid cells. 
 
 We identified a strong activity for motifs representing the ZEB1 and Snail
 transcription factors. The Snail transcription factors play an important role in
@@ -306,9 +308,9 @@ knockout mice exhibit a defect in thymocyte development [@zbTimXyu]. Together,
 this suggests that these TFs play an important role in lymphocyte development. 
 
 Finally, an interesting observation is the predicted motif activity of NANOG in
-endothelial cells. NANOG is expressin in embryonic stem cells and is essential
-for establishment and maintenance of pluripotency [ref]. However, NANOG is
-indeed expressed in endothelial cells and has been shown to play a role in
+endothelial cells. NANOG is expressed in embryonic stem cells and is essential
+for maintenance of pluripotency [doi:10.1038/sj.cr.7310125]. However, NANOG is
+indeed also  expressed in endothelial cells and has been shown to play a role in
 endothelial proliferation and angiogenesis [@dWdvt1AI].
 
 
