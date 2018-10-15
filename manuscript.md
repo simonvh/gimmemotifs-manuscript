@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/4df12aad95916936744db605a3f85560cd1045d7/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/e78c0f40494a8a117c0b0025056847b68fe14ee2/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@4df12aa](https://github.com/simonvh/gimmemotifs-manuscript/tree/4df12aad95916936744db605a3f85560cd1045d7)
+from [simonvh/gimmemotifs-manuscript@e78c0f4](https://github.com/simonvh/gimmemotifs-manuscript/tree/e78c0f40494a8a117c0b0025056847b68fe14ee2)
 on October 15, 2018.
 </em></small>
 
@@ -549,9 +549,9 @@ developed, it is still unclear how well these models perform and their use
 depends on specific tools. Supporting these different models and benchmarking
 their performance relative to high-quality PFMs will simplify their use and
 give insight into their benefits and disadvantages.  Second, there is significant progress recently 
-in modeling TF binding using deep neural networks (DNNs). These
+in modeling TF binding using deep neural networks (DNNs) [@2UI1BZuD;@15x5IEmHr]. These
 DNNs can learn sequence motifs, as well as complex inter-dependencies, directly
-from the data. However, while biological interpretation is possible, it becomes less straightforward. We expect that analyzing and understanding a trained DNN can
+from the data. However, while biological interpretation is possible [@14F1Ih71i], it becomes less straightforward. We expect that analyzing and understanding a trained DNN can
 benefit from high-quality motif databases and comparative tools such as
 GimmeMotifs. 
 
