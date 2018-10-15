@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Simon J. van Heeringen
-date-meta: '2018-10-12'
+date-meta: '2018-10-15'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -18,10 +18,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/5d4cfe7eff98389a9e6e9497d2da0b50fdcf539b/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/f4e5d9716be1229f6ead162088a067e367dc802e/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@5d4cfe7](https://github.com/simonvh/gimmemotifs-manuscript/tree/5d4cfe7eff98389a9e6e9497d2da0b50fdcf539b)
-on October 12, 2018.
+from [simonvh/gimmemotifs-manuscript@f4e5d97](https://github.com/simonvh/gimmemotifs-manuscript/tree/f4e5d9716be1229f6ead162088a067e367dc802e)
+on October 15, 2018.
 </em></small>
 
 ## Authors
@@ -123,7 +123,7 @@ don't have a peaks with a consistently enriched motif, or do not contain a
 sequence-specific DNA-binding domain, such as EP300 or CD2 for example.
 
 ![Figure 1: Benchmark of transcription factor motif databases. 
-A) Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5000 peaks were compared to background regions using each motif database. The boxplot shows the The ROC AUC of the bestt motif per database for all TFs.
+A) Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5000 peaks were compared to background regions using each motif database. The boxplot shows the The ROC AUC of the best motif per database for all TFs.
 B) Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v4.0). The same data is used as in A). The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
 ](content/images/figure_dbs.png)
 
@@ -269,12 +269,12 @@ methods to determine motif relevance or activity in an ensemble approach (Fig.
 5A).
 
 To demonstrate the utility of maelstrom we identified motif activity based on
-enhancers in hematopoietic cells. We downloaded 72 human hematopoietic DNAseI
-experiments (Supplemental Table X), called peaks, and created a combined peak
+enhancers in hematopoietic cells. We downloaded 69 human hematopoietic DNaseI
+experiments (Supplementary Table S1), called peaks, and created a combined peak
 set as a collection of putative enhancers. In addition we downloaded 193
 hematopoietic H3K27ac ChIP-seq experiments, mainly from BLUEPRINT
-[@MzCvXTgB] (Supplemental Table X). We determined the number of H3K27ac reads per
-enhancer. After log2 transformation and scaling, we selected the 50,000 most
+[@MzCvXTgB] (Supplementary Table S1). We determined the number of H3K27ac reads per
+enhancer (Supplementary Table S2). After log2 transformation and scaling, we selected the 50,000 most
 dynamic peaks. Figure 5B shows the correlation of the H3K27ac enrichment in
 these 50,000 enhancers between cell types. For this plot, replicates were
 combined by taking the mean value and all etperiments corresponding to treated
@@ -467,8 +467,8 @@ workflow is implemented in snakemake [@NcYZqBux] and is available at
 
 To illustrate the functionality of `gimme maelstrom` we analyzed an integrated
 collection of hematopoietic enhancers. We downloaded all H3K27ac ChIP-seq and
-DNase I data from BLUEPRINT (Supplemental Table SX) and hematopoietic DNase I
-data from ROADMAP (Supplemental Table SX). All DNase I data were processed using
+DNase I data from BLUEPRINT and hematopoietic DNase I
+data from ROADMAP (Supplementary Table S1). All DNase I data were processed using
 the Kundaje lab DNase pipeline version 0.3.0
 [https://github.com/kundajelab/atac_dnase_pipelines](https://github.com/kundajelab/atac_dnase_pipelines)
 [@PPuptgFe].  The ChIP-seq samples were processed using the
@@ -479,7 +479,7 @@ All ROADMAP samples were aligned using bowtie2 [@PiS0h6Mu] to the
 hg38 genome. DNase I peaks were called using MACS2
 [@MG7PTly9]. We merge all DNase I peak files and centered
 each merged peak on the summit of the strongest individual peak. H3K27ac reads
-were counted in a region of 2kb centered at the summit (Supplementary Table SX)
+were counted in a region of 2kb centered at the summit (Supplementary Table S2)
 and read counts were log2-transformed and scaled. We removed all samples that
 were treated and averaged all samples from the same cell type. We then selected
 all enhancers with at least one sample with a scaled log2 read count of 2,
