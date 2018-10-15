@@ -801,6 +801,263 @@
       "date-parts": [
         [
           2018,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2018-10-11T01:02:39Z",
+      "timestamp": 1539219759710
+    },
+    "reference-count": 126,
+    "publisher": "Elsevier BV",
+    "issue": "4",
+    "license": [
+      {
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2018-02-01T00:00:00Z",
+          "timestamp": 1517443200000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100012051",
+        "name": "Lupus Research Alliance",
+        "doi-asserted-by": "crossref",
+        "award": []
+      },
+      {
+        "DOI": "10.13039/501100004359",
+        "name": "Vetenskapsrådet",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "2016-00158"
+        ]
+      },
+      {
+        "name": "NIH",
+        "award": [
+          "R01 NS099068-01A1"
+        ]
+      },
+      {
+        "name": "Cincinnati Children’s Hospital",
+        "award": []
+      },
+      {
+        "name": "CIHR Foundation",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.cell.2018.01.029",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          8
+        ]
+      ],
+      "date-time": "2018-02-08T16:45:11Z",
+      "timestamp": 1518108311000
+    },
+    "page": "650-665",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 31,
+    "title": "The Human Transcription Factors",
+    "prefix": "10.1016",
+    "volume": "172",
+    "author": [
+      {
+        "given": "Samuel A.",
+        "family": "Lambert",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Arttu",
+        "family": "Jolma",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Laura F.",
+        "family": "Campitelli",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Pratyush K.",
+        "family": "Das",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Yimeng",
+        "family": "Yin",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Mihai",
+        "family": "Albu",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaoting",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Jussi",
+        "family": "Taipale",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy R.",
+        "family": "Hughes",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Matthew T.",
+        "family": "Weirauch",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Cell",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0092867418301065?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0092867418301065?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          5
+        ]
+      ],
+      "date-time": "2018-10-05T04:09:46Z",
+      "timestamp": 1538712586000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          2
+        ]
+      ]
+    },
+    "references-count": 126,
+    "journal-issue": {
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            2
+          ]
+        ]
+      },
+      "issue": "4"
+    },
+    "alternative-id": [
+      "S0092867418301065"
+    ],
+    "URL": "https://doi.org/10.1016/j.cell.2018.01.029",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology"
+    ],
+    "container-title-short": "Cell",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "The Human Transcription Factors",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Cell",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.cell.2018.01.029",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2018 Elsevier Inc.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/gcw8rb",
+    "id": "9vS8HBL6"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
           9,
           24
         ]
@@ -3766,6 +4023,166 @@
     "container-title-short": "Nat Methods",
     "short_url": "https://doi.org/gd2xzp",
     "id": "sYguBb3Q"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2018-09-27T18:22:37Z",
+      "timestamp": 1538072557304
+    },
+    "reference-count": 44,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2007-01-01T00:00:00Z",
+          "timestamp": 1167609600000
+        },
+        "delay-in-days": 0,
+        "content-version": "unspecified"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1038/sj.cr.7310125",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          9
+        ]
+      ],
+      "date-time": "2007-01-09T11:35:47Z",
+      "timestamp": 1168342547000
+    },
+    "page": "42-49",
+    "source": "Crossref",
+    "is-referenced-by-count": 263,
+    "title": "Nanog and transcriptional networks in embryonic stem cell pluripotency",
+    "prefix": "10.1038",
+    "volume": "17",
+    "author": [
+      {
+        "given": "Guangjin",
+        "family": "Pan",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "James A",
+        "family": "Thomson",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          9
+        ]
+      ]
+    },
+    "container-title": "Cell Research",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/7310125.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/7310125",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/7310125.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          28
+        ]
+      ],
+      "date-time": "2018-06-28T09:19:00Z",
+      "timestamp": 1530177540000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "references-count": 44,
+    "journal-issue": {
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            1
+          ]
+        ]
+      },
+      "issue": "1"
+    },
+    "alternative-id": [
+      "BF7310125"
+    ],
+    "URL": "https://doi.org/10.1038/sj.cr.7310125",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Cell Biology",
+      "Molecular Biology"
+    ],
+    "container-title-short": "Cell Res",
+    "short_url": "https://doi.org/csdvk3",
+    "id": "PV60Wrh7"
   },
   {
     "indexed": {

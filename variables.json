@@ -11,7 +11,7 @@
       "affiliations": [
         "Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands"
       ],
-      "funders": "Grant XXXXXXXX",
+      "funders": "NWO-ALW, grant 863.12.002",
       "affiliation_numbers": [
         1
       ]
@@ -27,15 +27,15 @@
     "repo_slug": "simonvh/gimmemotifs-manuscript",
     "repo_owner": "simonvh",
     "repo_name": "gimmemotifs-manuscript",
-    "commit": "a174868dbad87cdfbc488b1864f3915c5acb2a43"
+    "commit": "4df12aad95916936744db605a3f85560cd1045d7"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 54,
+      "doi": 56,
       "pmid": 8,
       "url": 9,
-      "total": 71
+      "total": 73
     },
-    "word_count": 5122
+    "word_count": 5201
   }
 }

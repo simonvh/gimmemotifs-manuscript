@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/a174868dbad87cdfbc488b1864f3915c5acb2a43/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/4df12aad95916936744db605a3f85560cd1045d7/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@a174868](https://github.com/simonvh/gimmemotifs-manuscript/tree/a174868dbad87cdfbc488b1864f3915c5acb2a43)
+from [simonvh/gimmemotifs-manuscript@4df12aa](https://github.com/simonvh/gimmemotifs-manuscript/tree/4df12aad95916936744db605a3f85560cd1045d7)
 on October 15, 2018.
 </em></small>
 
@@ -37,7 +37,7 @@ on October 15, 2018.
     [svheeringen](https://twitter.com/svheeringen)<br>
   <small>
      Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands
-     · Funded by Grant XXXXXXXX
+     · Funded by NWO-ALW, grant 863.12.002
   </small>
 
 
@@ -48,17 +48,17 @@ on October 15, 2018.
 
 **Findings:** Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. It includes tools for de novo motif discovery, motif scanning and sequence analysis, clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our de novo discovery pipeline we find large differences in performance between de novo motif finders on ChIP-seq data. Finally, we demonstrate maelstrom, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~300 H3K27ac ChIP-seq data sets we identify TFs  that play a role in hematopoietic differentiation and lineage commitment. 
 
-**Conclusion:** GimmeMotifs is a fully-featured and flexible framework for TF motif analysis. It contains both command-line tools as well as a Python API and is freely available at: https://github.com/vanheeringen-lab/gimmemotifs.
+**Conclusion:** GimmeMotifs is a fully-featured and flexible framework for TF motif analysis. It contains both command-line tools as well as a Python API and is freely available at: [https://github.com/vanheeringen-lab/gimmemotifs](https://github.com/vanheeringen-lab/gimmemotifs).
 
 
 
 
-# Introduction
+# Introduction {.page_break_before}
 
 The regulatory networks that determine cell and tissue identity are robust, yet
 remarkably flexible. Transcription factors (TFs) control the expression of genes
 by binding to their cognate DNA sequences, TF motifs, in cis-regulatory
-elements [doi:10.1016/j.cell.2018.01.029]. To understand how genetic variation affects binding and to elucidate
+elements [@9vS8HBL6]. To understand how genetic variation affects binding and to elucidate
 the role of TFs in regulatory networks we need to be able to accurately model
 binding of TFs to the DNA sequence.
 
@@ -121,18 +121,18 @@ SwissRegulon [@WubLhyiX], Homer [@14naBuW39], Factorbook
 [@YuvogFWT], the ENCODE motifs from Kheradpour et al.
 [@jUNvk96Q], HOCOMOCO [@1FStCACaF], the RSAT
 clustered motifs [@Pfmfeewp] and the motif database created by
-Madsen et al.  [@X6uuBgy]. Figure 3A shows distribution of the
+Madsen et al.  [@X6uuBgy]. Figure 1A shows distribution of the
 ROC AUC (area
 under the curve for the Receiver Operator Curve) of the best motif per database
 for all 294 transcription factors in a box plot. There is generally a wide
 distribution of ROC AUCs. For some factors, such as ELK1, CTCF, CBFB and MYOD1,
 peaks are relatively easy to classify using a single PFM motif. Other factors
-don't have a peaks with a consistently enriched motif, or do not contain a
+don't have peaks with a consistently enriched motif, or do not contain a
 sequence-specific DNA-binding domain, such as EP300 or CD2 for example.
 
-![Figure 1: Benchmark of transcription factor motif databases. 
-A) Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5000 peaks were compared to background regions using each motif database. The boxplot shows the The ROC AUC of the best motif per database for all TFs.
-B) Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v4.0). The same data is used as in A). The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
+![**Figure 1**: Benchmark of transcription factor motif databases. 
+**A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5000 peaks were compared to background regions using each motif database. The boxplot shows the The ROC AUC of the best motif per database for all TFs.
+**B)** Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v4.0). The same data is used as in **A)**. The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
 ](content/images/figure_dbs.png)
 
 The difference in maximum ROC AUC between databases is on average not very
@@ -148,7 +148,7 @@ While the ROC AUC is often used to compare the trade-off between sensitivity ver
 view. An alternative way of measuring performance is evaluating the recall (ie.
 how many true peaks do we recover) at a specific false discovery rate. This is
 one of the criteria that has been used by the ENCODE DREAM challenge for
-evaluation [@19QDk82XW]. Figure 3B shows scatterplots for the recall at 10% FDR for
+evaluation [@19QDk82XW]. Figure 1B shows scatterplots for the recall at 10% FDR for
 all motif databases compared to the clustered, non-redundant databases that is
 included with GimmeMotifs. The non-redundant vertebrate motif database included with
 GimmeMotifs shows better performance than most other databases. The
@@ -163,7 +163,7 @@ case of application of a motif database. In other cases well-curated databases s
 as JASPAR can be beneficial, for instance when linking motifs to binding
 proteins. 
 
-## Performance of de novo motif identification varies with motif quality
+## Large-scale benchmark of *de novo* motif finder performance on ChIP-seq peaks
 
 It has been noted that there is no *de novo* motif prediction
 algorithm that consistently performs well across different data sets
@@ -175,12 +175,12 @@ typically have tested only a few motif finders or used only a few datasets.
 
 Here, we used the GimmeMotifs framework as implemented in `gimme motifs` to benchmark 14 different *de novo*
 motif finders. To evaluate the different approaches, we downloaded 495 peak
-files for 270 proteins from ENCODE (Supplemental Table X; [@6eHRNaUT]) and
+files for 270 proteins from ENCODE [@6eHRNaUT] and
 selected the 100bp sequence centered on the summit of top 5000 peaks.  Of those
 peaks, half were randomly selected as a prediction set and the other half was
 used for evaluation. As a background set we selected regions of the same length
 flanking the original peaks. To assess the performance, we calculated two
-metrics, the ROC AUC and the recall at 10% FDR. Figure 4a shows the distribution
+metrics, the ROC AUC and the recall at 10% FDR. Figure 2A shows the distribution
 of the ROC AUC scores over all ENCODE peaks in a boxplot, ordered by the mean
 ROC AUC. The ROC AUC is distributed between 0.58 and 0.98, with a mean of 0.75.
 All proteins that have low ROC AUC are not sequence-specific transcription
@@ -188,7 +188,7 @@ factors such as POL2, TAF7 and GTF2B, the PRC2-subunit SUZ12 and the H3K9
 methyltransferase SETDB1. The factors with the highest ROC AUC are CTCF and
 members of the cohesin complex, SMC3 and RAD21, that bind at CTCF sites. 
 
-![**Figure 1**: Benchmark of *de novo* motif finders. 
+![**Figure 2**: Benchmark of *de novo* motif finders. 
 **A)** Comparison of the ROC AUC of the best motif of each motif finder. The
 boxplot shows the best motif per peak set of 495 peaks for 270 proteins from
 ENCODE. The best motif from all motif finders is indicated as 'Best'.
@@ -200,18 +200,17 @@ mean overall rank of three metrics (ROC AUC, recall at 10% FDR and MNCP).
 ](content/images/figure_denovo.png)
 
 Generally, the ROC AUC distribution of all evaluated motif finders is very
-similar. However, a few outliers can be observed. Trawler, Posmo and, to a
-lesser extent, GADEM show an overall lower distribution of ROC AUC scores.
-Compared to the ROC AUC scores of the next best program, Weeder, this is
-significant (p < 1e-5, Wilcoxon signed-rank). Selecting the best motif for each
+similar. However, a few outliers can be observed. Trawler and Posmo show an overall lower distribution of ROC AUC scores.
+Compared to the ROC AUC scores of the next best program, GADEM, this is
+significant (p < 0.01, Wilcoxon signed-rank). Selecting the best motif for each
 experiment results in a ROC AUC distribution that is significantly higher than
-the best single method, BioProspector (p < 4e-21, Wilcoxon signed-rank).
+the best single method, BioProspector (p < 1e-21, Wilcoxon signed-rank).
 
 As stated in the previous section, the ROC AUC is not the best measure to
 evaluate motif quality. Therefore, we selected for every peak set the best motif
 from all motifs predicted by the different motif finders on the basis of the
 recall at 10% FDR. We then plotted the difference between the best motif from
-each individual *de novo* approach with this best overall motif (Figure 4b). For
+each individual *de novo* approach with this best overall motif (Fig. 2B). For
 this figure, we used only the data sets where at least one motif had a recall
 higher than 0 at 10% FDR. 
 
@@ -222,12 +221,12 @@ consistently better than motifs predicted by other methods. In 75% of the cases,
 the motif predicted by BioProspector has a difference in recall smaller than
 0.026 compared to the best overall motif. In this benchmark, four programs
 (Trawler, Improbizer, Posmo and Weeder) generally perform worse than average,
-with a mean decrease in recall of [5%] to [10], as compared to the best motif.
+with a mean decrease in recall of 0.11 to 0.17, as compared to the best motif.
 In addition, these programs tend to have a much more variable performance
 overall.
 
 Predicted motifs identified using MEME with different motif widths show better performance than
-running MEME with the `minw` and `maxw` options (MEME vs. MEMEW in fig. 4b). Of
+running MEME with the `minw` and `maxw` options (MEME vs. MEMEW in Fig. 2B). Of
 the best performing algorithms, both MEME and BioProspector were not
 specifically developed for ChIP-seq data, however, they consistently outperform
 most methods created for ChIP-seq data. Of the ChIP-seq motif finders Homer
@@ -238,15 +237,15 @@ stratified the ChIP-seq datasets by motif "quality". We divided the
 transcription factors into five bins on basis of the ROC AUC score of the best
 motif. For each bin we ranked the tools on basis of the average of three metrics
 (ROC AUC, recall at 10% FDR and MNCP [@s6kAz7UG]). The results are visualized as a
-heatmap in Figure 4c. From this visualization, it is again clear that
+heatmap in Figure 2C. From this visualization, it is again clear that
 BioProspector, MEME and Homer produce consistently high-ranking motifs, while
 the motifs identified by Trawler, Posmo, GADEM and Improbizer generally have the
 lowest rank. Interestingly, for some motif finders, there is a relation between
 motif presence and the relative rank. Weeder, XXMotif and MDmodule yield
 relatively high-ranking motifs when the ROC AUC of the best motif for the data
 set is low. On the other hand, ChIPMunk shows the opposite pattern. Apparently
-this algorithm works well when a motif is present in significant fraction of the
-data set [TODO: check oop param].
+this algorithm works well when a motif is present in a significant fraction of the
+data set.
 
 These results illustrate that motif finders need to be evaluated along a broad range of
 data sets with different motif presence and quality. Another interesting
@@ -256,7 +255,7 @@ Tompa et al. benchmark.  It should be noted that our metric specifically
 evaluates how well *de novo* motif finders identify the primary motif in the
 context of ChIP-seq peaks. It does not evaluate other aspects that might be
 important, such as the ability to identify many low-abundant motifs.
-Furthermore, with ChIP-seq data there are usually many peaks available. This
+Furthermore, with ChIP-seq data there are usually thousands of peaks available. This
 allows for other algorithms than those that work well on a few sequences.
 Interestingly, the original MEME shows consistently good performance, although
 the running time is longer than most other tools.  On the basis of this
@@ -270,11 +269,9 @@ report high-quality motifs more consistently than any single tool.
 While many motif scanners and methods to calculate enrichment exist, there are few
 methods to compare motif enrichment or activity between two or more data
 sets. The CentriMo algorithm from the MEME suite implements a differential
-enrichment method to compare to samples [@eQM67dJD]. The regression approach MARA [@KGmXK8UO], as
-implemented in ISMARA [@3d6POy0h] normalizes between data sets before
-regression. Here we present the maelstrom algorithm that integrates different
+enrichment method to compare two samples [@eQM67dJD]. Other approaches, such as MARA [@KGmXK8UO;@3d6POy0h] and IMAGE [10.1101/gr.227231.117], are based on linear regression. Here we present the *maelstrom* algorithm that integrates different
 methods to determine motif relevance or activity in an ensemble approach (Fig.
-5A).
+3A).
 
 To demonstrate the utility of maelstrom we identified motif activity based on
 enhancers in hematopoietic cells. We downloaded 69 human hematopoietic DNaseI
@@ -283,21 +280,25 @@ set as a collection of putative enhancers. In addition we downloaded 193
 hematopoietic H3K27ac ChIP-seq experiments, mainly from BLUEPRINT
 [@MzCvXTgB] (Supplementary Table S1). We determined the number of H3K27ac reads per
 enhancer (Supplementary Table S2). After log2 transformation and scaling, we selected the 50,000 most
-dynamic peaks. Figure 5B shows the correlation of the H3K27ac enrichment in
+dynamic peaks. Figure 3B shows the correlation of the H3K27ac enrichment in
 these 50,000 enhancers between cell types. For this plot, replicates were
-combined by taking the mean value and all etperiments corresponding to treated
+combined by taking the mean value and all experiments corresponding to treated
 cells were removed. We can observe five main clusters 1) non-hematopoietic
 cells, megakaryocyte and erothrocytes 2), lymphoid cells, 3) neutrophilic cells,
 4) macrophages and dendritic cells and 5) monocytes. The lymphoid cluster furthermore seperates between B-cells and T- and NK cells and non-hematopoietic cells are distinct from the megakaryocytes and erythroblasts. We can conclude that the H3K27ac profile within this enhancers set recapitulates a cell type-spefific regulatory signal.
 
-![Figure 3: Benchmark of transcription factor motif databases](content/images/figure_blueprint.png)
+![**Figure 3**: Predicting TF motif activity using maelstrom.
+**A)** An overview of the *maelstrom* ensemble method.
+**B)** Heatmap of the correlation of H3K27ac signal in hematopoietic enhancers. We counted H3K27ac ChIP-seq reads in 2kb sequences centered at DNase I peaks. Counts were log2-transformed and scaled and replicates were combined by taking the mean value. This heatmap shows the Pearson r, calculated using the 50,000 most dynamic peaks.
+**C)** Results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. The reported motifs activity represents log10-transformed p-value of the rank aggregation. For high-ranking motifs -log10(p-value) is shown.
+](content/images/figure_blueprint.png)
 
 To determine differential motif activity from these dynamic enhancers we used
 maelstrom. We combined Bayesian ridge regression, multi-class regression using
 coordinate descent [@6chpTZMZ] and regression with boosted trees [@8w9fI63O].
 The coefficients or feature importances were ranked and combined using rank
 aggregation [@dTwzcIZ4]. A p-value was calculated for consistently high ranking and
-consistently low ranking motifs. The results are visualized in Figure 5C. 
+consistently low ranking motifs. The results are visualized in Figure 3C. 
 
 Two of the most signicant motifs are SPI1 (PU.1) and CEBP. The motif activity
 for SPI1 is high in monocytes and macrophages, consistent with its
@@ -315,7 +316,7 @@ this suggests that these TFs play an important role in lymphocyte development.
 
 Finally, an interesting observation is the predicted motif activity of NANOG in
 endothelial cells. NANOG is expressed in embryonic stem cells and is essential
-for maintenance of pluripotency [doi:10.1038/sj.cr.7310125]. However, NANOG is
+for maintenance of pluripotency [@PV60Wrh7]. However, NANOG is
 indeed also  expressed in endothelial cells and has been shown to play a role in
 endothelial proliferation and angiogenesis [@dWdvt1AI].
 
