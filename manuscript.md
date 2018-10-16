@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Simon J. van Heeringen
-date-meta: '2018-10-15'
+date-meta: '2018-10-16'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -18,10 +18,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/e78c0f40494a8a117c0b0025056847b68fe14ee2/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/06cd431fdc1e0495aee892b4d29f7a20e81b3767/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@e78c0f4](https://github.com/simonvh/gimmemotifs-manuscript/tree/e78c0f40494a8a117c0b0025056847b68fe14ee2)
-on October 15, 2018.
+from [simonvh/gimmemotifs-manuscript@06cd431](https://github.com/simonvh/gimmemotifs-manuscript/tree/06cd431fdc1e0495aee892b4d29f7a20e81b3767)
+on October 16, 2018.
 </em></small>
 
 ## Authors
@@ -44,9 +44,9 @@ on October 15, 2018.
 
 ## Abstract {.page_break_before}
 
-**Background:** Transcription factors (TFs) bind to specific DNA sequences, TF motifs, in cis-regulatory sequences and control the expression of the diverse transcriptional programs encoded in the genome. The concerted action of TFs within the chromatin context enables precise temporal and spatial expression patterns. To understand how TFs control gene expression it is essential to model TF binding. TF motif information can help interpret exact role of individual regulatory elements, for instance to predict the functional impact of non-coding variants.
+**Background:** Transcription factors (TFs) bind to specific DNA sequences, TF motifs, in cis-regulatory sequences and control the expression of the diverse transcriptional programs encoded in the genome. The concerted action of TFs within the chromatin context enables precise temporal and spatial expression patterns. To understand how TFs control gene expression it is essential to model TF binding. TF motif information can help to interpret the exact role of individual regulatory elements, for instance to predict the functional impact of non-coding variants.
 
-**Findings:** Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. It includes tools for de novo motif discovery, motif scanning and sequence analysis, clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our de novo discovery pipeline we find large differences in performance between de novo motif finders on ChIP-seq data. Finally, we demonstrate maelstrom, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~300 H3K27ac ChIP-seq data sets we identify TFs  that play a role in hematopoietic differentiation and lineage commitment. 
+**Findings:** Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. It includes tools for *de novo* motif discovery, motif scanning and sequence analysis, clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our *de novo* motif discovery pipeline we find large differences in performance between *de novo* motif finders on ChIP-seq data. Finally, we demonstrate *maelstrom*, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~300 H3K27ac ChIP-seq data sets we identify TFs  that play a role in hematopoietic differentiation and lineage commitment. 
 
 **Conclusion:** GimmeMotifs is a fully-featured and flexible framework for TF motif analysis. It contains both command-line tools as well as a Python API and is freely available at: [https://github.com/vanheeringen-lab/gimmemotifs](https://github.com/vanheeringen-lab/gimmemotifs).
 
@@ -77,20 +77,13 @@ binding of certain TFs. Multiple different representations have been proposed
 but no single one of these has gained much traction. Ultimately we
 will need these types of advanced models to accurately represent TF binding. However, PFMs still serve as a very useful abstraction that enables an intuitive understanding of TF binding.
 
-Here, we present GimmeMotifs, a Python module and set of command-line tools for
-TF motif analysis. Amongst other possibilities it can be used to perfom *de
-novo* motif analysis, calculate enrichment statistics and identify differential
-motifs between two or more experiments. We illustrate the functionality of GimmeMotifs using three different examples.
+Here, we present GimmeMotifs, a Python module and set of command-line tools to provide an comprehensive framework for transcription factor motif analysis. Amongst other possibilities it can be used to perfom *de novo* motif analysis, cluster and visualize motifs and to calculate enrichment statistics.
+A new ensemble method, *maelstrom*, can be used to determine differential motif activity
+between two or more experiments. We illustrate the functionality of GimmeMotifs
+using three different examples.
 
 
 # Findings
-
-We have developed GimmeMotifs to provide an comprehensive framework for
-transcription factor motif analysis. It includes both command-line tools as well
-as a Python API to perform all routine motif analysis experiments. Notably, we
-present maelstrom, a new ensemble approach to determine differential motif activity
-between two or more experiments. We illustrate the functionality of GimmeMotifs
-using three examples.
 
 ## Benchmark of transcription factor motif databases
 
@@ -112,7 +105,7 @@ non-redundant (i.e., similar motifs are grouped together), yet as complete as
 possible (i.e., covers a wide variety of TFs). To establish a quantitative
 measure of database quality, we evaluated how well motifs from different
 databases can classify ChIP-seq peaks from background sequences using the GimmeMotifs tool `gimme roc`. We downloaded
-ChIP-seq peaks from ReMap 2018 [@LBF5EBTh], and used all TFs with at least 1,000
+ChIP-seq peaks from ReMap 2018 [@LBF5EBTh], and selected all TFs with at least 1,000
 peaks. We then evaluated 8 motif databases to test how well they could
 distinguish peaks from random genomic sequences. When a data set contained more
 than 5,000 peaks we randomly selected 5,000 peaks for the analysis. We included
@@ -150,10 +143,7 @@ how many true peaks do we recover) at a specific false discovery rate. This is
 one of the criteria that has been used by the ENCODE DREAM challenge for
 evaluation [@19QDk82XW]. Figure 1B shows scatterplots for the recall at 10% FDR for
 all motif databases compared to the clustered, non-redundant databases that is
-included with GimmeMotifs. The non-redundant vertebrate motif database included with
-GimmeMotifs shows better performance than most other databases. The
-non-redundant RSAT database, which was created in a very similar manner, shows
-similar performance.
+included with GimmeMotifs. This database shows better performance than most other databases using this benchmark. The non-redundant RSAT database, which was created in a very similar manner [@Pfmfeewp], scores comparably.
 
 These results illustrate how `gimme roc` can be used for evaluation of motifs.
 The choice of a motif database can greatly influence the results of an analysis.
@@ -269,7 +259,7 @@ report high-quality motifs more consistently than any single tool.
 While many motif scanners and methods to calculate enrichment exist, there are few
 methods to compare motif enrichment or activity between two or more data
 sets. The CentriMo algorithm from the MEME suite implements a differential
-enrichment method to compare two samples [@eQM67dJD]. Other approaches, such as MARA [@KGmXK8UO;@3d6POy0h] and IMAGE [10.1101/gr.227231.117], are based on linear regression. Here we present the *maelstrom* algorithm that integrates different
+enrichment method to compare two samples [@eQM67dJD]. Other approaches, such as MARA [@KGmXK8UO;@3d6POy0h] and IMAGE [@X6uuBgy], are based on linear regression. Here we present the *maelstrom* algorithm that integrates different
 methods to determine motif relevance or activity in an ensemble approach (Fig.
 3A).
 
@@ -338,7 +328,7 @@ integration. GimmeMotifs can be installed via bioconda
 [https://bioconda.github.io/](https://bioconda.github.io/) for details.  All
 releases are also distributed through PyPi [@ycIGJh3s] and stably
 archived using Zenodo [@JnK7ipTw]. For *de novo* motif search,
-14 different external tools are supported (Table [X]). All of these are
+14 different external tools are supported (Table 1). All of these are
 installed when conda is used for installation. By default,
 [genomepy](https://github.com/simonvh/genomepy) is used for genome management
 [@4AHAVuXG]. In addition, GimmeMotifs uses the following Python
@@ -354,8 +344,7 @@ API.
 
 Originally, GimmeMotifs was developed to predict *de novo* motifs from ChIP-seq
 data using an ensemble of motif predictors [@11x7W2xZq]. The tools
-currently supported are listed in Table [X]. The pipeline is depicted in [Fig
-X]. An input file (BED, FASTA or narrowPeak format) is split into a prediction and
+currently supported are listed in Table 1. An input file (BED, FASTA or narrowPeak format) is split into a prediction and
 validation set. The prediction set is used to predict motifs, and the validation
 set is used to filter for significant motifs. All significant motifs are
 clustered to provide a collection of non-redundant *de novo* motifs.  Finally,
@@ -382,7 +371,7 @@ database of known motifs.
 | [Weeder](http://www.beaconlab.it/modtools) | [@1G4lWf9Jf] | 
 | [XXmotif](https://github.com/soedinglab/xxmotif) | [@QzszdQqA] |
 
-  : Table [X]: External *de novo* motif prediction tools supported by GimmeMotifs.
+  : **Table 1**: External *de novo* motif prediction tools supported by GimmeMotifs.
 
 
 ### Motif activity by ensemble learning: maelstrom
@@ -441,21 +430,21 @@ We removed all factors with fewer than 1000 peaks and created regions of 100 bp
 centered at the peak summit. Background files were created for each peak set
 using bedtools shuffle [@1HWiAHnIw], excluding the hg19 gaps and the peak regions.
 The ROC AUC and Recall at 10% FDR statistics were calculated using `gimme roc`.
-The motif databases included in the comparison are listed in table X. We only included public databases that can be freely accessed and downloaded.
+The motif databases included in the comparison are listed in Table 2. We only included public databases that can be freely accessed and downloaded.
 
 | Name          | Version  | Citation | 
 |:------------- |:---------|:---------|
-| Factorbook | | | [@YuvogFWT] 
-| FANTOM4 | http://swissregulon.unibas.ch/data/fantom4/WMs.txt.gz | | | 
-| GimmeMotifs vertebrate clusters | | v4.0 | | 
-| HOCOMOCO | http://hocomoco11.autosome.ru/ | v11 | [@1FStCACaF]
-| Homer | http://homer.ucsd.edu/homer/custom.motifs | XX | [ @14naBuW39] |
-| JASPAR | https://jaspar.genereg.net/ | 2018 | |
-| Kheradpour | | | [@jUNvk96Q]
-| Madsen | http://bioinformatik.sdu.dk/solexa/webshare/IMAGE/IMAGE_v1.1.tar.gz | 1.1 | [@X6uuBgy]
-| RSAT vertebrate clusters | | | [@Pfmfeewp] 
+| [Factorbook](http://www.factorbook.org/) | Sep. 2012 | [@YuvogFWT] 
+| [SwissRegulon](http://swissregulon.unibas.ch/sr/swissregulon) | Nov. 2006 | [@WubLhyiX] |
+| [GimmeMotifs vertebrate](https://gimmemotifs.readthedocs.io) | v4.0 | | 
+| [HOCOMOCO](http://hocomoco11.autosome.ru/) | v11 | [@1FStCACaF]
+| [Homer](http://homer.ucsd.edu/homer/) | v4.10 | [ @14naBuW39] |
+| [JASPAR](https://jaspar.genereg.net/) | 2018 | [@XrrO63jn] |
+| [Kheradpour](http://compbio.mit.edu/encode-motifs/) | Dec. 2013 | [@jUNvk96Q]
+| [Madsen](http://bioinformatik.sdu.dk/solexa/webshare/IMAGE/IMAGE_v1.1.tar.gz) | 1.1 | [@X6uuBgy]
+| [RSAT vertebrate clusters](http://pedagogix-tagc.univ-mrs.fr/rsat/data/published_data/Castro_2016_matrix-clustering/) | Sep. 2017 | [@Pfmfeewp] 
  
-    : Table [X]: Motif databases.
+  : **Table 2**: Motif databases.
 
 
 The workflow is implemented in snakemake [@NcYZqBux] and is available at
