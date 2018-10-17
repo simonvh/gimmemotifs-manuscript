@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Simon J. van Heeringen
-date-meta: '2018-10-16'
+date-meta: '2018-10-17'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -18,10 +18,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/06cd431fdc1e0495aee892b4d29f7a20e81b3767/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/5f7f461fbc0b4bbe96a9c2c0d7d70393cbac6b43/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@06cd431](https://github.com/simonvh/gimmemotifs-manuscript/tree/06cd431fdc1e0495aee892b4d29f7a20e81b3767)
-on October 16, 2018.
+from [simonvh/gimmemotifs-manuscript@5f7f461](https://github.com/simonvh/gimmemotifs-manuscript/tree/5f7f461fbc0b4bbe96a9c2c0d7d70393cbac6b43)
+on October 17, 2018.
 </em></small>
 
 ## Authors
