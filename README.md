@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# GimmeMotifs Manuscript Source
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -8,9 +8,11 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
+This repository contains the manuscript describing the 2018 release of GimmeMotifs, an analysis framework for transcription factor motif analysis. The manuscript is available on [biorRxiv](TODO) as a preprint and can be cited as:
 
-Description test
+> [**GimmeMotifs: an analysis framework for transcription factor motif analysis**](TODO: add DOI)<br>
+Niklas Bruse, Simon J. van Heeringen<br>
+_bioRxiv_ (2018) DOI: `TODO: add DOI`
 
 ## Manubot
 
