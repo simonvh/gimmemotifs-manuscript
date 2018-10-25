@@ -8,6 +8,11 @@ keywords:
 lang: en-US
 author_info:
   -
+    name: Niklas Bruse
+    initials: NB
+    affiliations:
+      - Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands
+  -
     github: simonvh
     name: Simon J. van Heeringen
     initials: SJvH
