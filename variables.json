@@ -2,6 +2,16 @@
   "date": "October 25, 2018",
   "authors": [
     {
+      "name": "Niklas Bruse",
+      "initials": "NB",
+      "affiliations": [
+        "Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands"
+      ],
+      "affiliation_numbers": [
+        1
+      ]
+    },
+    {
       "github": "simonvh",
       "name": "Simon J. van Heeringen",
       "initials": "SJvH",
@@ -27,7 +37,7 @@
     "repo_slug": "simonvh/gimmemotifs-manuscript",
     "repo_owner": "simonvh",
     "repo_name": "gimmemotifs-manuscript",
-    "commit": "3fc1e0b6c70942f15de3223d1bc746c2da657120"
+    "commit": "038230582d2de71dad667a2a7096843cd5c19cb5"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -36,6 +46,6 @@
       "url": 9,
       "total": 79
     },
-    "word_count": 5305
+    "word_count": 5384
   }
 }
