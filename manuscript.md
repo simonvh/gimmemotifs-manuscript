@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Simon J. van Heeringen
-date-meta: '2018-10-17'
+date-meta: '2018-10-25'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -18,10 +18,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/5f7f461fbc0b4bbe96a9c2c0d7d70393cbac6b43/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/2d16dd22c2973378fdcfd16f9adc65f5d93a782a/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@5f7f461](https://github.com/simonvh/gimmemotifs-manuscript/tree/5f7f461fbc0b4bbe96a9c2c0d7d70393cbac6b43)
-on October 17, 2018.
+from [simonvh/gimmemotifs-manuscript@2d16dd2](https://github.com/simonvh/gimmemotifs-manuscript/tree/2d16dd22c2973378fdcfd16f9adc65f5d93a782a)
+on October 25, 2018.
 </em></small>
 
 ## Authors
@@ -422,13 +422,15 @@ associated motifs.
 
 ## Clustering
 
+We collected all motifs from the following databases: CIS-BP v1.02 [@1Df4blqEs], ENCODE [@jUNvk96Q], Factorbook [@YuvogFWT], HOCOMOCO v11 [@1FStCACaF], HOMER v4.10 [@14naBuW39], JASPAR 2018 vertebrates [@XrrO63jn] and SwissRegulon [@WubLhyiX]. Motif similarity was calculated using Pearson correlation of motif scores profiles [@AxXzJVRV;@1LM2RTcx] using a sequence that contains each 7-mer or its reverse complement [@PF2d1YvC]. We then clustered the motifs using agglomerative clustering with complete linkage and connectivity constraints where only motifs with a Pearson r >= 0.5 were considered as neighbors. The number of clusters was set to 1600. After clustering, we discarded all motifs were the sum of the information content of all positions was less than 5. The clustered database, gimme.vertebrate.v5.0, is distributed with GimmeMotifs.
+
 ## Transcription factor motif database benchmark
 
-We downloaded all ChIP-seq peaks from Remap 2018 v1.2 [@LBF5EBTh]
+We downloaded all hg38 non-ENCODE ChIP-seq peaks from Remap 2018 v1.2 [@LBF5EBTh]
 ([http://tagc.univ-mrs.fr/remap/index.php?page=download](http://tagc.univ-mrs.fr/remap/index.php?page=download)).
 We removed all factors with fewer than 1000 peaks and created regions of 100 bp
 centered at the peak summit. Background files were created for each peak set
-using bedtools shuffle [@1HWiAHnIw], excluding the hg19 gaps and the peak regions.
+using bedtools shuffle [@1HWiAHnIw], excluding the hg38 gaps and the peak regions.
 The ROC AUC and Recall at 10% FDR statistics were calculated using `gimme roc`.
 The motif databases included in the comparison are listed in Table 2. We only included public databases that can be freely accessed and downloaded.
 
@@ -440,16 +442,14 @@ The motif databases included in the comparison are listed in Table 2. We only in
 | [HOCOMOCO](http://hocomoco11.autosome.ru/) | v11 | [@1FStCACaF]
 | [Homer](http://homer.ucsd.edu/homer/) | v4.10 | [ @14naBuW39] |
 | [JASPAR](https://jaspar.genereg.net/) | 2018 | [@XrrO63jn] |
-| [Kheradpour](http://compbio.mit.edu/encode-motifs/) | Dec. 2013 | [@jUNvk96Q]
+| [ENCODE](http://compbio.mit.edu/encode-motifs/) | Dec. 2013 | [@jUNvk96Q]
 | [Madsen](http://bioinformatik.sdu.dk/solexa/webshare/IMAGE/IMAGE_v1.1.tar.gz) | 1.1 | [@X6uuBgy]
 | [RSAT vertebrate clusters](http://pedagogix-tagc.univ-mrs.fr/rsat/data/published_data/Castro_2016_matrix-clustering/) | Sep. 2017 | [@Pfmfeewp] 
  
   : **Table 2**: Motif databases.
 
-
 The workflow is implemented in snakemake [@NcYZqBux] and is available at
-[https://github.com/simonvh/gimme_analysis](https://github.com/simonvh/gimme_analysis).
-
+[https://github.com/vanheeringen-lab/gimme-analysis](https://github.com/vanheeringen-lab/gimme-analysis).
 
 ## `De novo` motif prediction benchmark
 
@@ -459,7 +459,7 @@ We selected the top 5000 peaks and created 100bp regions centered on the peak
 summit. As background we selected 100 bp regions flanking the original peaks.
 For the `de novo` motif search default settings for `gimme motifs` were used. The
 workflow is implemented in snakemake [@NcYZqBux] and is available at
-[https://github.com/simonvh/gimme_analysis](https://github.com/simonvh/gimme_analysis).
+[https://github.com/vanheeringen-lab/gimme-analysis](https://github.com/vanheeringen-lab/gimme-analysis).
 
 ## Motif analysis of hematopoietic enhancers
 
@@ -485,7 +485,7 @@ sorted by the maximum difference in normalized signal between samples and
 selected the 50,000 enhancers with the largest difference. Using this enhancer
 collection as input, we ran `gimme maelstrom` using default settings. The motif
 analysis workflow is implemented in a Jupyter notebook and is available at
-[https://github.com/simonvh/gimme_analysis](https://github.com/simonvh/gimme_analysis).
+[https://github.com/vanheeringen-lab/gimme-analysis](https://github.com/vanheeringen-lab/gimme-analysis).
 
 
 # Conclusions

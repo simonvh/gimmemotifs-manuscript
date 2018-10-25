@@ -5530,6 +5530,141 @@
       "date-parts": [
         [
           2018,
+          10,
+          16
+        ]
+      ],
+      "date-time": "2018-10-16T04:22:38Z",
+      "timestamp": 1539663758343
+    },
+    "reference-count": 12,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "13",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          7,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btt230",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          27
+        ]
+      ],
+      "date-time": "2013-06-27T05:33:26Z",
+      "timestamp": 1372311206000
+    },
+    "page": "i71-i79",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": "Design of shortest double-stranded DNA sequences covering all k-mers with applications to protein-binding microarrays and synthetic enhancers",
+    "prefix": "10.1093",
+    "volume": "29",
+    "author": [
+      {
+        "given": "Y.",
+        "family": "Orenstein",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "R.",
+        "family": "Shamir",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          21
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/29/13/i71/6433019/btt230.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T15:50:00Z",
+      "timestamp": 1503417000000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          21
+        ]
+      ]
+    },
+    "references-count": 12,
+    "journal-issue": {
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            6,
+            21
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            1
+          ]
+        ]
+      },
+      "issue": "13"
+    },
+    "URL": "https://doi.org/10.1093/bioinformatics/btt230",
+    "relation": {
+      "cites": []
+    },
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/gbdfcf",
+    "id": "PF2d1YvC"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
           4,
           17
         ]
@@ -9758,6 +9893,108 @@
         [
           2018,
           5,
+          4
+        ]
+      ],
+      "date-time": "2018-05-04T22:59:56Z",
+      "timestamp": 1525474796674
+    },
+    "reference-count": 0,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "DOI": "10.1186/1471-2105-6-237",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2005,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2005-09-30T18:14:11Z",
+      "timestamp": 1128104051000
+    },
+    "page": "237",
+    "source": "Crossref",
+    "is-referenced-by-count": 27,
+    "title": [],
+    "prefix": "10.1186",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Szymon M",
+        "family": "Kielbasa",
+        "sequence": "first",
+        "affiliation": []
+      },
+      {
+        "given": "Didier",
+        "family": "Gonze",
+        "sequence": "additional",
+        "affiliation": []
+      },
+      {
+        "given": "Hanspeter",
+        "family": "Herzel",
+        "sequence": "additional",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2016-05-16T13:06:19Z",
+      "timestamp": 1463403979000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1"
+    },
+    "alternative-id": [
+      "1471-2105-6-237"
+    ],
+    "URL": "https://doi.org/10.1186/1471-2105-6-237",
+    "relation": {},
+    "container-title-short": "BMC Bioinformatics",
+    "short_url": "https://doi.org/b9gkcj",
+    "id": "AxXzJVRV"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          5,
           9
         ]
       ],
@@ -11178,6 +11415,176 @@
     "URL": "https://doi.org/10.5281/zenodo.156534",
     "version": "0.3.0",
     "short_url": "https://doi.org/gd2xzt"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2018-05-11T13:42:58Z",
+      "timestamp": 1526046178915
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          13
+        ]
+      ]
+    },
+    "group-title": "PeerJ PrePrints",
+    "reference-count": 0,
+    "publisher": "PeerJ",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              8,
+              13
+            ]
+          ],
+          "date-time": "2015-08-13T00:00:00Z",
+          "timestamp": 1439424000000
+        },
+        "delay-in-days": 0,
+        "content-version": "unspecified"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "abstract": "<jats:p>High-throughput data, for instance ChIP-seq data, measure binding of transcription factors (TFs) or other proteins to DNA and have become a widespread data source for de-novo motif discovery. Often, several ChIP-seq data sets study the same TF under different conditions resulting in several, potentially redundant motifs, which demands for identification and clustering of similar motifs. Here, we propose a refined measure of motif similarity based on the correlation between score profiles on de Bruijn sequences. We demonstrate the utility of the proposed measure in benchmark studies on artificial motifs and motifs discovered from ENCODE ChIP-seq data. We use this measure to cluster motifs discovered from 757 different ENCODE ChIP-seq data sets for 166 TFs and RNA-polymerase II and III. Based on this clustering, we derive a TF interaction network that reflects many known TF-TF interactions, but also reveals novel putative interaction partners.</jats:p>",
+    "DOI": "10.7287/peerj.preprints.1302v1",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          12
+        ]
+      ],
+      "date-time": "2018-01-12T22:17:20Z",
+      "timestamp": 1515795440000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Motif clustering with implications for transcription factor interactions",
+    "prefix": "10.7287",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-2081-6405",
+        "authenticated-orcid": true,
+        "given": "Jan",
+        "family": "Grau",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Computer Science, Martin Luther University Halle-Wittenberg, Halle, Germany"
+          }
+        ]
+      },
+      {
+        "given": "Ivo",
+        "family": "Grosse",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Computer Science, Martin Luther University Halle-Wittenberg, Halle, Germany"
+          },
+          {
+            "name": "German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, Leipzig, Germany"
+          }
+        ]
+      },
+      {
+        "given": "Stefan",
+        "family": "Posch",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Computer Science, Martin Luther University Halle-Wittenberg, Halle, Germany"
+          }
+        ]
+      },
+      {
+        "given": "Jens",
+        "family": "Keilwagen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Julius Kühn-Institut (JKI) - Federal Research Centre for Cultivated Plants, Quedlinburg, Germany"
+          }
+        ]
+      }
+    ],
+    "member": "4443",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://peerj.com/preprints/1302.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/preprints/1302.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/preprints/1302.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/preprints/1302.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          12
+        ]
+      ],
+      "date-time": "2018-01-12T22:17:20Z",
+      "timestamp": 1515795440000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          13
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.7287/peerj.preprints.1302v1",
+    "relation": {},
+    "subtype": "preprint",
+    "short_url": "https://doi.org/gffmnf",
+    "id": "1LM2RTcx"
   },
   {
     "title": "T-cell expression of the human GATA-3 gene is regulated by a non-lineage-specific silencer.",
