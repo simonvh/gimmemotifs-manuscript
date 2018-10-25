@@ -18,9 +18,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/2d16dd22c2973378fdcfd16f9adc65f5d93a782a/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/3fc1e0b6c70942f15de3223d1bc746c2da657120/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@2d16dd2](https://github.com/simonvh/gimmemotifs-manuscript/tree/2d16dd22c2973378fdcfd16f9adc65f5d93a782a)
+from [simonvh/gimmemotifs-manuscript@3fc1e0b](https://github.com/simonvh/gimmemotifs-manuscript/tree/3fc1e0b6c70942f15de3223d1bc746c2da657120)
 on October 25, 2018.
 </em></small>
 
@@ -106,15 +106,19 @@ possible (i.e., covers a wide variety of TFs). To establish a quantitative
 measure of database quality, we evaluated how well motifs from different
 databases can classify ChIP-seq peaks from background sequences using the GimmeMotifs tool `gimme roc`. We downloaded
 ChIP-seq peaks from ReMap 2018 [@LBF5EBTh], and selected all TFs with at least 1,000
-peaks. We then evaluated 8 motif databases to test how well they could
-distinguish peaks from random genomic sequences. When a data set contained more
-than 5,000 peaks we randomly selected 5,000 peaks for the analysis. We included
+peaks. 
+When a data set contained more
+than 5,000 peaks we randomly selected 5,000 peaks for the analysis. 
+We then evaluated 8 motif databases to test how well they could
+distinguish peaks from random genomic sequences. 
+We included
 the following databases: JASPAR 2018 vertebrate [@XrrO63jn],
 SwissRegulon [@WubLhyiX], Homer [@14naBuW39], Factorbook
 [@YuvogFWT], the ENCODE motifs from Kheradpour et al.
 [@jUNvk96Q], HOCOMOCO [@1FStCACaF], the RSAT
-clustered motifs [@Pfmfeewp] and the motif database created by
-Madsen et al.  [@X6uuBgy]. Figure 1A shows distribution of the
+clustered motifs [@Pfmfeewp] and the IMAGE motif database created by
+Madsen et al.  [@X6uuBgy]. We compared these databases to the
+non-redundant vertebrate motif database included with GimmeMotifs (v5.0, see Methods). Figure 1A shows distribution of the
 ROC AUC (area
 under the curve for the Receiver Operator Curve) of the best motif per database
 for all 294 transcription factors in a box plot. There is generally a wide
@@ -124,7 +128,7 @@ don't have peaks with a consistently enriched motif, or do not contain a
 sequence-specific DNA-binding domain, such as EP300 or CD2 for example.
 
 ![**Figure 1**: Benchmark of transcription factor motif databases. 
-**A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5000 peaks were compared to background regions using each motif database. The boxplot shows the The ROC AUC of the best motif per database for all TFs.
+**A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5,000 peaks were compared to background regions using each motif database. The boxplot shows the The ROC AUC of the best motif per database for all TFs.
 **B)** Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v4.0). The same data is used as in **A)**. The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
 ](content/images/figure_dbs.png)
 
@@ -133,7 +137,7 @@ large, with a mean maximum difference of 0.05. The largest difference (~0.24) is
 found for factors that were not assayed by ENCODE, such as ONECUT1, SIX2 and
 TP73, and are therefore not present in the Factorbook motif database.
 Unsurprisingly, the databases that were based on motif collections of different
-sources (Kheradpour, Madsen, RSAT and Gimme) generally perform best. It should
+sources (ENCODE, IMAGE, RSAT and GimmeMotifs) generally perform best. It should
 be noted that, for this task, using motif databases based on motif identification from
 ChIP-seq peaks is in some sense "overfitting", as the motifs in these databases were inferred from highly similar data. 
 
@@ -151,7 +155,7 @@ The default database included with GimmeMotifs shows good performance on the
 metric evaluated here. However, this analysis illustrates only one specific use
 case of application of a motif database. In other cases well-curated databases such
 as JASPAR can be beneficial, for instance when linking motifs to binding
-proteins. 
+proteins. Any of these databases can be easily used in all GimmeMotifs tools. 
 
 ## Large-scale benchmark of *de novo* motif finder performance on ChIP-seq peaks
 
@@ -166,7 +170,7 @@ typically have tested only a few motif finders or used only a few datasets.
 Here, we used the GimmeMotifs framework as implemented in `gimme motifs` to benchmark 14 different *de novo*
 motif finders. To evaluate the different approaches, we downloaded 495 peak
 files for 270 proteins from ENCODE [@6eHRNaUT] and
-selected the 100bp sequence centered on the summit of top 5000 peaks.  Of those
+selected the 100bp sequence centered on the summit of top 5,000 peaks.  Of those
 peaks, half were randomly selected as a prediction set and the other half was
 used for evaluation. As a background set we selected regions of the same length
 flanking the original peaks. To assess the performance, we calculated two
@@ -420,7 +424,7 @@ probability of finding a motif at all observed positions. We use a Python implem
 once with the ranks reversed to generate both positively and negatively
 associated motifs.
 
-## Clustering
+## Clustering to create the gimme.vertebrate.v5.0 motif database
 
 We collected all motifs from the following databases: CIS-BP v1.02 [@1Df4blqEs], ENCODE [@jUNvk96Q], Factorbook [@YuvogFWT], HOCOMOCO v11 [@1FStCACaF], HOMER v4.10 [@14naBuW39], JASPAR 2018 vertebrates [@XrrO63jn] and SwissRegulon [@WubLhyiX]. Motif similarity was calculated using Pearson correlation of motif scores profiles [@AxXzJVRV;@1LM2RTcx] using a sequence that contains each 7-mer or its reverse complement [@PF2d1YvC]. We then clustered the motifs using agglomerative clustering with complete linkage and connectivity constraints where only motifs with a Pearson r >= 0.5 were considered as neighbors. The number of clusters was set to 1600. After clustering, we discarded all motifs were the sum of the information content of all positions was less than 5. The clustered database, gimme.vertebrate.v5.0, is distributed with GimmeMotifs.
 
@@ -438,7 +442,7 @@ The motif databases included in the comparison are listed in Table 2. We only in
 |:------------- |:---------|:---------|
 | [Factorbook](http://www.factorbook.org/) | Sep. 2012 | [@YuvogFWT] 
 | [SwissRegulon](http://swissregulon.unibas.ch/sr/swissregulon) | Nov. 2006 | [@WubLhyiX] |
-| [GimmeMotifs vertebrate](https://gimmemotifs.readthedocs.io) | v4.0 | | 
+| [GimmeMotifs vertebrate](https://gimmemotifs.readthedocs.io) | v5.0 | | 
 | [HOCOMOCO](http://hocomoco11.autosome.ru/) | v11 | [@1FStCACaF]
 | [Homer](http://homer.ucsd.edu/homer/) | v4.10 | [ @14naBuW39] |
 | [JASPAR](https://jaspar.genereg.net/) | 2018 | [@XrrO63jn] |
@@ -475,7 +479,7 @@ Kundaje lab AQUAS TF and histone ChIP-seq pipeline
 For all experiments from BLUEPRINT we used the aligned reads provided by EBI.
 All ROADMAP samples were aligned using bowtie2 [@PiS0h6Mu] to the
 hg38 genome. DNase I peaks were called using MACS2
-[@MG7PTly9]. We merge all DNase I peak files and centered
+[@MG7PTly9]. We merged all DNase I peak files and centered
 each merged peak on the summit of the strongest individual peak. H3K27ac reads
 were counted in a region of 2kb centered at the summit (Supplementary Table S2)
 and read counts were log2-transformed and scaled. We removed all samples that
@@ -497,7 +501,7 @@ perform best on this benchmark are collections of motifs from different
 sources. Of the individual databases HOCOMOCO and Factorbook rank highest
 using this collection of human ChIP-seq peaks. Based on our results it is
 recommended to use a composite database, such as the RSAT clustered motifs or
-the GimmeMotifs database (v4.0), for the best vertebrate motif coverage. However,
+the GimmeMotifs database (v5.0), for the best vertebrate motif coverage. However,
 these motifs are less well annotated. For instance, motifs based on ChIP-seq
 peaks from some sources might be from co-factors or cell type-specific
 regulators instead of the factor that was assayed. An example are motifs that
