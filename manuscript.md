@@ -19,9 +19,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/9221f4987b9110ddd28098e56574553cf5bf03ea/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/3b0a25150d6e46c1c52e130b2dd9413b37a13059/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@9221f49](https://github.com/simonvh/gimmemotifs-manuscript/tree/9221f4987b9110ddd28098e56574553cf5bf03ea)
+from [simonvh/gimmemotifs-manuscript@3b0a251](https://github.com/simonvh/gimmemotifs-manuscript/tree/3b0a25150d6e46c1c52e130b2dd9413b37a13059)
 on October 25, 2018.
 </em></small>
 
