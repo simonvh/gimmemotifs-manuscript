@@ -19,9 +19,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/9d9745a93893663b4435fe340a2d7950b80b436f/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/5fa03a12a9fd4a630860573f7f6a5890ac0c2dd2/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@9d9745a](https://github.com/simonvh/gimmemotifs-manuscript/tree/9d9745a93893663b4435fe340a2d7950b80b436f)
+from [simonvh/gimmemotifs-manuscript@5fa03a1](https://github.com/simonvh/gimmemotifs-manuscript/tree/5fa03a12a9fd4a630860573f7f6a5890ac0c2dd2)
 on November 9, 2018.
 </em></small>
 
@@ -75,13 +75,6 @@ can be derived from high-throughput experiments such as Chromatin Immunoprecipit
 @jUNvk96Q; @1FStCACaF;
 @14naBuW39],
 HT-SELEX [@ZFIFozC9] or Protein Binding Microarrays (PBMs) [@ZfeCID7o]. Through straightforward transformations a PFM can be expressed as a weight matrix, using log likelihoods, or information content, using the Kullback-Leibler divergence.
-
-Even though the PFM is a convenient representation, it has certain limitations.
-A PFM cannot model inter-nucleotide dependencies, which are known to affect
-binding of certain TFs. Multiple different representations have been proposed
-[@Jc96vlRF; @1F4IFj9vd; @7nxD51Mq; @nswYGz33; @1FTeX7ahA],
-but no single one of these has gained much traction. Ultimately we
-will need these types of advanced models to accurately represent TF binding. However, PFMs still serve as a very useful abstraction that enables an intuitive understanding of TF binding.
 
 Here, we present GimmeMotifs, a Python module and set of command-line tools to provide an comprehensive framework for transcription factor motif analysis. Amongst other possibilities it can be used to perfom *de novo* motif analysis, cluster and visualize motifs and to calculate enrichment statistics.
 A new ensemble method, *maelstrom*, can be used to determine differential motif activity
@@ -540,10 +533,15 @@ transcription factors.
 In conclusion, GimmeMotifs is a flexible and highly versatile framework for
 transcription factor motif analysis. Both command line and programmatic use in
 Python are supported. One planned future improvement to GimmeMotifs is the
-support of more sophisticated motif models. Although PFMs are very informative,
-it is clear that they represent an oversimplification of TF binding preferences. While
-several approaches that incorporate positional dependencies have been
-developed, it is still unclear how well these models perform and their use
+support of more sophisticated motif models. 
+
+Even though the PFM is a convenient representation, it has certain limitations.
+A PFM cannot model inter-nucleotide dependencies, which are known to affect
+binding of certain TFs. Multiple different representations have been proposed
+[@Jc96vlRF; @1F4IFj9vd; @7nxD51Mq; @nswYGz33; @1FTeX7ahA],
+but no single one of these has gained much traction. 
+
+It is still unclear how well these models perform and their use
 depends on specific tools. Supporting these different models and benchmarking
 their performance relative to high-quality PFMs will simplify their use and
 give insight into their benefits and disadvantages.  Second, there is significant progress recently 
