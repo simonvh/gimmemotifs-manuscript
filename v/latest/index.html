@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Niklas Bruse" />
   <meta name="author" content="Simon J. van Heeringen" />
-  <meta name="dcterms.date" content="2018-10-25" />
+  <meta name="dcterms.date" content="2018-11-09" />
   <meta name="keywords" content="transcription factor, ChIP-seq, regulatory motif, TF motif" />
   <title>GimmeMotifs: an analysis framework for transcription factor motif analysis</title>
   <style type="text/css">
@@ -28,7 +28,7 @@
 <header>
 <h1 class="title">GimmeMotifs: an analysis framework for transcription factor motif analysis</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/3b0a25150d6e46c1c52e130b2dd9413b37a13059/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/3b0a25150d6e46c1c52e130b2dd9413b37a13059">simonvh/gimmemotifs-manuscript@3b0a251</a> on October 25, 2018. </em></small></p>
+<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/9d9745a93893663b4435fe340a2d7950b80b436f/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/9d9745a93893663b4435fe340a2d7950b80b436f">simonvh/gimmemotifs-manuscript@9d9745a</a> on November 9, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Niklas Bruse</strong><br><br> <small> Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands </small></p></li>
@@ -82,68 +82,83 @@
 <h3 id="de-novo-motif-prediction-pipeline"><em>De novo</em> motif prediction pipeline</h3>
 <p>Originally, GimmeMotifs was developed to predict <em>de novo</em> motifs from ChIP-seq data using an ensemble of motif predictors <span class="citation" data-cites="11x7W2xZq">[<a href="#ref-11x7W2xZq">53</a>]</span>. The tools currently supported are listed in Table 1. An input file (BED, FASTA or narrowPeak format) is split into a prediction and validation set. The prediction set is used to predict motifs, and the validation set is used to filter for significant motifs. All significant motifs are clustered to provide a collection of non-redundant <em>de novo</em> motifs. Finally, significant clustered motifs are reported, along with several statistics to evaluate motif quality, calculated using the validation set. These evaluation metrics include ROC AUC, distribution of the motif location relative to the center of the input (i.e., the ChIP-seq peak summit) and the best match in a database of known motifs.</p>
 <table>
-<caption><strong>Table 1</strong>: External <em>de novo</em> motif prediction tools supported by GimmeMotifs.</caption>
+<caption><strong>Table 1</strong>: External <em>de novo</em> motif prediction tools supported by GimmeMotifs. The version shown is the version string reported by the software. If the version is unknown, the date when the tools was added to the GimmeMotifs repository is shown.</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
 <th style="text-align: left;">Citation</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/JiantaoShi/AMD">AMD</a></td>
+<td style="text-align: left;">Unknown (2012-11-21)</td>
 <td style="text-align: left;"><span class="citation" data-cites="1BgOvt0PL">[<a href="#ref-1BgOvt0PL">54</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="http://ai.stanford.edu/~xsliu/BioProspector/">BioProspector</a></td>
+<td style="text-align: left;">4/15/04</td>
 <td style="text-align: left;"><span class="citation" data-cites="Zg6SmzaV">[<a href="#ref-Zg6SmzaV">55</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="http://autosome.ru/chipmunk/">ChIPMunk</a></td>
+<td style="text-align: left;">V7 10012017</td>
 <td style="text-align: left;"><span class="citation" data-cites="smdkzwHK">[<a href="#ref-smdkzwHK">56</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https://www.niehs.nih.gov/research/resources/software/biostatistics/gadem/index.cfm">GADEM</a></td>
+<td style="text-align: left;">v1.3.1</td>
 <td style="text-align: left;"><span class="citation" data-cites="8xwckKK3">[<a href="#ref-8xwckKK3">57</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://dx.doi.org/10.1093/nar/gkp1180">HMS</a></td>
+<td style="text-align: left;">Unknown (2012-11-23)</td>
 <td style="text-align: left;"><span class="citation" data-cites="YIsvgfWU">[<a href="#ref-YIsvgfWU">58</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="http://homer.ucsd.edu/homer/motif/">Homer</a></td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;"><span class="citation" data-cites="14naBuW39">[<a href="#ref-14naBuW39">6</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://users.soe.ucsc.edu/~kent/improbizer/improbizer.html">Improbizer</a></td>
+<td style="text-align: left;">Unknown (2010-10-01)</td>
 <td style="text-align: left;"><span class="citation" data-cites="wUklcuxK">[<a href="#ref-wUklcuxK">59</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https:/dx.doi.org/10.1038/nbt717">MDmodule</a></td>
+<td style="text-align: left;">Unknown (2010-07-29)</td>
 <td style="text-align: left;"><span class="citation" data-cites="aZ8ZieVF">[<a href="#ref-aZ8ZieVF">60</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="http://meme-suite.org/">MEME</a></td>
+<td style="text-align: left;">4.6.0</td>
 <td style="text-align: left;"><span class="citation" data-cites="KqGAZzyz">[<a href="#ref-KqGAZzyz">61</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="http://bioinformatics.intec.ugent.be/MotifSuite/motifsampler.php">MotifSampler</a></td>
+<td style="text-align: left;">3.2</td>
 <td style="text-align: left;"><span class="citation" data-cites="FGUIIeyX">[<a href="#ref-FGUIIeyX">62</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://dx.doi.org/10.1093/nar/gkr1135">Posmo</a></td>
+<td style="text-align: left;">May-19-2011</td>
 <td style="text-align: left;"><span class="citation" data-cites="oL2CQf3y">[<a href="#ref-oL2CQf3y">63</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https://trawler.erc.monash.edu.au/">Trawler</a></td>
+<td style="text-align: left;">2.0</td>
 <td style="text-align: left;"><span class="citation" data-cites="19jTKi9ZQ">[<a href="#ref-19jTKi9ZQ">64</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="http://www.beaconlab.it/modtools">Weeder</a></td>
+<td style="text-align: left;">2.0</td>
 <td style="text-align: left;"><span class="citation" data-cites="1G4lWf9Jf">[<a href="#ref-1G4lWf9Jf">65</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="https://github.com/soedinglab/xxmotif">XXmotif</a></td>
+<td style="text-align: left;">1.6</td>
 <td style="text-align: left;"><span class="citation" data-cites="QzszdQqA">[<a href="#ref-QzszdQqA">66</a>]</span></td>
 </tr>
 </tbody>
