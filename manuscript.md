@@ -19,9 +19,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/5fa03a12a9fd4a630860573f7f6a5890ac0c2dd2/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/f918ea99938b3b4378926777d17d959212fb32c0/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@5fa03a1](https://github.com/simonvh/gimmemotifs-manuscript/tree/5fa03a12a9fd4a630860573f7f6a5890ac0c2dd2)
+from [simonvh/gimmemotifs-manuscript@f918ea9](https://github.com/simonvh/gimmemotifs-manuscript/tree/f918ea99938b3b4378926777d17d959212fb32c0)
 on November 9, 2018.
 </em></small>
 
@@ -374,7 +374,7 @@ database of known motifs.
 | [Weeder](http://www.beaconlab.it/modtools) | 2.0 | [@1G4lWf9Jf] | 
 | [XXmotif](https://github.com/soedinglab/xxmotif) | 1.6 | [@QzszdQqA] |
 
-  : **Table 1**: External *de novo* motif prediction tools supported by GimmeMotifs. The version shown is the version string reported by the software. If the version is unknown, the date when the tools was added to the GimmeMotifs repository is shown.
+  : **Table 1**: External *de novo* motif prediction tools supported by GimmeMotifs. The version shown is the version string reported by the software. If the version is unknown, the date when the tool was added to the GimmeMotifs repository is shown.
 
 ### Motif activity by ensemble learning: maelstrom
 
