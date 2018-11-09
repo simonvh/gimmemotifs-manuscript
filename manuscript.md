@@ -2,7 +2,7 @@
 author-meta:
 - Niklas Bruse
 - Simon J. van Heeringen
-date-meta: '2018-10-25'
+date-meta: '2018-11-09'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -19,10 +19,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/3b0a25150d6e46c1c52e130b2dd9413b37a13059/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/9d9745a93893663b4435fe340a2d7950b80b436f/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@3b0a251](https://github.com/simonvh/gimmemotifs-manuscript/tree/3b0a25150d6e46c1c52e130b2dd9413b37a13059)
-on October 25, 2018.
+from [simonvh/gimmemotifs-manuscript@9d9745a](https://github.com/simonvh/gimmemotifs-manuscript/tree/9d9745a93893663b4435fe340a2d7950b80b436f)
+on November 9, 2018.
 </em></small>
 
 ## Authors
@@ -364,25 +364,24 @@ metrics include ROC AUC, distribution of the motif location relative to the
 center of the input (i.e., the ChIP-seq peak summit) and the best match in a
 database of known motifs.
 
-| Name          | Citation |
-|:------------- |:---------|
-| [AMD](https://github.com/JiantaoShi/AMD) | [@1BgOvt0PL] |
-| [BioProspector](http://ai.stanford.edu/~xsliu/BioProspector/) | [@Zg6SmzaV]  |
-| [ChIPMunk](http://autosome.ru/chipmunk/) | [@smdkzwHK]  |
-| [GADEM](https://www.niehs.nih.gov/research/resources/software/biostatistics/gadem/index.cfm) | [@8xwckKK3]  |
-| [HMS](https://dx.doi.org/10.1093/nar/gkp1180) | [@YIsvgfWU] | 
-| [Homer](http://homer.ucsd.edu/homer/motif/) | [ @14naBuW39] |
-| [Improbizer](https://users.soe.ucsc.edu/~kent/improbizer/improbizer.html) | [@wUklcuxK]  |
-| [MDmodule](https:/dx.doi.org/10.1038/nbt717) | [@aZ8ZieVF] |
-| [MEME](http://meme-suite.org/) | [@KqGAZzyz] |
-| [MotifSampler](http://bioinformatics.intec.ugent.be/MotifSuite/motifsampler.php) | [@FGUIIeyX] |
-| [Posmo](https://dx.doi.org/10.1093/nar/gkr1135) | [@oL2CQf3y] |
-| [Trawler](https://trawler.erc.monash.edu.au/) | [@19jTKi9ZQ] |
-| [Weeder](http://www.beaconlab.it/modtools) | [@1G4lWf9Jf] | 
-| [XXmotif](https://github.com/soedinglab/xxmotif) | [@QzszdQqA] |
+| Name          | Version  | Citation |
+|:------------- |:---------|:---------|
+| [AMD](https://github.com/JiantaoShi/AMD) | Unknown (2012-11-21) | [@1BgOvt0PL] |
+| [BioProspector](http://ai.stanford.edu/~xsliu/BioProspector/) |  4/15/04 | [@Zg6SmzaV]  |
+| [ChIPMunk](http://autosome.ru/chipmunk/) | V7 10012017 | [@smdkzwHK]  |
+| [GADEM](https://www.niehs.nih.gov/research/resources/software/biostatistics/gadem/index.cfm) | v1.3.1 | [@8xwckKK3]  |
+| [HMS](https://dx.doi.org/10.1093/nar/gkp1180) | Unknown (2012-11-23) | [@YIsvgfWU] | 
+| [Homer](http://homer.ucsd.edu/homer/motif/) | 2 |[ @14naBuW39] |
+| [Improbizer](https://users.soe.ucsc.edu/~kent/improbizer/improbizer.html) | Unknown (2010-10-01) | [@wUklcuxK]  |
+| [MDmodule](https:/dx.doi.org/10.1038/nbt717) | Unknown (2010-07-29) | [@aZ8ZieVF] |
+| [MEME](http://meme-suite.org/) | 4.6.0 | [@KqGAZzyz] |
+| [MotifSampler](http://bioinformatics.intec.ugent.be/MotifSuite/motifsampler.php) | 3.2 | [@FGUIIeyX] |
+| [Posmo](https://dx.doi.org/10.1093/nar/gkr1135) | May-19-2011 | [@oL2CQf3y] |
+| [Trawler](https://trawler.erc.monash.edu.au/) | 2.0 | [@19jTKi9ZQ] |
+| [Weeder](http://www.beaconlab.it/modtools) | 2.0 | [@1G4lWf9Jf] | 
+| [XXmotif](https://github.com/soedinglab/xxmotif) | 1.6 | [@QzszdQqA] |
 
-  : **Table 1**: External *de novo* motif prediction tools supported by GimmeMotifs.
-
+  : **Table 1**: External *de novo* motif prediction tools supported by GimmeMotifs. The version shown is the version string reported by the software. If the version is unknown, the date when the tools was added to the GimmeMotifs repository is shown.
 
 ### Motif activity by ensemble learning: maelstrom
 
