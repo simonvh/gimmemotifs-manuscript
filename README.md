@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/simonvh/gimmemotifs-manuscript/tree/gh-pages) branch hosts the contents of this directory at https://simonvh.github.io/gimmemotifs-manuscript/.
-The permalink for this webpage version is https://simonvh.github.io/gimmemotifs-manuscript/v/9d9745a93893663b4435fe340a2d7950b80b436f/.
+The permalink for this webpage version is https://simonvh.github.io/gimmemotifs-manuscript/v/5fa03a12a9fd4a630860573f7f6a5890ac0c2dd2/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://simonvh.github.io/gimmemotifs-manuscript/v/freeze/.
 
 ## Files
@@ -32,4 +32,4 @@ git add v/*/*.ots
 ## Source
 
 The manuscripts in this directory were built from
-[`9d9745a93893663b4435fe340a2d7950b80b436f`](https://github.com/simonvh/gimmemotifs-manuscript/commit/9d9745a93893663b4435fe340a2d7950b80b436f).
+[`5fa03a12a9fd4a630860573f7f6a5890ac0c2dd2`](https://github.com/simonvh/gimmemotifs-manuscript/commit/5fa03a12a9fd4a630860573f7f6a5890ac0c2dd2).
