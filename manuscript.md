@@ -19,9 +19,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/e3abbc06e5084021c7d475e5bb4c125b91657452/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/dea9894429b87e5059a5285ed48a60d281080f31/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@e3abbc0](https://github.com/simonvh/gimmemotifs-manuscript/tree/e3abbc06e5084021c7d475e5bb4c125b91657452)
+from [simonvh/gimmemotifs-manuscript@dea9894](https://github.com/simonvh/gimmemotifs-manuscript/tree/dea9894429b87e5059a5285ed48a60d281080f31)
 on November 19, 2018.
 </em></small>
 
@@ -125,6 +125,11 @@ clustered motifs [@Pfmfeewp] and the IMAGE motif database created by
 Madsen et al. [@X6uuBgy]. We compared these databases to the
 non-redundant vertebrate motif database included with GimmeMotifs (v5.0, see Methods). 
 
+![**Figure 1**: Benchmark of transcription factor motif databases. 
+**A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5,000 peaks were compared to background regions using each motif database. The boxplot shows the the ROC AUC of the best motif per database for all TFs. Every point in this plot is based on one TF ChIP-seq peak set.
+**B)** Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v5.0). The same data is used as in **A)**. The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
+](content/images/figure_dbs.png)
+
 As a reference data set we downloaded all
 ChIP-seq peaks from ReMap 2018 [@LBF5EBTh], and selected the TFs with at least 1,000
 peaks. 
@@ -132,11 +137,6 @@ When there were more than 5,000 peaks for a TF we randomly selected 5,000 peaks 
 
 We then evaluated the eight motif databases to test how well they could
 discriminate TF peaks from random genomic sequences using the GimmeMotifs tool `gimme roc`. This tool calculates a range of performance metrics to compare motif quality. For each TF and motif database combination we selected the single best performing motif, depending on the metric under consideration.
-
-![**Figure 1**: Benchmark of transcription factor motif databases. 
-**A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5,000 peaks were compared to background regions using each motif database. The boxplot shows the the ROC AUC of the best motif per database for all TFs. Every point in this plot is based on one TF ChIP-seq peak set.
-**B)** Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v5.0). The same data is used as in **A)**. The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
-](content/images/figure_dbs.png)
 
 Figure 1A shows distribution of the
 ROC AUC (area
