@@ -2,7 +2,7 @@
 author-meta:
 - Niklas Bruse
 - Simon J. van Heeringen
-date-meta: '2018-11-15'
+date-meta: '2018-11-19'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -19,10 +19,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/5777f85ec7caf4c096174b7c475444904729db67/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/bcdef4f33096b680b0f9da88bb2b550ad90139a9/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@5777f85](https://github.com/simonvh/gimmemotifs-manuscript/tree/5777f85ec7caf4c096174b7c475444904729db67)
-on November 15, 2018.
+from [simonvh/gimmemotifs-manuscript@bcdef4f](https://github.com/simonvh/gimmemotifs-manuscript/tree/bcdef4f33096b680b0f9da88bb2b550ad90139a9)
+on November 19, 2018.
 </em></small>
 
 ## Authors
@@ -299,7 +299,7 @@ cells, megakaryocyte and erothrocytes 2), lymphoid cells, 3) neutrophilic cells,
 **A)** An overview of the *maelstrom* ensemble method.
 **B)** Heatmap of the correlation of H3K27ac signal in hematopoietic enhancers. We counted H3K27ac ChIP-seq reads in 2kb sequences centered at DNase I peaks. Counts were log2-transformed and scaled and replicates were combined by taking the mean value. This heatmap shows the Pearson r, calculated using the 50,000 most dynamic peaks.
 **C)** Results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. The color represents the reported motif activity, where the value corresponds to the log10 of the p-value of the rank aggregation. For high-ranking motifs (red) -log10(p-value) is shown, while for low ranking motifs (blue) log10(p-value) of the reversed ranking is shown.
-](content/images/figure_blueprint.png)
+](content/images/figure_blueprint1.png)
 
 To determine differential motif activity from these dynamic enhancers we used
 maelstrom. We combined Bayesian ridge regression, multi-class regression using
@@ -328,7 +328,12 @@ for maintenance of pluripotency [@PV60Wrh7]. However, NANOG is
 indeed also  expressed in endothelial cells and has been shown to play a role in
 endothelial proliferation and angiogenesis [@dWdvt1AI].
 
+![**Figure 3**: Predicting TF motif activity using maelstrom.
+ Results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. The color represents the reported motif activity, where the value corresponds to the log10 of the p-value of the rank aggregation. For high-ranking motifs (red) -log10(p-value) is shown, while for low ranking motifs (blue) log10(p-value) of the reversed ranking is shown.
+](content/images/figure_blueprint2.png)
+
 As we have demonstrated here, using a large-scale analysis of hematopoietic enhancers, `gimme maelstrom` can be used to analyze complex, multi-dimensional data sets. Especially in experiments where there are multiple conditions or time points that need to be compared, `maelstrom` provides a powerful method to determine differential transcription factor motif activity.
+
 
 # Methods
 
