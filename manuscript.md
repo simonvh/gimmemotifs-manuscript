@@ -19,9 +19,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/bcdef4f33096b680b0f9da88bb2b550ad90139a9/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/9d42d1bdebc2aba6cf7b1f7e4f4db8aa25444e86/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@bcdef4f](https://github.com/simonvh/gimmemotifs-manuscript/tree/bcdef4f33096b680b0f9da88bb2b550ad90139a9)
+from [simonvh/gimmemotifs-manuscript@9d42d1b](https://github.com/simonvh/gimmemotifs-manuscript/tree/9d42d1bdebc2aba6cf7b1f7e4f4db8aa25444e86)
 on November 19, 2018.
 </em></small>
 
@@ -52,7 +52,7 @@ on November 19, 2018.
 
 **Background:** Transcription factors (TFs) bind to specific DNA sequences, TF motifs, in cis-regulatory sequences and control the expression of the diverse transcriptional programs encoded in the genome. The concerted action of TFs within the chromatin context enables precise temporal and spatial expression patterns. To understand how TFs control gene expression it is essential to model TF binding. TF motif information can help to interpret the exact role of individual regulatory elements, for instance to predict the functional impact of non-coding variants.
 
-**Findings:** Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. Compared to the previously published version, this release adds a whole range of new functionality and analysis methods. It now includes tools for *de novo* motif discovery, motif scanning and sequence analysis, motif clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our *de novo* motif discovery pipeline we find large differences in performance between *de novo* motif finders on ChIP-seq data. Using an ensemble method such as implemented in GimmeMotifs will generally result in improved motif identification compared to a single motif finder. Finally, we demonstrate *maelstrom*, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~300 H3K27ac ChIP-seq data sets we identify TFs  that play a role in hematopoietic differentiation and lineage commitment. 
+**Findings:** Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. Compared to the previously published version, this release adds a whole range of new functionality and analysis methods. It now includes tools for *de novo* motif discovery, motif scanning and sequence analysis, motif clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our *de novo* motif discovery pipeline we find large differences in performance between *de novo* motif finders on ChIP-seq data. Using an ensemble method such as implemented in GimmeMotifs will generally result in improved motif identification compared to a single motif finder. Finally, we demonstrate *maelstrom*, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~200 H3K27ac ChIP-seq data sets we identify TFs  that play a role in hematopoietic differentiation and lineage commitment. 
 
 **Conclusion:** GimmeMotifs is a fully-featured and flexible framework for TF motif analysis. It contains both command-line tools as well as a Python API and is freely available at: [https://github.com/vanheeringen-lab/gimmemotifs](https://github.com/vanheeringen-lab/gimmemotifs).
 
@@ -84,7 +84,7 @@ using three different examples.
 
 # Findings
 
-GimmeMotifs included several different modules (Table 1), that can all be used either via a command-line tools or using the Python API. In the next sections we illustrate the functionality using three different examples.
+GimmeMotifs includes several different modules (Table 1), that can all be used either via a command-line tool or using the Python API. In the next sections we illustrate the functionality using three different examples.
 
 | Command          | Purpose   |
 |:------------- |:----------|
@@ -136,11 +136,11 @@ discriminate TF peaks from random genomic sequences using the GimmeMotifs tool `
 Figure 1A shows distribution of the
 ROC AUC (area
 under the curve for the Receiver Operator Curve) of the best motif per database
-for all 294 transcription factors in a box plot. The ROC curve plots the fraction of true positives (TPR, or sensitivity) against the fraction of false positives (FPR, or 1 - specificity). The ROC AUC value will generally range from 0.5 (no improvement on random guessing)to 1.0 (perfect classifier). There is generally a wide
+for all 294 transcription factors in a box plot. The ROC curve plots the fraction of true positives (TPR, or sensitivity) against the fraction of false positives (FPR, or 1 - specificity). The ROC AUC value will generally range from 0.5 (no improvement on random guessing) to 1.0 (perfect classifier). As Figure 1A illustrates, the collection of TFs generally shows a wide
 distribution of ROC AUCs. For some factors, such as ELK1, CTCF, CBFB and MYOD1,
 peaks are relatively easy to classify using a single PFM motif. Other factors
 do not have peaks with a consistently enriched motif, or do not contain a
-sequence-specific DNA-binding domain, such as EP300 or CD2 for example.
+sequence-specific DNA-binding domain, such as EP300 or CDK2 for example.
 
 ![**Figure 1**: Benchmark of transcription factor motif databases. 
 **A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5,000 peaks were compared to background regions using each motif database. The boxplot shows the the ROC AUC of the best motif per database for all TFs. Every point in this plot is based on one TF ChIP-seq peak set.
@@ -185,7 +185,9 @@ typically have tested only a few motif finders or used only a few datasets.
 Here, we used the GimmeMotifs framework as implemented in `gimme motifs` to benchmark 14 different *de novo*
 motif finders. To evaluate the different approaches, we downloaded 495 peak
 files for 270 proteins from ENCODE [@6eHRNaUT] and
-selected the 100bp sequence centered on the summit of top 5,000 peaks. In this specific case, these will be the peaks most likely to contain the primary TF motif and should therefore be the "easiest". Ranking and selecting in this manner is a widely adopted practice and we use this procedure also for our benchmark. However, when analyzing ChIP-seq data in detail, it might be preferable to analyze to full complement of peaks. Of the top
+selected the 100bp sequence centered on the summit of top 5,000 peaks. These will be the peaks most likely to contain the primary TF motif, and should provide a straightforward test-case for the *de novo* motif finders. Ranking and selecting peaks in this manner is a widely adopted practice and we use this procedure also for our benchmark. However, when analyzing ChIP-seq data in detail, it might be preferable to analyze to full complement of peaks. 
+
+Of the top
 peaks, half were randomly selected as a prediction set and the other half was
 used for evaluation. As a background set we selected regions of the same length
 flanking the original peaks. This will account for sequence bias according to genomic distribution. To assess the performance, we calculated two
@@ -291,48 +293,49 @@ enhancer (Supplementary Table S2). After log2 transformation and scaling, we sel
 dynamic peaks. Figure 3B shows the correlation of the H3K27ac enrichment in
 these 50,000 enhancers between cell types. For this plot, replicates were
 combined by taking the mean value and all experiments corresponding to treated
-cells were removed. We can observe five main clusters 1) non-hematopoietic
-cells, megakaryocyte and erothrocytes 2), lymphoid cells, 3) neutrophilic cells,
-4) macrophages and dendritic cells and 5) monocytes. The lymphoid cluster furthermore seperates between B-cells and T- and NK cells and non-hematopoietic cells are distinct from the megakaryocytes and erythroblasts. We can conclude that the H3K27ac profile within this enhancers set recapitulates a cell type-specific regulatory signal.
+cells were removed. We can observe six main clusters 1) non-hematopoietic
+cells 2) neutrophilic cells, 3) monocytes, macrophages and dendritic cells, 
+4) megakaryocytse and erythroblasts, 5) B cells 6) T cells and natural killer (NK) cells. We can conclude that the H3K27ac profile within this enhancers set recapitulates a cell type-specific regulatory signal.
 
 ![**Figure 3**: Predicting TF motif activity using maelstrom.
-**A)** An overview of the *maelstrom* ensemble method.
+**A)** A schematic overview of the *maelstrom* ensemble method.
 **B)** Heatmap of the correlation of H3K27ac signal in hematopoietic enhancers. We counted H3K27ac ChIP-seq reads in 2kb sequences centered at DNase I peaks. Counts were log2-transformed and scaled and replicates were combined by taking the mean value. This heatmap shows the Pearson r, calculated using the 50,000 most dynamic peaks.
-**C)** Results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. The color represents the reported motif activity, where the value corresponds to the log10 of the p-value of the rank aggregation. For high-ranking motifs (red) -log10(p-value) is shown, while for low ranking motifs (blue) log10(p-value) of the reversed ranking is shown.
+**C)** Selection of the results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. Shown is the motif activity of four motifs associated with factors that are known to play a role in hematopoietic cells: SPI1 (PU1.), CEBP, RUNX and GATA1. The visualization shows a schematic, simplified cell lineage tree. The color and the line thickness represent the motif activity, where the value corresponds to the log10 of the p-value of the rank aggregation. For high-ranking motifs (red) -log10(p-value) is shown, while for low ranking motifs (blue) log10(p-value) of the reversed ranking is shown.
+**D)** Motif activity, as in **C**, of two motifs of factors for which the exact function in these cell types is currently unknown.  
 ](content/images/figure_blueprint1.png)
 
 To determine differential motif activity from these dynamic enhancers we used
-maelstrom. We combined Bayesian ridge regression, multi-class regression using
+maelstrom. We combined Lasso, Bayesian ridge regression, multi-class regression using
 coordinate descent [@6chpTZMZ] and regression with boosted trees [@8w9fI63O].
 The coefficients or feature importances were ranked and combined using rank
 aggregation [@dTwzcIZ4]. A p-value was calculated for consistently high ranking and
-consistently low ranking motifs. The results are visualized in Figure 3C. 
+consistently low ranking motifs. A selection of the results is visualized in Figure 3C. The full results are available as Supplementary File S1 and on Zenodo (https://doi.org/10.5281/zenodo.1491482).
 
-Two of the most signicant motifs are SPI1 (PU.1) and CEBP. The motif activity
+Two of the most signicant motifs are SPI1 (PU.1) and CEBP (Fig. 3C). The motif activity
 for SPI1 is high in monocytes and macrophages, consistent with its
-role in myeloid lineage commitment [@ou8OYkdE]. The CEBP family members are important for monocytes and granulocytic cells [@U0f0MFSJ], and show a high motif activity in neutrophils and monocytes. Other strong motifs include RUNX for T cells and NK cells, GATA1 for erythroid cells. 
+role in myeloid lineage commitment [@ou8OYkdE]. The CEBP family members are important for monocytes and granulocytic cells [@U0f0MFSJ], and show a high motif activity in neutrophils and monocytes. Other strong motifs include RUNX for T cells and NK cells, GATA1 for erythroid cells (Fig. 3C). 
 
-We identified a strong activity for motifs representing the ZEB1 and Snail
-transcription factors. The Snail transcription factors play an important role in
+We identified a high activity for motifs representing the ZEB1 and Snail
+transcription factors (Fig. 3D). The Snail transcription factors play an important role in
 the epithelial-to-mesenchymal transition (EMT), and their role in hematopoietic
 cells is less well-described. However, recently Snai2 and Snai3 were found to be
 required to generate mature T and B cells [@60Dz9zIg;@ndDtTItn] in mice. ZEB1
 is expressed in T cells and represses expression of IL-2 [@vhkaSeK9], as well as
 other immune genes such as CD4 [@YfRzUAEm] and GATA3 [@EN0Mcnx6]. ZEB1
 knockout mice exhibit a defect in thymocyte development [@zbTimXyu]. Together,
-this suggests that these TFs play an important role in lymphocyte development. 
+this suggests that these TFs could play an important role in the hematopoietic lineage. 
 
 Finally, an interesting observation is the predicted motif activity of NANOG in
-endothelial cells. NANOG is expressed in embryonic stem cells and is essential
+endothelial cells (Fig. 3D). NANOG is expressed in embryonic stem cells and is essential
 for maintenance of pluripotency [@PV60Wrh7]. However, NANOG is
 indeed also  expressed in endothelial cells and has been shown to play a role in
 endothelial proliferation and angiogenesis [@dWdvt1AI].
 
-![**Figure 3**: Predicting TF motif activity using maelstrom.
- Results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. The color represents the reported motif activity, where the value corresponds to the log10 of the p-value of the rank aggregation. For high-ranking motifs (red) -log10(p-value) is shown, while for low ranking motifs (blue) log10(p-value) of the reversed ranking is shown.
+![**Figure 4**: Predicting TF motif activity using maelstrom.
+ Results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. The motif activity of the top 78 motifs (absolute motif activity >= 5) is visualized in a heatmap. The color represents the reported motif activity, where the value corresponds to the log10 of the p-value of the rank aggregation. For high-ranking motifs (red) -log10(p-value) is shown, while for low ranking motifs (blue) log10(p-value) of the reversed ranking is shown.
 ](content/images/figure_blueprint2.png)
 
-As we have demonstrated here, using a large-scale analysis of hematopoietic enhancers, `gimme maelstrom` can be used to analyze complex, multi-dimensional data sets. Especially in experiments where there are multiple conditions or time points that need to be compared, `maelstrom` provides a powerful method to determine differential transcription factor motif activity.
+In addition to the described examples, we identified a large compendium of TF motifs that display differential activity in the hematopoeitic lineage (Fig. 4). This demonstrates that `gimme maelstrom` can be used to analyze complex, multi-dimensional data sets such as this large-scale collection of hematopoietic enhancers. Especially in experiments where there are multiple conditions or time points that need to be compared, `maelstrom` provides a powerful method to determine differential transcription factor motif activity.
 
 
 # Methods
@@ -352,7 +355,7 @@ integration. GimmeMotifs can be installed via bioconda
 [https://bioconda.github.io/](https://bioconda.github.io/) for details.  All
 releases are also distributed through PyPi [@ycIGJh3s] and stably
 archived using Zenodo [@JnK7ipTw]. For *de novo* motif search,
-14 different external tools are supported (Table 1). All of these are
+14 different external tools are supported (Table 2). All of these are
 installed when conda is used for installation. By default,
 [genomepy](https://github.com/simonvh/genomepy) is used for genome management
 [@4AHAVuXG]. In addition, GimmeMotifs uses the following Python
@@ -368,7 +371,7 @@ API.
 
 Originally, GimmeMotifs was developed to predict *de novo* motifs from ChIP-seq
 data using an ensemble of motif predictors [@11x7W2xZq]. The tools
-currently supported are listed in Table 1. An input file (BED, FASTA or narrowPeak format) is split into a prediction and
+currently supported are listed in Table 2. An input file (BED, FASTA or narrowPeak format) is split into a prediction and
 validation set. The prediction set is used to predict motifs, and the validation
 set is used to filter for significant motifs. All significant motifs are
 clustered to provide a collection of non-redundant *de novo* motifs.  Finally,
@@ -404,7 +407,7 @@ enrichment of known motifs between two or more conditions. In addition, these me
 combined in a single measure of *motif activity* using rank aggregation. Four
 methods work with discrete sets, such as different peak sets or clusters from a
 K-means clustering. The hypergeometric test uses motif counts with an empirical
-motif-specific FPR of 5%. All other implemented methods use the PFM log-odds
+motif-specific FPR of 5%. All other implemented methods use the z-score normalized PFM log-odds
 score of the best match. 
 
 To combine different measures of motif significance or activity into a single
@@ -445,7 +448,7 @@ regression (LASSO).
 
 ## Clustering to create the gimme.vertebrate.v5.0 motif database
 
-We collected all motifs from the following databases: CIS-BP v1.02 [@1Df4blqEs], ENCODE [@jUNvk96Q], Factorbook [@YuvogFWT], HOCOMOCO v11 [@1FStCACaF], HOMER v4.10 [@14naBuW39], JASPAR 2018 vertebrates [@XrrO63jn] and SwissRegulon [@WubLhyiX]. Motif similarity was calculated using Pearson correlation of motif scores profiles [@AxXzJVRV;@1LM2RTcx] using a sequence that contains each 7-mer or its reverse complement [@PF2d1YvC]. We then clustered the motifs using agglomerative clustering with complete linkage and connectivity constraints where only motifs with a Pearson r >= 0.5 were considered as neighbors. The number of clusters was set to 1600. After clustering, we discarded all motifs were the sum of the information content of all positions was less than 5. The clustered database, gimme.vertebrate.v5.0, is distributed with GimmeMotifs.
+We collected all motifs from the following databases: CIS-BP v1.02 [@1Df4blqEs], ENCODE [@jUNvk96Q], Factorbook [@YuvogFWT], HOCOMOCO v11 [@1FStCACaF], HOMER v4.10 [@14naBuW39], JASPAR 2018 vertebrates [@XrrO63jn] and SwissRegulon [@WubLhyiX]. Motif similarity was calculated using Pearson correlation of motif scores profiles [@AxXzJVRV;@1LM2RTcx] using a sequence that contains each 7-mer or its reverse complement [@PF2d1YvC]. We then clustered the motifs using agglomerative clustering with complete linkage and connectivity constraints where only motifs with a Pearson r >= 0.5 were considered as neighbors. The number of clusters was set to 1900. After clustering, we discarded all motifs were the sum of the information content of all positions was less than 5. The clustered database, `gimme.vertebrate.v5.0`, is distributed with GimmeMotifs.
 
 ## Transcription factor motif database benchmark
 
@@ -558,9 +561,7 @@ support of more sophisticated motif models. Even though the PFM is a convenient 
 A PFM cannot model inter-nucleotide dependencies, which are known to affect
 binding of certain TFs. Multiple different representations have been proposed
 [@Jc96vlRF; @1F4IFj9vd; @7nxD51Mq; @nswYGz33; @1FTeX7ahA],
-but no single one of these has gained much traction. 
-
-It is still unclear how well these models perform and their use
+but no single one of these has gained much traction. It is still unclear how well these models perform and their use
 depends on specific tools. Supporting these different models and benchmarking
 their performance relative to high-quality PFMs will simplify their use and
 give insight into their benefits and disadvantages. Second, there is significant progress recently 
@@ -582,12 +583,15 @@ GimmeMotifs.
 # Availability of supporting data
 
 * Scripts and notebooks to reproduce the analysis are available at https://github.com/vanheeringen-lab/gimme-analyis.
-* Additonal data files are available at Zenodo: !!ADD DOI ZENODO!!!
+* Additonal data files are available at Zenodo:
+    * Table of H3K27ac read counts at all DNase I accessible sites: [10.5281/zenodo.1488669](https://doi.org/10.5281/zenodo.1488669).
+    * Results of gimme maelstrom (Figure 3 and 4): [10.5281/zenodo.1491482](https://doi.org/10.5281/zenodo.1491482).
 
 # Additional files
 
-* Supplementary Table S1: list of accession used in the analysis of hematopoietic enhancers.
-* Supplementary Table S2: table of H3K27ac read counts at all DNase I accessible sites.
+* Supplementary Table S1: List of accessions used in the analysis of hematopoietic enhancers.
+* Supplementary Table S2: Table of H3K27ac read counts at all DNase I accessible sites.
+* Supplementary File S1: Results of gimme maelstrom (Figure 3 and 4).
 
 # Competing interests
 
