@@ -19,9 +19,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/9d42d1bdebc2aba6cf7b1f7e4f4db8aa25444e86/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/e3abbc06e5084021c7d475e5bb4c125b91657452/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@9d42d1b](https://github.com/simonvh/gimmemotifs-manuscript/tree/9d42d1bdebc2aba6cf7b1f7e4f4db8aa25444e86)
+from [simonvh/gimmemotifs-manuscript@e3abbc0](https://github.com/simonvh/gimmemotifs-manuscript/tree/e3abbc06e5084021c7d475e5bb4c125b91657452)
 on November 19, 2018.
 </em></small>
 
@@ -133,6 +133,11 @@ When there were more than 5,000 peaks for a TF we randomly selected 5,000 peaks 
 We then evaluated the eight motif databases to test how well they could
 discriminate TF peaks from random genomic sequences using the GimmeMotifs tool `gimme roc`. This tool calculates a range of performance metrics to compare motif quality. For each TF and motif database combination we selected the single best performing motif, depending on the metric under consideration.
 
+![**Figure 1**: Benchmark of transcription factor motif databases. 
+**A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5,000 peaks were compared to background regions using each motif database. The boxplot shows the the ROC AUC of the best motif per database for all TFs. Every point in this plot is based on one TF ChIP-seq peak set.
+**B)** Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v5.0). The same data is used as in **A)**. The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
+](content/images/figure_dbs.png)
+
 Figure 1A shows distribution of the
 ROC AUC (area
 under the curve for the Receiver Operator Curve) of the best motif per database
@@ -141,11 +146,6 @@ distribution of ROC AUCs. For some factors, such as ELK1, CTCF, CBFB and MYOD1,
 peaks are relatively easy to classify using a single PFM motif. Other factors
 do not have peaks with a consistently enriched motif, or do not contain a
 sequence-specific DNA-binding domain, such as EP300 or CDK2 for example.
-
-![**Figure 1**: Benchmark of transcription factor motif databases. 
-**A)** Motif-based classification of binding sites for 294 TFs from the ReMap ChIP-seq database. For all TFs 5,000 peaks were compared to background regions using each motif database. The boxplot shows the the ROC AUC of the best motif per database for all TFs. Every point in this plot is based on one TF ChIP-seq peak set.
-**B)** Recall at 10% FDR of motif databases compared to the GimmeMotifs vertebrate motif database (v5.0). The same data is used as in **A)**. The X-axis represents the recall for the different databases, the Y-axis represents the recall for the GimmeMotifs vertebrate database. Differences of more than 0.025 are marked blue, and less then -0.025 red. 
-](content/images/figure_dbs.png)
 
 The difference in maximum ROC AUC between databases is on average not very
 large, with a mean maximum difference of 0.05. The largest difference (~0.24) is
@@ -273,7 +273,6 @@ analysis, BioProspector should be the top pick for a program to identify primary
 motifs in ChIP-seq data. However, an ensemble program such as GimmeMotifs will
 report high-quality motifs more consistently than any single tool.
 
-
 ## Differential motif analysis of hematopoietic enhancers identifies cell type-specific regulators
 
 While many motif scanners and methods to calculate enrichment exist, there are few
@@ -309,7 +308,7 @@ maelstrom. We combined Lasso, Bayesian ridge regression, multi-class regression 
 coordinate descent [@6chpTZMZ] and regression with boosted trees [@8w9fI63O].
 The coefficients or feature importances were ranked and combined using rank
 aggregation [@dTwzcIZ4]. A p-value was calculated for consistently high ranking and
-consistently low ranking motifs. A selection of the results is visualized in Figure 3C. The full results are available as Supplementary File S1 and on Zenodo (https://doi.org/10.5281/zenodo.1491482).
+consistently low ranking motifs. A selection of the results is visualized in Figure 3C. The full results are available as Supplementary File S1 and on Zenodo ([10.5281/zenodo.1491482](https://doi.org/10.5281/zenodo.1491482).
 
 Two of the most signicant motifs are SPI1 (PU.1) and CEBP (Fig. 3C). The motif activity
 for SPI1 is high in monocytes and macrophages, consistent with its
@@ -582,7 +581,9 @@ GimmeMotifs.
 
 # Availability of supporting data
 
-* Scripts and notebooks to reproduce the analysis are available at https://github.com/vanheeringen-lab/gimme-analyis.
+* Scripts and notebooks to reproduce the analysis are available at:
+    * [https://github.com/vanheeringen-lab/gimme-analyis](https://github.com/vanheeringen-lab/gimme-analyis).
+    
 * Additonal data files are available at Zenodo:
     * Table of H3K27ac read counts at all DNase I accessible sites: [10.5281/zenodo.1488669](https://doi.org/10.5281/zenodo.1488669).
     * Results of gimme maelstrom (Figure 3 and 4): [10.5281/zenodo.1491482](https://doi.org/10.5281/zenodo.1491482).

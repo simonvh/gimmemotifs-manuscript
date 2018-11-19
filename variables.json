@@ -37,7 +37,7 @@
     "repo_slug": "simonvh/gimmemotifs-manuscript",
     "repo_owner": "simonvh",
     "repo_name": "gimmemotifs-manuscript",
-    "commit": "9d42d1bdebc2aba6cf7b1f7e4f4db8aa25444e86"
+    "commit": "e3abbc06e5084021c7d475e5bb4c125b91657452"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -46,6 +46,6 @@
       "url": 9,
       "total": 79
     },
-    "word_count": 6175
+    "word_count": 6176
   }
 }
