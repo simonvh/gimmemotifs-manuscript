@@ -19,9 +19,9 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/65a54609fd13195f5735b7adf7b490d32123ea86/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/6298f92ae948cbaeabfc6758153e48f170b63ce0/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@65a5460](https://github.com/simonvh/gimmemotifs-manuscript/tree/65a54609fd13195f5735b7adf7b490d32123ea86)
+from [simonvh/gimmemotifs-manuscript@6298f92](https://github.com/simonvh/gimmemotifs-manuscript/tree/6298f92ae948cbaeabfc6758153e48f170b63ce0)
 on November 20, 2018.
 </em></small>
 
@@ -297,7 +297,7 @@ cells 2) neutrophilic cells, 3) monocytes, macrophages and dendritic cells,
 4) megakaryocytes and erythroblasts, 5) B cells 6) T cells and natural killer (NK) cells. We can conclude that the H3K27ac profile within this enhancer set recapitulates a cell type-specific regulatory signal.
 
 ![**Figure 3**: *Predicting TF motif activity using maelstrom.
-**A)** A schematic overview of the *maelstrom* ensemble method.
+**A)** A schematic overview of the maelstrom ensemble method.
 **B)** Heatmap of the correlation of H3K27ac signal in hematopoietic enhancers. We counted H3K27ac ChIP-seq reads in 2kb sequences centered at DNase I peaks. Counts were log2-transformed and scaled and replicates were combined by taking the mean value. This heatmap shows the Pearson r, calculated using the 50,000 most dynamic peaks.
 **C)** Selection of the results of running `gimme maelstrom` on the 50,000 most dynamic hematopoietic enhancers. Shown is the motif activity of four motifs associated with factors that are known to play a role in hematopoietic cells: SPI1 (PU.1), CEBP, RUNX and GATA1. The visualization shows a schematic, simplified cell lineage tree. The color and the line thickness represent the motif activity, where the value corresponds to the log10 of the p-value of the rank aggregation. For high-ranking motifs (red) -log10(p-value) is shown, while for low ranking motifs (blue) log10(p-value) of the reversed ranking is shown.
 **D)** Motif activity, as in **C**, of two motifs of factors for which the exact function in these cell types is currently unknown.*
@@ -308,7 +308,7 @@ maelstrom. We combined Lasso, Bayesian ridge regression, multi-class regression 
 coordinate descent [@6chpTZMZ] and regression with boosted trees [@8w9fI63O].
 The coefficients or feature importances were ranked and combined using rank
 aggregation [@dTwzcIZ4]. A p-value was calculated for consistently high ranking and
-consistently low ranking motifs. A selection of the results is visualized in Figure 3C. The full results are available as Supplementary File S1 and on Zenodo ([10.5281/zenodo.1491482](https://doi.org/10.5281/zenodo.1491482)i).
+consistently low ranking motifs. A selection of the results is visualized in Figure 3C. The full results are available as Supplementary File S1 and on Zenodo ([10.5281/zenodo.1491482](https://doi.org/10.5281/zenodo.1491482)).
 
 Two of the most signicant motifs are SPI1 (PU.1) and CEBP (Fig. 3C). The motif activity
 for SPI1 is high in monocytes and macrophages, consistent with its
@@ -573,7 +573,7 @@ GimmeMotifs.
 # Availability and requirements
 
 * Project name: GimmeMotifs
-* Project home page: https://github.com/vanheeringen-lab/gimmemotifs
+* Project home page: [https://github.com/vanheeringen-lab/gimmemotifs](https://github.com/vanheeringen-lab/gimmemotifs)
 * Operating system(s): Linux, Mac OSX
 * Programming language: Python 3 
 * Other requirements: *de novo* motif finders
