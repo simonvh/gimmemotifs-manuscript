@@ -2,7 +2,7 @@
 author-meta:
 - Niklas Bruse
 - Simon J. van Heeringen
-date-meta: '2018-11-19'
+date-meta: '2018-11-20'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -19,10 +19,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/dea9894429b87e5059a5285ed48a60d281080f31/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/22347600bafe410f1b7391143772592a09b180d8/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@dea9894](https://github.com/simonvh/gimmemotifs-manuscript/tree/dea9894429b87e5059a5285ed48a60d281080f31)
-on November 19, 2018.
+from [simonvh/gimmemotifs-manuscript@2234760](https://github.com/simonvh/gimmemotifs-manuscript/tree/22347600bafe410f1b7391143772592a09b180d8)
+on November 20, 2018.
 </em></small>
 
 ## Authors
