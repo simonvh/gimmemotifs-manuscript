@@ -3,13 +3,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          8,
-          5
+          2019,
+          2,
+          14
         ]
       ],
-      "date-time": "2018-08-05T22:13:35Z",
-      "timestamp": 1533507215964
+      "date-time": "2019-02-14T08:31:54Z",
+      "timestamp": 1550133114984
     },
     "reference-count": 22,
     "publisher": "Wiley",
@@ -75,7 +75,7 @@
     },
     "page": "2.11.1-2.11.31",
     "source": "Crossref",
-    "is-referenced-by-count": 6,
+    "is-referenced-by-count": 7,
     "title": "Using Weeder, Pscan, and PscanChIP for the Discovery of Enriched Transcription Factor Binding Site Motifs in Nucleotide Sequences",
     "prefix": "10.1002",
     "volume": "47",
@@ -184,9 +184,6 @@
     "relation": {
       "cites": []
     },
-    "subject": [
-      "General Medicine"
-    ],
     "container-title-short": "Current Protocols in Bioinformatics",
     "short_url": "https://doi.org/gd2z3n",
     "id": "1G4lWf9Jf"
@@ -195,13 +192,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          1
+          2019,
+          2,
+          13
         ]
       ],
-      "date-time": "2018-10-01T10:02:35Z",
-      "timestamp": 1538388155563
+      "date-time": "2019-02-13T03:43:32Z",
+      "timestamp": 1550029412921
     },
     "reference-count": 38,
     "publisher": "Springer Nature",
@@ -233,7 +230,7 @@
     },
     "page": "31-52",
     "source": "Crossref",
-    "is-referenced-by-count": 25,
+    "is-referenced-by-count": 26,
     "title": "Block coordinate descent algorithms for large-scale sparse multiclass classification",
     "prefix": "10.1007",
     "volume": "93",
@@ -328,13 +325,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          21
+          2019,
+          4,
+          29
         ]
       ],
-      "date-time": "2018-09-21T07:42:38Z",
-      "timestamp": 1537515758118
+      "date-time": "2019-04-29T08:44:47Z",
+      "timestamp": 1556527487330
     },
     "reference-count": 95,
     "publisher": "Springer Nature",
@@ -366,7 +363,7 @@
     },
     "page": "115-130",
     "source": "Crossref",
-    "is-referenced-by-count": 56,
+    "is-referenced-by-count": 62,
     "title": "Modeling the specificity of protein-DNA interactions",
     "prefix": "10.1007",
     "volume": "1",
@@ -449,13 +446,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          2
+          2019,
+          5,
+          18
         ]
       ],
-      "date-time": "2018-10-02T01:22:33Z",
-      "timestamp": 1538443353124
+      "date-time": "2019-05-18T17:03:07Z",
+      "timestamp": 1558198987382
     },
     "reference-count": 70,
     "publisher": "Elsevier BV",
@@ -526,7 +523,7 @@
     "page": "1431-1443",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 301,
+    "is-referenced-by-count": 374,
     "title": "Determination and Inference of Eukaryotic Transcription Factor Sequence Specificity",
     "prefix": "10.1016",
     "volume": "158",
@@ -757,9 +754,6 @@
     ],
     "URL": "https://doi.org/10.1016/j.cell.2014.08.009",
     "relation": {},
-    "subject": [
-      "General Biochemistry, Genetics and Molecular Biology"
-    ],
     "container-title-short": "Cell",
     "assertion": [
       {
@@ -800,13 +794,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          11
+          2019,
+          5,
+          18
         ]
       ],
-      "date-time": "2018-10-11T01:02:39Z",
-      "timestamp": 1539219759710
+      "date-time": "2019-05-18T17:03:07Z",
+      "timestamp": 1558198987414
     },
     "reference-count": 126,
     "publisher": "Elsevier BV",
@@ -827,6 +821,22 @@
         },
         "delay-in-days": 0,
         "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              2,
+              8
+            ]
+          ],
+          "date-time": "2019-02-08T00:00:00Z",
+          "timestamp": 1549584000000
+        },
+        "delay-in-days": 372,
+        "content-version": "vor"
       }
     ],
     "funder": [
@@ -891,7 +901,7 @@
     "page": "650-665",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 31,
+    "is-referenced-by-count": 82,
     "title": "The Human Transcription Factors",
     "prefix": "10.1016",
     "volume": "172",
@@ -978,13 +988,13 @@
     "deposited": {
       "date-parts": [
         [
-          2018,
-          10,
-          5
+          2019,
+          3,
+          4
         ]
       ],
-      "date-time": "2018-10-05T04:09:46Z",
-      "timestamp": 1538712586000
+      "date-time": "2019-03-04T13:10:09Z",
+      "timestamp": 1551705009000
     },
     "score": 1.0,
     "subtitle": [],
@@ -1057,13 +1067,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          24
+          2019,
+          2,
+          14
         ]
       ],
-      "date-time": "2018-09-24T22:40:43Z",
-      "timestamp": 1537828843321
+      "date-time": "2019-02-14T19:15:34Z",
+      "timestamp": 1550171734658
     },
     "reference-count": 42,
     "publisher": "Elsevier BV",
@@ -1217,9 +1227,6 @@
     ],
     "URL": "https://doi.org/10.1016/j.cellimm.2015.02.009",
     "relation": {},
-    "subject": [
-      "Immunology"
-    ],
     "container-title-short": "Cellular Immunology",
     "assertion": [
       {
@@ -1260,13 +1267,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          16
+          2019,
+          2,
+          15
         ]
       ],
-      "date-time": "2018-09-16T02:10:52Z",
-      "timestamp": 1537063852774
+      "date-time": "2019-02-15T18:58:57Z",
+      "timestamp": 1550257137418
     },
     "reference-count": 73,
     "publisher": "Elsevier BV",
@@ -1444,11 +1451,6 @@
     ],
     "URL": "https://doi.org/10.1016/j.imbio.2016.01.007",
     "relation": {},
-    "subject": [
-      "Immunology",
-      "Immunology and Allergy",
-      "Hematology"
-    ],
     "container-title-short": "Immunobiology",
     "assertion": [
       {
@@ -1489,20 +1491,20 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          11
+          2019,
+          5,
+          21
         ]
       ],
-      "date-time": "2018-10-11T19:22:34Z",
-      "timestamp": 1539285754050
+      "date-time": "2019-05-21T20:23:05Z",
+      "timestamp": 1558470185275
     },
     "reference-count": 49,
     "publisher": "Elsevier BV",
     "issue": "4",
     "license": [
       {
-        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
         "start": {
           "date-parts": [
             [
@@ -1518,7 +1520,7 @@
         "content-version": "tdm"
       },
       {
-        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "URL": "https://www.elsevier.com/open-access/userlicense/1.0/",
         "start": {
           "date-parts": [
             [
@@ -1561,7 +1563,7 @@
     },
     "page": "576-589",
     "source": "Crossref",
-    "is-referenced-by-count": 2236,
+    "is-referenced-by-count": 2772,
     "title": "Simple Combinations of Lineage-Determining Transcription Factors Prime cis-Regulatory Elements Required for Macrophage and B Cell Identities",
     "prefix": "10.1016",
     "volume": "38",
@@ -1633,13 +1635,13 @@
     "language": "en",
     "link": [
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S1097276510003667?httpAccept=text/xml",
+        "URL": "https://api.elsevier.com/content/article/PII:S1097276510003667?httpAccept=text/xml",
         "content-type": "text/xml",
         "content-version": "vor",
         "intended-application": "text-mining"
       },
       {
-        "URL": "http://api.elsevier.com/content/article/PII:S1097276510003667?httpAccept=text/plain",
+        "URL": "https://api.elsevier.com/content/article/PII:S1097276510003667?httpAccept=text/plain",
         "content-type": "text/plain",
         "content-version": "vor",
         "intended-application": "text-mining"
@@ -1648,13 +1650,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          6,
-          19
+          2018,
+          12,
+          10
         ]
       ],
-      "date-time": "2017-06-19T08:45:03Z",
-      "timestamp": 1497861903000
+      "date-time": "2018-12-10T20:53:56Z",
+      "timestamp": 1544475236000
     },
     "score": 1.0,
     "subtitle": [],
@@ -1684,6 +1686,10 @@
     ],
     "URL": "https://doi.org/10.1016/j.molcel.2010.05.004",
     "relation": {},
+    "subject": [
+      "Cell Biology",
+      "Molecular Biology"
+    ],
     "container-title-short": "Molecular Cell",
     "short_url": "https://doi.org/dhdgvz",
     "id": "14naBuW39"
@@ -1692,13 +1698,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          6
+          2019,
+          5,
+          20
         ]
       ],
-      "date-time": "2018-10-06T22:22:36Z",
-      "timestamp": 1538864556567
+      "date-time": "2019-05-20T14:43:05Z",
+      "timestamp": 1558363385478
     },
     "reference-count": 23,
     "publisher": "Springer Nature",
@@ -1718,7 +1724,7 @@
           "timestamp": 1104537600000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -1748,7 +1754,7 @@
     },
     "page": "137-144",
     "source": "Crossref",
-    "is-referenced-by-count": 577,
+    "is-referenced-by-count": 715,
     "title": "Assessing computational tools for the discovery of transcription factor binding sites",
     "prefix": "10.1038",
     "volume": "23",
@@ -1910,7 +1916,7 @@
         [
           2005,
           1,
-          1
+          6
         ]
       ]
     },
@@ -1940,13 +1946,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          12,
-          9
+          2019,
+          3,
+          19
         ]
       ],
-      "date-time": "2017-12-09T12:54:58Z",
-      "timestamp": 1512824098000
+      "date-time": "2019-03-19T14:53:13Z",
+      "timestamp": 1553007193000
     },
     "score": 1.0,
     "subtitle": [],
@@ -1978,6 +1984,13 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Biotechnology",
+      "Molecular Medicine",
+      "Applied Microbiology and Biotechnology",
+      "Bioengineering",
+      "Biomedical Engineering"
+    ],
     "container-title-short": "Nat Biotechnol",
     "short_url": "https://doi.org/cfhhbr",
     "id": "PNXlUYkS"
@@ -1986,13 +1999,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          9
+          2019,
+          5,
+          14
         ]
       ],
-      "date-time": "2018-10-09T08:42:42Z",
-      "timestamp": 1539074562287
+      "date-time": "2019-05-14T07:23:10Z",
+      "timestamp": 1557818590315
     },
     "reference-count": 50,
     "publisher": "Springer Nature",
@@ -2012,7 +2025,7 @@
           "timestamp": 1146441600000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -2042,7 +2055,7 @@
     },
     "page": "537-544",
     "source": "Crossref",
-    "is-referenced-by-count": 472,
+    "is-referenced-by-count": 531,
     "title": "Gene prioritization through genomic data fusion",
     "prefix": "10.1038",
     "volume": "24",
@@ -2126,7 +2139,7 @@
         [
           2006,
           5,
-          1
+          5
         ]
       ]
     },
@@ -2156,13 +2169,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          11,
-          27
+          2019,
+          3,
+          19
         ]
       ],
-      "date-time": "2017-11-27T22:49:02Z",
-      "timestamp": 1511822942000
+      "date-time": "2019-03-19T00:48:49Z",
+      "timestamp": 1552956529000
     },
     "score": 1.0,
     "subtitle": [],
@@ -2194,6 +2207,13 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Biotechnology",
+      "Molecular Medicine",
+      "Applied Microbiology and Biotechnology",
+      "Bioengineering",
+      "Biomedical Engineering"
+    ],
     "container-title-short": "Nat Biotechnol",
     "short_url": "https://doi.org/bcmjgf",
     "id": "dTwzcIZ4"
@@ -2202,13 +2222,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          11
+          2019,
+          5,
+          17
         ]
       ],
-      "date-time": "2018-10-11T17:22:36Z",
-      "timestamp": 1539278556594
+      "date-time": "2019-05-17T02:44:28Z",
+      "timestamp": 1558061068496
     },
     "reference-count": 20,
     "publisher": "Springer Nature",
@@ -2228,7 +2248,7 @@
           "timestamp": 1026086400000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -2258,8 +2278,8 @@
     },
     "page": "835-839",
     "source": "Crossref",
-    "is-referenced-by-count": 331,
-    "title": "An algorithm for finding protein–DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments",
+    "is-referenced-by-count": 372,
+    "title": "An algorithm for finding protein–DNA binding sites with applications to chromatin- immunoprecipitation microarray experiments",
     "prefix": "10.1038",
     "volume": "20",
     "author": [
@@ -2318,13 +2338,13 @@
     "deposited": {
       "date-parts": [
         [
-          2018,
-          1,
-          30
+          2019,
+          3,
+          19
         ]
       ],
-      "date-time": "2018-01-30T19:45:00Z",
-      "timestamp": 1517341500000
+      "date-time": "2019-03-19T05:17:35Z",
+      "timestamp": 1552972655000
     },
     "score": 1.0,
     "subtitle": [],
@@ -2357,6 +2377,13 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Biotechnology",
+      "Molecular Medicine",
+      "Applied Microbiology and Biotechnology",
+      "Bioengineering",
+      "Biomedical Engineering"
+    ],
     "container-title-short": "Nat Biotechnol",
     "short_url": "https://doi.org/d5n6nt",
     "id": "aZ8ZieVF"
@@ -2365,13 +2392,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          21
+          2019,
+          5,
+          17
         ]
       ],
-      "date-time": "2018-09-21T17:02:45Z",
-      "timestamp": 1537549365789
+      "date-time": "2019-05-17T14:06:55Z",
+      "timestamp": 1558102015350
     },
     "reference-count": 49,
     "publisher": "Springer Nature",
@@ -2391,7 +2418,7 @@
           "timestamp": 1240099200000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -2421,974 +2448,14 @@
     },
     "page": "553-562",
     "source": "Crossref",
-    "is-referenced-by-count": 252,
+    "is-referenced-by-count": 263,
     "title": "The transcriptional network that controls growth arrest and differentiation in a human myeloid leukemia cell line",
     "prefix": "10.1038",
     "volume": "41",
     "author": [
       {
-        "given": "Harukazu",
-        "family": "Suzuki",
-        "sequence": "first",
-        "affiliation": []
-      },
-      {
         "name": "The FANTOM Consortium",
         "sequence": "first",
-        "affiliation": []
-      },
-      {
-        "given": "Alistair R R",
-        "family": "Forrest",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Erik",
-        "family": "van Nimwegen",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Carsten O",
-        "family": "Daub",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Piotr J",
-        "family": "Balwierz",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Katharine M",
-        "family": "Irvine",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Timo",
-        "family": "Lassmann",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Timothy",
-        "family": "Ravasi",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yuki",
-        "family": "Hasegawa",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Michiel J L",
-        "family": "de Hoon",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Shintaro",
-        "family": "Katayama",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kate",
-        "family": "Schroder",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Piero",
-        "family": "Carninci",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yasuhiro",
-        "family": "Tomaru",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mutsumi",
-        "family": "Kanamori-Katayama",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Atsutaka",
-        "family": "Kubosaki",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Altuna",
-        "family": "Akalin",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yoshinari",
-        "family": "Ando",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Erik",
-        "family": "Arner",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Maki",
-        "family": "Asada",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hiroshi",
-        "family": "Asahara",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Timothy",
-        "family": "Bailey",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Vladimir B",
-        "family": "Bajic",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Denis",
-        "family": "Bauer",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Anthony G",
-        "family": "Beckhouse",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Nicolas",
-        "family": "Bertin",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Johan",
-        "family": "Björkegren",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Frank",
-        "family": "Brombacher",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Erika",
-        "family": "Bulger",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Alistair M",
-        "family": "Chalk",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Joe",
-        "family": "Chiba",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Nicole",
-        "family": "Cloonan",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Adam",
-        "family": "Dawe",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Josee",
-        "family": "Dostie",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Pär G",
-        "family": "Engström",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Magbubah",
-        "family": "Essack",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Geoffrey J",
-        "family": "Faulkner",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "J Lynn",
-        "family": "Fink",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "David",
-        "family": "Fredman",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ko",
-        "family": "Fujimori",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Masaaki",
-        "family": "Furuno",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Takashi",
-        "family": "Gojobori",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Julian",
-        "family": "Gough",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Sean M",
-        "family": "Grimmond",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mika",
-        "family": "Gustafsson",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Megumi",
-        "family": "Hashimoto",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Takehiro",
-        "family": "Hashimoto",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mariko",
-        "family": "Hatakeyama",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Susanne",
-        "family": "Heinzel",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Winston",
-        "family": "Hide",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Oliver",
-        "family": "Hofmann",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Michael",
-        "family": "Hörnquist",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Lukasz",
-        "family": "Huminiecki",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kazuho",
-        "family": "Ikeo",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Naoko",
-        "family": "Imamoto",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Satoshi",
-        "family": "Inoue",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yusuke",
-        "family": "Inoue",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ryoko",
-        "family": "Ishihara",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Takao",
-        "family": "Iwayanagi",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Anders",
-        "family": "Jacobsen",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mandeep",
-        "family": "Kaur",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hideya",
-        "family": "Kawaji",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Markus C",
-        "family": "Kerr",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ryuichiro",
-        "family": "Kimura",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Syuhei",
-        "family": "Kimura",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yasumasa",
-        "family": "Kimura",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hiroaki",
-        "family": "Kitano",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hisashi",
-        "family": "Koga",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Toshio",
-        "family": "Kojima",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Shinji",
-        "family": "Kondo",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Takeshi",
-        "family": "Konno",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Anders",
-        "family": "Krogh",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Adele",
-        "family": "Kruger",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ajit",
-        "family": "Kumar",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Boris",
-        "family": "Lenhard",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Andreas",
-        "family": "Lennartsson",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Morten",
-        "family": "Lindow",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Marina",
-        "family": "Lizio",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Cameron",
-        "family": "MacPherson",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Norihiro",
-        "family": "Maeda",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Christopher A",
-        "family": "Maher",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Monique",
-        "family": "Maqungo",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Jessica",
-        "family": "Mar",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Nicholas A",
-        "family": "Matigian",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hideo",
-        "family": "Matsuda",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "John S",
-        "family": "Mattick",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Stuart",
-        "family": "Meier",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Sei",
-        "family": "Miyamoto",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Etsuko",
-        "family": "Miyamoto-Sato",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kazuhiko",
-        "family": "Nakabayashi",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yutaka",
-        "family": "Nakachi",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mika",
-        "family": "Nakano",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Sanne",
-        "family": "Nygaard",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Toshitsugu",
-        "family": "Okayama",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yasushi",
-        "family": "Okazaki",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Haruka",
-        "family": "Okuda-Yabukami",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Valerio",
-        "family": "Orlando",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Jun",
-        "family": "Otomo",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mikhail",
-        "family": "Pachkov",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Nikolai",
-        "family": "Petrovsky",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Charles",
-        "family": "Plessy",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "John",
-        "family": "Quackenbush",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Aleksandar",
-        "family": "Radovanovic",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Michael",
-        "family": "Rehli",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Rintaro",
-        "family": "Saito",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Albin",
-        "family": "Sandelin",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Sebastian",
-        "family": "Schmeier",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Christian",
-        "family": "Schönbach",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ariel S",
-        "family": "Schwartz",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Colin A",
-        "family": "Semple",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Miho",
-        "family": "Sera",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Jessica",
-        "family": "Severin",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Katsuhiko",
-        "family": "Shirahige",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Cas",
-        "family": "Simons",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "George",
-        "family": "St. Laurent",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Masanori",
-        "family": "Suzuki",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Takahiro",
-        "family": "Suzuki",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Matthew J",
-        "family": "Sweet",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ryan J",
-        "family": "Taft",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Shizu",
-        "family": "Takeda",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yoichi",
-        "family": "Takenaka",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kai",
-        "family": "Tan",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Martin S",
-        "family": "Taylor",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Rohan D",
-        "family": "Teasdale",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Jesper",
-        "family": "Tegnér",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Sarah",
-        "family": "Teichmann",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Eivind",
-        "family": "Valen",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Claes",
-        "family": "Wahlestedt",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kazunori",
-        "family": "Waki",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Andrew",
-        "family": "Waterhouse",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Christine A",
-        "family": "Wells",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ole",
-        "family": "Winther",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Linda",
-        "family": "Wu",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kazumi",
-        "family": "Yamaguchi",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hiroshi",
-        "family": "Yanagawa",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Jun",
-        "family": "Yasuda",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mihaela",
-        "family": "Zavolan",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "David A",
-        "family": "Hume",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Takahiro",
-        "family": "Arakawa",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Shiro",
-        "family": "Fukuda",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kengo",
-        "family": "Imamura",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Chikatoshi",
-        "family": "Kai",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Ai",
-        "family": "Kaiho",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Tsugumi",
-        "family": "Kawashima",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Chika",
-        "family": "Kawazu",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yayoi",
-        "family": "Kitazume",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Miki",
-        "family": "Kojima",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hisashi",
-        "family": "Miura",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Kayoko",
-        "family": "Murakami",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Mitsuyoshi",
-        "family": "Murata",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Noriko",
-        "family": "Ninomiya",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Hiromi",
-        "family": "Nishiyori",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Shohei",
-        "family": "Noma",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Chihiro",
-        "family": "Ogawa",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Takuma",
-        "family": "Sano",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Christophe",
-        "family": "Simon",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Michihira",
-        "family": "Tagami",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yukari",
-        "family": "Takahashi",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Jun",
-        "family": "Kawai",
-        "sequence": "additional",
-        "affiliation": []
-      },
-      {
-        "given": "Yoshihide",
-        "family": "Hayashizaki",
-        "sequence": "additional",
         "affiliation": []
       },
       {
@@ -3433,13 +2500,13 @@
     "deposited": {
       "date-parts": [
         [
-          2018,
-          1,
-          11
+          2019,
+          4,
+          18
         ]
       ],
-      "date-time": "2018-01-11T22:14:46Z",
-      "timestamp": 1515708886000
+      "date-time": "2019-04-18T10:34:38Z",
+      "timestamp": 1555583678000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3472,6 +2539,9 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Genetics"
+    ],
     "container-title-short": "Nat Genet",
     "short_url": "https://doi.org/bc8crv",
     "id": "KGmXK8UO"
@@ -3480,13 +2550,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          11
+          2019,
+          5,
+          22
         ]
       ],
-      "date-time": "2018-10-11T18:22:38Z",
-      "timestamp": 1539282158362
+      "date-time": "2019-05-22T02:23:02Z",
+      "timestamp": 1558491782075
     },
     "reference-count": 14,
     "publisher": "Springer Nature",
@@ -3506,7 +2576,7 @@
           "timestamp": 1330819200000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -3536,7 +2606,7 @@
     },
     "page": "357-359",
     "source": "Crossref",
-    "is-referenced-by-count": 8071,
+    "is-referenced-by-count": 10278,
     "title": "Fast gapped-read alignment with Bowtie 2",
     "prefix": "10.1038",
     "volume": "9",
@@ -3590,13 +2660,13 @@
     "deposited": {
       "date-parts": [
         [
-          2018,
-          1,
-          25
+          2019,
+          4,
+          20
         ]
       ],
-      "date-time": "2018-01-25T18:18:44Z",
-      "timestamp": 1516904324000
+      "date-time": "2019-04-20T17:10:37Z",
+      "timestamp": 1555780237000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3629,6 +2699,12 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Biotechnology",
+      "Cell Biology",
+      "Biochemistry",
+      "Molecular Biology"
+    ],
     "container-title-short": "Nat Methods",
     "short_url": "https://doi.org/gd2xzn",
     "id": "PiS0h6Mu"
@@ -3637,13 +2713,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          15
+          2019,
+          5,
+          20
         ]
       ],
-      "date-time": "2018-10-15T09:42:36Z",
-      "timestamp": 1539596556337
+      "date-time": "2019-05-20T05:03:03Z",
+      "timestamp": 1558328583354
     },
     "reference-count": 26,
     "publisher": "Springer Nature",
@@ -3663,7 +2739,7 @@
           "timestamp": 1440374400000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -3696,7 +2772,7 @@
     "page": "931-934",
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 221,
+    "is-referenced-by-count": 332,
     "title": "Predicting effects of noncoding variants with deep learning–based sequence model",
     "prefix": "10.1038",
     "volume": "12",
@@ -3750,13 +2826,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          12,
-          27
+          2019,
+          4,
+          22
         ]
       ],
-      "date-time": "2017-12-27T14:31:19Z",
-      "timestamp": 1514385079000
+      "date-time": "2019-04-22T11:11:27Z",
+      "timestamp": 1555931487000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3789,7 +2865,54 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Biotechnology",
+      "Cell Biology",
+      "Biochemistry",
+      "Molecular Biology"
+    ],
     "container-title-short": "Nat Methods",
+    "assertion": [
+      {
+        "value": "26 February 2015",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "11 June 2015",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "24 August 2015",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing financial interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
     "short_url": "https://doi.org/gcgk8g",
     "id": "2UI1BZuD"
   },
@@ -3797,16 +2920,16 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          10
+          2019,
+          5,
+          16
         ]
       ],
-      "date-time": "2018-10-10T22:42:35Z",
-      "timestamp": 1539211355501
+      "date-time": "2019-05-16T11:25:51Z",
+      "timestamp": 1558005951653
     },
     "reference-count": 16,
-    "publisher": "Springer Nature America, Inc",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "7",
     "license": [
       {
@@ -3823,7 +2946,7 @@
           "timestamp": 1182643200000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -3853,7 +2976,7 @@
     },
     "page": "563-565",
     "source": "Crossref",
-    "is-referenced-by-count": 44,
+    "is-referenced-by-count": 50,
     "title": "Trawler: de novo regulatory motif discovery pipeline for chromatin immunoprecipitation",
     "prefix": "10.1038",
     "volume": "4",
@@ -3925,13 +3048,13 @@
     "deposited": {
       "date-parts": [
         [
-          2018,
-          8,
-          7
+          2019,
+          5,
+          13
         ]
       ],
-      "date-time": "2018-08-07T14:11:19Z",
-      "timestamp": 1533651079000
+      "date-time": "2019-05-13T22:13:36Z",
+      "timestamp": 1557785616000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3978,13 +3101,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          6
+          2019,
+          5,
+          16
         ]
       ],
-      "date-time": "2018-09-06T15:02:41Z",
-      "timestamp": 1536246161073
+      "date-time": "2019-05-16T19:43:29Z",
+      "timestamp": 1558035809168
     },
     "reference-count": 6,
     "publisher": "Springer Nature",
@@ -4037,7 +3160,7 @@
     "page": "475-476",
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 36,
     "title": "Bioconda: sustainable and comprehensive software distribution for the life sciences",
     "prefix": "10.1038",
     "volume": "15",
@@ -4172,14 +3295,15 @@
     ],
     "URL": "https://doi.org/10.1038/s41592-018-0046-7",
     "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/207092",
+          "asserted-by": "object"
+        }
+      ],
       "cites": []
     },
-    "subject": [
-      "Biotechnology",
-      "Cell Biology",
-      "Biochemistry",
-      "Molecular Biology"
-    ],
     "container-title-short": "Nat Methods",
     "short_url": "https://doi.org/gd2xzp",
     "id": "sYguBb3Q"
@@ -4188,13 +3312,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          27
+          2019,
+          5,
+          10
         ]
       ],
-      "date-time": "2018-09-27T18:22:37Z",
-      "timestamp": 1538072557304
+      "date-time": "2019-05-10T12:43:37Z",
+      "timestamp": 1557492217903
     },
     "reference-count": 44,
     "publisher": "Springer Nature",
@@ -4214,7 +3338,7 @@
           "timestamp": 1167609600000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -4244,7 +3368,7 @@
     },
     "page": "42-49",
     "source": "Crossref",
-    "is-referenced-by-count": 263,
+    "is-referenced-by-count": 284,
     "title": "Nanog and transcriptional networks in embryonic stem cell pluripotency",
     "prefix": "10.1038",
     "volume": "17",
@@ -4298,13 +3422,13 @@
     "deposited": {
       "date-parts": [
         [
-          2018,
-          6,
-          28
+          2019,
+          3,
+          16
         ]
       ],
-      "date-time": "2018-06-28T09:19:00Z",
-      "timestamp": 1530177540000
+      "date-time": "2019-03-16T08:25:54Z",
+      "timestamp": 1552724754000
     },
     "score": 1.0,
     "subtitle": [],
@@ -4348,16 +3472,16 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          30
+          2019,
+          5,
+          16
         ]
       ],
-      "date-time": "2018-09-30T11:02:41Z",
-      "timestamp": 1538305361924
+      "date-time": "2019-05-16T22:03:08Z",
+      "timestamp": 1558044188374
     },
     "reference-count": 195,
-    "publisher": "Springer Nature",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "47",
     "license": [
       {
@@ -4374,7 +3498,7 @@
           "timestamp": 1191196800000
         },
         "delay-in-days": 0,
-        "content-version": "unspecified"
+        "content-version": "tdm"
       }
     ],
     "content-domain": {
@@ -4404,7 +3528,7 @@
     },
     "page": "6816-6828",
     "source": "Crossref",
-    "is-referenced-by-count": 219,
+    "is-referenced-by-count": 235,
     "title": "Transcriptional control of granulocyte and monocyte development",
     "prefix": "10.1038",
     "volume": "26",
@@ -4452,13 +3576,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          12,
-          23
+          2019,
+          5,
+          3
         ]
       ],
-      "date-time": "2017-12-23T09:14:17Z",
-      "timestamp": 1514020457000
+      "date-time": "2019-05-03T19:46:34Z",
+      "timestamp": 1556912794000
     },
     "score": 1.0,
     "subtitle": [],
@@ -4490,6 +3614,11 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Genetics",
+      "Cancer Research",
+      "Molecular Biology"
+    ],
     "container-title-short": "Oncogene",
     "short_url": "https://doi.org/cdzfmw",
     "id": "U0f0MFSJ"
@@ -4498,13 +3627,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          21
+          2019,
+          5,
+          16
         ]
       ],
-      "date-time": "2018-09-21T07:22:43Z",
-      "timestamp": 1537514563603
+      "date-time": "2019-05-16T22:42:58Z",
+      "timestamp": 1558046578522
     },
     "reference-count": 37,
     "publisher": "Mary Ann Liebert Inc",
@@ -4554,7 +3683,7 @@
     },
     "page": "447-464",
     "source": "Crossref",
-    "is-referenced-by-count": 170,
+    "is-referenced-by-count": 186,
     "title": "A Gibbs Sampling Method to Detect Overrepresented Motifs in the Upstream Regions of Coexpressed Genes",
     "prefix": "10.1089",
     "volume": "9",
@@ -4681,13 +3810,6 @@
     ],
     "URL": "https://doi.org/10.1089/10665270252935566",
     "relation": {},
-    "subject": [
-      "Modelling and Simulation",
-      "Computational Theory and Mathematics",
-      "Genetics",
-      "Molecular Biology",
-      "Computational Mathematics"
-    ],
     "container-title-short": "Journal of Computational Biology",
     "short_url": "https://doi.org/d3mkc9",
     "id": "FGUIIeyX"
@@ -4696,13 +3818,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          8,
-          15
+          2019,
+          5,
+          16
         ]
       ],
-      "date-time": "2018-08-15T02:22:36Z",
-      "timestamp": 1534299756549
+      "date-time": "2019-05-16T22:23:23Z",
+      "timestamp": 1558045403727
     },
     "reference-count": 50,
     "publisher": "Mary Ann Liebert Inc",
@@ -4752,7 +3874,7 @@
     },
     "page": "317-329",
     "source": "Crossref",
-    "is-referenced-by-count": 46,
+    "is-referenced-by-count": 57,
     "title": "GADEM: A Genetic Algorithm Guided Formation of Spaced Dyads Coupled with an EM Algorithm for Motif Discovery",
     "prefix": "10.1089",
     "volume": "16",
@@ -4834,13 +3956,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          11
+          2019,
+          5,
+          22
         ]
       ],
-      "date-time": "2018-10-11T19:22:34Z",
-      "timestamp": 1539285754055
+      "date-time": "2019-05-22T04:43:12Z",
+      "timestamp": 1558500192591
     },
     "reference-count": 5,
     "publisher": "Oxford University Press (OUP)",
@@ -4873,7 +3995,7 @@
     },
     "page": "841-842",
     "source": "Crossref",
-    "is-referenced-by-count": 4015,
+    "is-referenced-by-count": 5041,
     "title": "BEDTools: a flexible suite of utilities for comparing genomic features",
     "prefix": "10.1093",
     "volume": "26",
@@ -4961,6 +4083,14 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
     "short_url": "https://doi.org/cmrms3",
     "id": "1HWiAHnIw"
   },
@@ -4968,13 +4098,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          21
+          2019,
+          5,
+          17
         ]
       ],
-      "date-time": "2018-09-21T12:02:43Z",
-      "timestamp": 1537531363252
+      "date-time": "2019-05-17T02:03:34Z",
+      "timestamp": 1558058614752
     },
     "reference-count": 15,
     "publisher": "Oxford University Press (OUP)",
@@ -5007,7 +4137,7 @@
     },
     "page": "2622-2623",
     "source": "Crossref",
-    "is-referenced-by-count": 75,
+    "is-referenced-by-count": 84,
     "title": "Deep and wide digging for binding motifs in ChIP-Seq data",
     "prefix": "10.1093",
     "volume": "26",
@@ -5107,6 +4237,14 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
     "short_url": "https://doi.org/b4pwbk",
     "id": "smdkzwHK"
   },
@@ -5114,13 +4252,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          21
+          2019,
+          5,
+          3
         ]
       ],
-      "date-time": "2018-09-21T04:22:48Z",
-      "timestamp": 1537503768405
+      "date-time": "2019-05-03T07:24:21Z",
+      "timestamp": 1556868261263
     },
     "reference-count": 9,
     "publisher": "Oxford University Press (OUP)",
@@ -5153,7 +4291,7 @@
     },
     "page": "270-271",
     "source": "Crossref",
-    "is-referenced-by-count": 39,
+    "is-referenced-by-count": 49,
     "title": "GimmeMotifs: a de novo motif prediction pipeline for ChIP-sequencing experiments",
     "prefix": "10.1093",
     "volume": "27",
@@ -5241,6 +4379,14 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
     "short_url": "https://doi.org/d73jwz",
     "id": "11x7W2xZq"
   },
@@ -5248,13 +4394,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          12
+          2019,
+          5,
+          20
         ]
       ],
-      "date-time": "2018-10-12T04:42:35Z",
-      "timestamp": 1539319355750
+      "date-time": "2019-05-20T04:43:13Z",
+      "timestamp": 1558327393239
     },
     "reference-count": 29,
     "publisher": "Oxford University Press (OUP)",
@@ -5287,7 +4433,7 @@
     },
     "page": "573-580",
     "source": "Crossref",
-    "is-referenced-by-count": 122,
+    "is-referenced-by-count": 150,
     "title": "Robust rank aggregation for gene list integration and meta-analysis",
     "prefix": "10.1093",
     "volume": "28",
@@ -5387,6 +4533,14 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
     "short_url": "https://doi.org/fx4nbm",
     "id": "15HHsoLKA"
   },
@@ -5394,13 +4548,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          11
+          2019,
+          5,
+          20
         ]
       ],
-      "date-time": "2018-10-11T15:02:40Z",
-      "timestamp": 1539270160062
+      "date-time": "2019-05-20T10:43:11Z",
+      "timestamp": 1558348991389
     },
     "reference-count": 12,
     "publisher": "Oxford University Press (OUP)",
@@ -5433,7 +4587,7 @@
     },
     "page": "2520-2522",
     "source": "Crossref",
-    "is-referenced-by-count": 187,
+    "is-referenced-by-count": 272,
     "title": "Snakemake--a scalable bioinformatics workflow engine",
     "prefix": "10.1093",
     "volume": "28",
@@ -5521,6 +4675,14 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
     "container-title-short": "Bioinformatics",
     "short_url": "https://doi.org/gd2xzq",
     "id": "NcYZqBux"
@@ -5529,13 +4691,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          16
+          2019,
+          2,
+          13
         ]
       ],
-      "date-time": "2018-10-16T04:22:38Z",
-      "timestamp": 1539663758343
+      "date-time": "2019-02-13T06:37:15Z",
+      "timestamp": 1550039835626
     },
     "reference-count": 12,
     "publisher": "Oxford University Press (OUP)",
@@ -5664,13 +4826,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          4,
-          17
+          2019,
+          2,
+          16
         ]
       ],
-      "date-time": "2018-04-17T18:48:42Z",
-      "timestamp": 1523990922756
+      "date-time": "2019-02-16T15:11:03Z",
+      "timestamp": 1550329863428
     },
     "reference-count": 15,
     "publisher": "Oxford University Press (OUP)",
@@ -5776,13 +4938,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          7,
-          3
+          2019,
+          2,
+          18
         ]
       ],
-      "date-time": "2018-07-03T14:40:12Z",
-      "timestamp": 1530628812057
+      "date-time": "2019-02-18T21:12:43Z",
+      "timestamp": 1550524363225
     },
     "reference-count": 9,
     "publisher": "Oxford University Press (OUP)",
@@ -5956,16 +5118,15 @@
     },
     "URL": "https://doi.org/10.1093/bioinformatics/btx804",
     "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/160184",
+          "asserted-by": "object"
+        }
+      ],
       "cites": []
     },
-    "subject": [
-      "Statistics and Probability",
-      "Computational Theory and Mathematics",
-      "Biochemistry",
-      "Molecular Biology",
-      "Computational Mathematics",
-      "Computer Science Applications"
-    ],
     "short_url": "https://doi.org/ckps",
     "id": "QMQpDahx"
   },
@@ -5973,13 +5134,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          9
+          2019,
+          4,
+          10
         ]
       ],
-      "date-time": "2018-09-09T11:10:52Z",
-      "timestamp": 1536491452666
+      "date-time": "2019-04-10T09:43:33Z",
+      "timestamp": 1554889413887
     },
     "reference-count": 18,
     "publisher": "Oxford University Press (OUP)",
@@ -6052,7 +5213,7 @@
     },
     "page": "i629-i637",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 2,
     "title": "Discovering epistatic feature interactions from neural network models of regulatory DNA sequences",
     "prefix": "10.1093",
     "volume": "34",
@@ -6178,16 +5339,15 @@
     },
     "URL": "https://doi.org/10.1093/bioinformatics/bty575",
     "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/302711",
+          "asserted-by": "object"
+        }
+      ],
       "cites": []
     },
-    "subject": [
-      "Statistics and Probability",
-      "Computational Theory and Mathematics",
-      "Biochemistry",
-      "Molecular Biology",
-      "Computational Mathematics",
-      "Computer Science Applications"
-    ],
     "short_url": "https://doi.org/gd9j7g",
     "id": "14F1Ih71i"
   },
@@ -6195,13 +5355,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          8,
-          17
+          2019,
+          5,
+          15
         ]
       ],
-      "date-time": "2018-08-17T12:02:41Z",
-      "timestamp": 1534507361960
+      "date-time": "2019-05-15T16:04:09Z",
+      "timestamp": 1557936249063
     },
     "reference-count": 32,
     "publisher": "Oxford University Press (OUP)",
@@ -6225,7 +5385,7 @@
     },
     "page": "227-235",
     "source": "Crossref",
-    "is-referenced-by-count": 36,
+    "is-referenced-by-count": 42,
     "title": "The transcription repressor, ZEB1, cooperates with CtBP2 and HDAC1 to suppress IL-2 gene activation in T cells",
     "prefix": "10.1093",
     "volume": "21",
@@ -6328,6 +5488,10 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Immunology",
+      "General Medicine"
+    ],
     "container-title-short": "International Immunology",
     "short_url": "https://doi.org/d5ktrw",
     "id": "vhkaSeK9"
@@ -6336,13 +5500,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          6
+          2019,
+          5,
+          16
         ]
       ],
-      "date-time": "2018-10-06T12:42:39Z",
-      "timestamp": 1538829759387
+      "date-time": "2019-05-16T11:25:56Z",
+      "timestamp": 1558005956911
     },
     "reference-count": 42,
     "publisher": "Oxford University Press (OUP)",
@@ -6375,7 +5539,7 @@
     },
     "page": "4899-4913",
     "source": "Crossref",
-    "is-referenced-by-count": 99,
+    "is-referenced-by-count": 126,
     "title": "Limitations and potentials of current motif discovery algorithms",
     "prefix": "10.1093",
     "volume": "33",
@@ -6423,13 +5587,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          8,
-          24
+          2019,
+          3,
+          20
         ]
       ],
-      "date-time": "2017-08-24T12:25:16Z",
-      "timestamp": 1503577516000
+      "date-time": "2019-03-20T06:33:44Z",
+      "timestamp": 1553063624000
     },
     "score": 1.0,
     "subtitle": [],
@@ -6460,6 +5624,9 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Genetics"
+    ],
     "container-title-short": "Nucleic Acids Research",
     "short_url": "https://doi.org/cjvmfh",
     "id": "iW6hyGIk"
@@ -6468,13 +5635,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          9
+          2019,
+          5,
+          6
         ]
       ],
-      "date-time": "2018-10-09T08:42:42Z",
-      "timestamp": 1539074562292
+      "date-time": "2019-05-06T15:25:39Z",
+      "timestamp": 1557156339670
     },
     "reference-count": 0,
     "publisher": "Oxford University Press (OUP)",
@@ -6507,7 +5674,7 @@
     },
     "page": "D127-D131",
     "source": "Crossref",
-    "is-referenced-by-count": 64,
+    "is-referenced-by-count": 74,
     "title": "SwissRegulon: a database of genome-wide annotations of regulatory sites",
     "prefix": "10.1093",
     "volume": "35",
@@ -6595,13 +5762,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          3
+          2019,
+          5,
+          17
         ]
       ],
-      "date-time": "2018-10-03T14:42:32Z",
-      "timestamp": 1538577752510
+      "date-time": "2019-05-17T02:23:28Z",
+      "timestamp": 1558059808106
     },
     "reference-count": 51,
     "publisher": "Oxford University Press (OUP)",
@@ -6651,7 +5818,7 @@
     },
     "page": "2154-2167",
     "source": "Crossref",
-    "is-referenced-by-count": 59,
+    "is-referenced-by-count": 67,
     "title": "On the detection and refinement of transcription factor binding sites using ChIP-Seq data",
     "prefix": "10.1093",
     "volume": "38",
@@ -6756,6 +5923,9 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Genetics"
+    ],
     "short_url": "https://doi.org/b8wbmp",
     "id": "YIsvgfWU"
   },
@@ -6763,13 +5933,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          3
+          2019,
+          2,
+          17
         ]
       ],
-      "date-time": "2018-10-03T14:42:37Z",
-      "timestamp": 1538577757516
+      "date-time": "2019-02-17T07:50:56Z",
+      "timestamp": 1550389856914
     },
     "reference-count": 51,
     "publisher": "Oxford University Press (OUP)",
@@ -6831,7 +6001,7 @@
         "sequence": "first",
         "affiliation": [
           {
-            "name": "\n        Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
+            "name": "Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
           }
         ]
       },
@@ -6841,7 +6011,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
+            "name": "Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
           }
         ]
       },
@@ -6851,7 +6021,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
+            "name": "Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
           }
         ]
       },
@@ -6861,7 +6031,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
+            "name": "Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
           }
         ]
       },
@@ -6871,7 +6041,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
+            "name": "Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
           }
         ]
       },
@@ -6881,10 +6051,10 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
+            "name": "Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
           },
           {
-            "name": "\n        Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
+            "name": "Department of Molecular and Cell Biology, Center for Systems Biology, 2Department of Mathematics, University of Texas at Dallas, 800 W. Campbell Road, Richardson, TX 75080, USA and 3Division of Bioinformatics, Center for Synthetic and Systems Biology, TNLIST, Tsinghua University, Beijing 100084, China"
           }
         ]
       }
@@ -6969,13 +6139,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          9
+          2019,
+          5,
+          20
         ]
       ],
-      "date-time": "2018-10-09T12:02:39Z",
-      "timestamp": 1539086559096
+      "date-time": "2019-05-20T13:43:00Z",
+      "timestamp": 1558359780309
     },
     "reference-count": 9,
     "publisher": "Oxford University Press (OUP)",
@@ -7026,7 +6196,7 @@
     },
     "page": "D171-D176",
     "source": "Crossref",
-    "is-referenced-by-count": 107,
+    "is-referenced-by-count": 123,
     "title": "Factorbook.org: a Wiki-based database for transcription factor-binding data generated by the ENCODE consortium",
     "prefix": "10.1093",
     "volume": "41",
@@ -7180,6 +6350,9 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Genetics"
+    ],
     "container-title-short": "Nucleic Acids Research",
     "short_url": "https://doi.org/f4jn3n",
     "id": "YuvogFWT"
@@ -7188,13 +6361,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          24
+          2019,
+          5,
+          15
         ]
       ],
-      "date-time": "2018-09-24T07:42:38Z",
-      "timestamp": 1537774958836
+      "date-time": "2019-05-15T11:03:50Z",
+      "timestamp": 1557918230622
     },
     "reference-count": 110,
     "publisher": "Oxford University Press (OUP)",
@@ -7245,7 +6418,7 @@
     },
     "page": "2976-2987",
     "source": "Crossref",
-    "is-referenced-by-count": 126,
+    "is-referenced-by-count": 154,
     "title": "Systematic discovery and characterization of regulatory motifs in ENCODE TF binding experiments",
     "prefix": "10.1093",
     "volume": "42",
@@ -7341,13 +6514,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          4
+          2019,
+          5,
+          6
         ]
       ],
-      "date-time": "2018-10-04T17:02:39Z",
-      "timestamp": 1538672559431
+      "date-time": "2019-05-06T17:23:22Z",
+      "timestamp": 1557163402861
     },
     "reference-count": 36,
     "publisher": "Oxford University Press (OUP)",
@@ -7398,7 +6571,7 @@
     },
     "page": "D117-D122",
     "source": "Crossref",
-    "is-referenced-by-count": 83,
+    "is-referenced-by-count": 96,
     "title": "UniPROBE, update 2015: new tools and content for the online database of protein-binding microarray data on protein–DNA interactions",
     "prefix": "10.1093",
     "volume": "43",
@@ -7507,13 +6680,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          4
+          2019,
+          5,
+          11
         ]
       ],
-      "date-time": "2018-10-04T17:02:39Z",
-      "timestamp": 1538672559404
+      "date-time": "2019-05-11T16:03:24Z",
+      "timestamp": 1557590604992
     },
     "reference-count": 70,
     "publisher": "Oxford University Press (OUP)",
@@ -7564,7 +6737,7 @@
     },
     "page": "e119-e119",
     "source": "Crossref",
-    "is-referenced-by-count": 12,
+    "is-referenced-by-count": 19,
     "title": "Varying levels of complexity in transcription factor binding motifs",
     "prefix": "10.1093",
     "volume": "43",
@@ -7663,13 +6836,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          8,
-          17
+          2019,
+          5,
+          19
         ]
       ],
-      "date-time": "2018-08-17T07:22:33Z",
-      "timestamp": 1534490553931
+      "date-time": "2019-05-19T21:03:01Z",
+      "timestamp": 1558299781614
     },
     "reference-count": 26,
     "publisher": "Oxford University Press (OUP)",
@@ -7720,7 +6893,7 @@
     },
     "page": "D267-D275",
     "source": "Crossref",
-    "is-referenced-by-count": 6,
+    "is-referenced-by-count": 22,
     "title": "ReMap 2018: an updated atlas of regulatory regions from an integrative analysis of DNA-binding ChIP-seq experiments",
     "prefix": "10.1093",
     "volume": "46",
@@ -7837,13 +7010,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          11
+          2019,
+          5,
+          17
         ]
       ],
-      "date-time": "2018-09-11T08:42:31Z",
-      "timestamp": 1536655351901
+      "date-time": "2019-05-17T09:06:31Z",
+      "timestamp": 1558083991282
     },
     "reference-count": 45,
     "publisher": "Oxford University Press (OUP)",
@@ -7894,7 +7067,7 @@
     },
     "page": "D252-D259",
     "source": "Crossref",
-    "is-referenced-by-count": 15,
+    "is-referenced-by-count": 42,
     "title": "HOCOMOCO: towards a complete collection of transcription factor binding models for human and mouse via large-scale ChIP-Seq analysis",
     "prefix": "10.1093",
     "volume": "46",
@@ -8053,13 +7226,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          10
+          2019,
+          5,
+          20
         ]
       ],
-      "date-time": "2018-10-10T18:22:40Z",
-      "timestamp": 1539195760596
+      "date-time": "2019-05-20T15:43:19Z",
+      "timestamp": 1558366999512
     },
     "reference-count": 47,
     "publisher": "Oxford University Press (OUP)",
@@ -8110,7 +7283,7 @@
     },
     "page": "D260-D266",
     "source": "Crossref",
-    "is-referenced-by-count": 43,
+    "is-referenced-by-count": 125,
     "title": "JASPAR 2018: update of the open-access database of transcription factor binding profiles and its web framework",
     "prefix": "10.1093",
     "volume": "46",
@@ -8317,13 +7490,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          4
+          2019,
+          5,
+          2
         ]
       ],
-      "date-time": "2018-09-04T14:02:38Z",
-      "timestamp": 1536069758967
+      "date-time": "2019-05-02T22:22:58Z",
+      "timestamp": 1556835778211
     },
     "reference-count": 66,
     "publisher": "Oxford University Press (OUP)",
@@ -8374,7 +7547,7 @@
     },
     "page": "e119-e119",
     "source": "Crossref",
-    "is-referenced-by-count": 5,
+    "is-referenced-by-count": 15,
     "title": "RSAT matrix-clustering: dynamic exploration and redundancy reduction of transcription factor binding motif collections",
     "prefix": "10.1093",
     "volume": "45",
@@ -8387,7 +7560,7 @@
         "sequence": "first",
         "affiliation": [
           {
-            "name": "\n        Aix Marseille Univ, INSERM, TAGC, Theory and Approaches of Genomic Complexity, UMR_S 1090, Marseille, France"
+            "name": "Aix Marseille Univ, INSERM, TAGC, Theory and Approaches of Genomic Complexity, UMR_S 1090, Marseille, France"
           }
         ]
       },
@@ -8397,7 +7570,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        Aix Marseille Univ, CNRS, INSERM, CIML, Marseille, France"
+            "name": "Aix Marseille Univ, CNRS, INSERM, CIML, Marseille, France"
           }
         ]
       },
@@ -8407,7 +7580,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        IBENS, Département de Biologie, Ecole Normale Supérieure, CNRS, Inserm, PSL Research University, F-75005 Paris, France"
+            "name": "IBENS, Département de Biologie, Ecole Normale Supérieure, CNRS, Inserm, PSL Research University, F-75005 Paris, France"
           }
         ]
       },
@@ -8417,7 +7590,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        IBENS, Département de Biologie, Ecole Normale Supérieure, CNRS, Inserm, PSL Research University, F-75005 Paris, France"
+            "name": "IBENS, Département de Biologie, Ecole Normale Supérieure, CNRS, Inserm, PSL Research University, F-75005 Paris, France"
           }
         ]
       },
@@ -8427,7 +7600,7 @@
         "sequence": "additional",
         "affiliation": [
           {
-            "name": "\n        Aix Marseille Univ, INSERM, TAGC, Theory and Approaches of Genomic Complexity, UMR_S 1090, Marseille, France"
+            "name": "Aix Marseille Univ, INSERM, TAGC, Theory and Approaches of Genomic Complexity, UMR_S 1090, Marseille, France"
           }
         ]
       }
@@ -8500,11 +7673,15 @@
     },
     "URL": "https://doi.org/10.1093/nar/gkx314",
     "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/065565",
+          "asserted-by": "object"
+        }
+      ],
       "cites": []
     },
-    "subject": [
-      "Genetics"
-    ],
     "short_url": "https://doi.org/gdwsgq",
     "id": "Pfmfeewp"
   },
@@ -8512,13 +7689,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          9
+          2019,
+          5,
+          17
         ]
       ],
-      "date-time": "2018-10-09T08:42:42Z",
-      "timestamp": 1539074562321
+      "date-time": "2019-05-17T17:23:10Z",
+      "timestamp": 1558113790908
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -8551,7 +7728,7 @@
     },
     "page": "861-873",
     "source": "Crossref",
-    "is-referenced-by-count": 183,
+    "is-referenced-by-count": 205,
     "title": "Multiplexed massively parallel SELEX for characterization of human transcription factor binding specificities",
     "prefix": "10.1101",
     "volume": "20",
@@ -8727,6 +7904,10 @@
     },
     "URL": "https://doi.org/10.1101/gr.100552.109",
     "relation": {},
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
     "container-title-short": "Genome Research",
     "short_url": "https://doi.org/dtx8n3",
     "id": "ZFIFozC9"
@@ -8735,13 +7916,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          3
+          2019,
+          4,
+          8
         ]
       ],
-      "date-time": "2018-10-03T14:42:37Z",
-      "timestamp": 1538577757522
+      "date-time": "2019-04-08T10:22:59Z",
+      "timestamp": 1554718979487
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -8774,7 +7955,7 @@
     },
     "page": "181-194",
     "source": "Crossref",
-    "is-referenced-by-count": 28,
+    "is-referenced-by-count": 30,
     "title": "P-value-based regulatory motif discovery using positional weight matrices",
     "prefix": "10.1101",
     "volume": "23",
@@ -8878,6 +8059,10 @@
     },
     "URL": "https://doi.org/10.1101/gr.139881.112",
     "relation": {},
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
     "container-title-short": "Genome Research",
     "short_url": "https://doi.org/f4g4dq",
     "id": "QzszdQqA"
@@ -8886,13 +8071,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          7
+          2019,
+          5,
+          15
         ]
       ],
-      "date-time": "2018-09-07T20:02:29Z",
-      "timestamp": 1536350549564
+      "date-time": "2019-05-15T19:03:46Z",
+      "timestamp": 1557947026012
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -8925,7 +8110,7 @@
     },
     "page": "869-884",
     "source": "Crossref",
-    "is-referenced-by-count": 62,
+    "is-referenced-by-count": 80,
     "title": "ISMARA: automated modeling of genomic signals as a democracy of regulatory motifs",
     "prefix": "10.1101",
     "volume": "24",
@@ -9043,13 +8228,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          14
+          2019,
+          3,
+          29
         ]
       ],
-      "date-time": "2018-09-14T20:40:58Z",
-      "timestamp": 1536957658543
+      "date-time": "2019-03-29T20:22:51Z",
+      "timestamp": 1553890971533
     },
     "reference-count": 72,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -9121,7 +8306,7 @@
     },
     "page": "243-255",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 2,
     "title": "Integrated analysis of motif activity and gene expression changes of transcription factors",
     "prefix": "10.1101",
     "volume": "28",
@@ -9235,10 +8420,6 @@
     "relation": {
       "cites": []
     },
-    "subject": [
-      "Genetics(clinical)",
-      "Genetics"
-    ],
     "container-title-short": "Genome Res.",
     "short_url": "https://doi.org/gctvqj",
     "id": "X6uuBgy"
@@ -9247,13 +8428,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          14
+          2019,
+          5,
+          3
         ]
       ],
-      "date-time": "2018-09-14T20:40:59Z",
-      "timestamp": 1536957659309
+      "date-time": "2019-05-03T07:24:21Z",
+      "timestamp": 1556868261230
     },
     "reference-count": 66,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -9285,7 +8466,7 @@
     },
     "page": "739-750",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 8,
     "title": "Sequential regulatory activity prediction across chromosomes with convolutional neural networks",
     "prefix": "10.1101",
     "volume": "28",
@@ -9401,12 +8582,15 @@
     ],
     "URL": "https://doi.org/10.1101/gr.227819.117",
     "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/161851",
+          "asserted-by": "object"
+        }
+      ],
       "cites": []
     },
-    "subject": [
-      "Genetics(clinical)",
-      "Genetics"
-    ],
     "container-title-short": "Genome Res.",
     "short_url": "https://doi.org/gd54x8",
     "id": "15x5IEmHr"
@@ -9415,13 +8599,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          3
+          2019,
+          5,
+          2
         ]
       ],
-      "date-time": "2018-10-03T14:42:37Z",
-      "timestamp": 1538577757500
+      "date-time": "2019-05-02T15:02:59Z",
+      "timestamp": 1556809379520
     },
     "reference-count": 21,
     "publisher": "World Scientific Pub Co Pte Lt",
@@ -9453,7 +8637,7 @@
     },
     "page": "1340004",
     "source": "Crossref",
-    "is-referenced-by-count": 27,
+    "is-referenced-by-count": 30,
     "title": "FROM BINDING MOTIFS IN CHIP-SEQ DATA TO IMPROVED MODELS OF TRANSCRIPTION FACTOR BINDING SITES",
     "prefix": "10.1142",
     "volume": "11",
@@ -9464,7 +8648,7 @@
         "sequence": "first",
         "affiliation": [
           {
-            "name": " Laboratory of Bioinformatics and Systems Biology, Engelhardt Institute of Molecular Biology, Russian Academy of Sciences, Vavilov Street 32, Moscow 119991, GSP-1, Russia"
+            "name": "Laboratory of Bioinformatics and Systems Biology, Engelhardt Institute of Molecular Biology, Russian Academy of Sciences, Vavilov Street 32, Moscow 119991, GSP-1, Russia"
           },
           {
             "name": "Department of Computational Systems Biology, Vavilov Institute of General Genetics, Russian Academy of Sciences, Gubkina Street 3, Moscow 119991, Russia"
@@ -9587,6 +8771,11 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
     "container-title-short": "J. Bioinform. Comput. Biol.",
     "short_url": "https://doi.org/gdwsfr",
     "id": "Jc96vlRF"
@@ -9595,17 +8784,23 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          10
+          2019,
+          5,
+          21
         ]
       ],
-      "date-time": "2018-10-10T18:42:43Z",
-      "timestamp": 1539196963930
+      "date-time": "2019-05-21T20:03:00Z",
+      "timestamp": 1558468980783
     },
     "publisher-location": "New York, New York, USA",
     "reference-count": 25,
     "publisher": "ACM Press",
+    "isbn-type": [
+      {
+        "value": "9781450342322",
+        "type": "print"
+      }
+    ],
     "license": [
       {
         "URL": "http://www.acm.org/publications/policies/copyright_policy#Background",
@@ -9667,7 +8862,7 @@
       "timestamp": 1470681226000
     },
     "source": "Crossref",
-    "is-referenced-by-count": 381,
+    "is-referenced-by-count": 680,
     "title": "XGBoost",
     "prefix": "10.1145",
     "author": [
@@ -9738,13 +8933,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          5,
-          3
+          2019,
+          2,
+          16
         ]
       ],
-      "date-time": "2018-05-03T18:12:34Z",
-      "timestamp": 1525371154091
+      "date-time": "2019-02-16T04:24:14Z",
+      "timestamp": 1550291054533
     },
     "reference-count": 46,
     "publisher": "American Society of Hematology",
@@ -9777,7 +8972,7 @@
     },
     "page": "1761-1769",
     "source": "Crossref",
-    "is-referenced-by-count": 26,
+    "is-referenced-by-count": 27,
     "title": "NANOG induction of fetal liver kinase-1 (FLK1) transcription regulates endothelial cell proliferation and angiogenesis",
     "prefix": "10.1182",
     "volume": "117",
@@ -9883,6 +9078,12 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "Immunology",
+      "Cell Biology",
+      "Biochemistry",
+      "Hematology"
+    ],
     "container-title-short": "Blood",
     "short_url": "https://doi.org/c4jvh7",
     "id": "dWdvt1AI"
@@ -9891,13 +9092,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          5,
-          4
+          2019,
+          4,
+          19
         ]
       ],
-      "date-time": "2018-05-04T22:59:56Z",
-      "timestamp": 1525474796674
+      "date-time": "2019-04-19T18:22:54Z",
+      "timestamp": 1555698174670
     },
     "reference-count": 0,
     "publisher": "Springer Nature",
@@ -9928,7 +9129,7 @@
     },
     "page": "237",
     "source": "Crossref",
-    "is-referenced-by-count": 27,
+    "is-referenced-by-count": 35,
     "title": [],
     "prefix": "10.1186",
     "volume": "6",
@@ -9993,13 +9194,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
+          2019,
           5,
-          9
+          8
         ]
       ],
-      "date-time": "2018-05-09T04:15:35Z",
-      "timestamp": 1525839335604
+      "date-time": "2019-05-08T09:03:19Z",
+      "timestamp": 1557306199013
     },
     "reference-count": 17,
     "publisher": "Springer Nature",
@@ -10030,7 +9231,7 @@
     },
     "page": "752",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 7,
     "title": "Differential motif enrichment analysis of paired ChIP-seq experiments",
     "prefix": "10.1186",
     "volume": "15",
@@ -10111,13 +9312,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          11
+          2019,
+          5,
+          21
         ]
       ],
-      "date-time": "2018-10-11T15:02:40Z",
-      "timestamp": 1539270160055
+      "date-time": "2019-05-21T23:23:03Z",
+      "timestamp": 1558480983751
     },
     "reference-count": 0,
     "publisher": "Springer Nature",
@@ -10148,7 +9349,7 @@
     },
     "page": "R137",
     "source": "Crossref",
-    "is-referenced-by-count": 3145,
+    "is-referenced-by-count": 3887,
     "title": "Model-based Analysis of ChIP-Seq (MACS)",
     "prefix": "10.1186",
     "volume": "9",
@@ -10269,13 +9470,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          10,
-          4
+          2019,
+          4,
+          10
         ]
       ],
-      "date-time": "2018-10-04T17:02:39Z",
-      "timestamp": 1538672559449
+      "date-time": "2019-04-10T17:03:03Z",
+      "timestamp": 1554915783011
     },
     "reference-count": 96,
     "publisher": "Springer Nature",
@@ -10310,7 +9511,7 @@
     },
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 10,
+    "is-referenced-by-count": 15,
     "title": "Evaluating tools for transcription factor binding site prediction",
     "prefix": "10.1186",
     "author": [
@@ -10395,13 +9596,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          22
+          2019,
+          5,
+          2
         ]
       ],
-      "date-time": "2018-09-22T09:22:40Z",
-      "timestamp": 1537608160988
+      "date-time": "2019-05-02T15:02:59Z",
+      "timestamp": 1556809379528
     },
     "reference-count": 68,
     "publisher": "Public Library of Science (PLoS)",
@@ -10446,7 +9647,7 @@
     "page": "e1003214",
     "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 65,
+    "is-referenced-by-count": 75,
     "title": "The Next Generation of Transcription Factor Binding Site Prediction",
     "prefix": "10.1371",
     "volume": "9",
@@ -10541,13 +9742,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          8,
-          1
+          2019,
+          2,
+          18
         ]
       ],
-      "date-time": "2018-08-01T05:22:31Z",
-      "timestamp": 1533100951684
+      "date-time": "2019-02-18T08:29:26Z",
+      "timestamp": 1550478566572
     },
     "update-to": [
       {
@@ -10620,7 +9821,7 @@
     "page": "e1005176",
     "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 3,
     "title": "Automated incorporation of pairwise dependency in transcription factor binding site prediction using dinucleotide weight tensors",
     "prefix": "10.1371",
     "volume": "13",
@@ -10688,13 +9889,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          8,
-          9
+          2018,
+          10,
+          23
         ]
       ],
-      "date-time": "2017-08-09T22:25:15Z",
-      "timestamp": 1502317515000
+      "date-time": "2018-10-23T21:16:36Z",
+      "timestamp": 1540329396000
     },
     "score": 1.0,
     "subtitle": [],
@@ -10748,13 +9949,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          7,
-          19
+          2019,
+          2,
+          16
         ]
       ],
-      "date-time": "2018-07-19T18:02:32Z",
-      "timestamp": 1532023352870
+      "date-time": "2019-02-16T21:12:04Z",
+      "timestamp": 1550351524971
     },
     "reference-count": 43,
     "publisher": "Public Library of Science (PLoS)",
@@ -10799,7 +10000,7 @@
     "page": "e24576",
     "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 9,
+    "is-referenced-by-count": 10,
     "title": "AMD, an Automated Motif Discovery Tool Using Stepwise Refinement of Gapped Consensuses",
     "prefix": "10.1371",
     "volume": "6",
@@ -10865,13 +10066,13 @@
     "deposited": {
       "date-parts": [
         [
-          2017,
-          6,
-          20
+          2018,
+          10,
+          23
         ]
       ],
-      "date-time": "2017-06-20T06:13:02Z",
-      "timestamp": 1497939182000
+      "date-time": "2018-10-23T05:50:32Z",
+      "timestamp": 1540273832000
     },
     "score": 1.0,
     "subtitle": [],
@@ -10910,6 +10111,11 @@
     "relation": {
       "cites": []
     },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Agricultural and Biological Sciences",
+      "General Medicine"
+    ],
     "container-title-short": "PLoS ONE",
     "short_url": "https://doi.org/b97vhq",
     "id": "1BgOvt0PL"
@@ -10918,13 +10124,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          5,
-          7
+          2019,
+          2,
+          18
         ]
       ],
-      "date-time": "2018-05-07T21:04:35Z",
-      "timestamp": 1525727075002
+      "date-time": "2019-02-18T10:09:10Z",
+      "timestamp": 1550484550278
     },
     "reference-count": 5,
     "publisher": "The Open Journal",
@@ -11096,13 +10302,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          9,
-          12
+          2019,
+          5,
+          15
         ]
       ],
-      "date-time": "2018-09-12T04:42:39Z",
-      "timestamp": 1536727359747
+      "date-time": "2019-05-15T10:24:39Z",
+      "timestamp": 1557915879887
     },
     "reference-count": 0,
     "publisher": "Ferrata Storti Foundation (Haematologica)",
@@ -11135,7 +10341,7 @@
     },
     "page": "1487-1489",
     "source": "Crossref",
-    "is-referenced-by-count": 40,
+    "is-referenced-by-count": 47,
     "title": "BLUEPRINT: mapping human blood cell epigenomes",
     "prefix": "10.3324",
     "volume": "98",
@@ -11335,7 +10541,7 @@
       },
       {
         "given": "Brian",
-        "literal": "Brian "
+        "literal": ", Brian"
       },
       {
         "family": "Qalieh",
@@ -11354,7 +10560,7 @@
     "abstract": "v0.9.0 (July 2018)\nNote: a version of these release notes with working links appears in the online documentation.\nThis is a major release with several substantial and long-desired new features. There are also updates/modifications to the themes and color palettes that give better consistency with matplotlib 2.0 and some notable API changes.\nNew relational plots\nThree completely new plotting functions have been added: catplot, scatterplot, and lineplot. The first is a figure-level interface to the latter two that combines them with a FacetGrid. The functions bring the high-level, dataset-oriented API of the seaborn categorical plotting functions to more general plots (scatter plots and line plots).\nThese functions can visualize a relationship between two numeric variables while mapping up to three additional variables by modifying <code>hue</code>, <code>size</code>, and/or <code>style</code> semantics. The common high-level API is implemented differently in the two functions. For example, the size semantic in scatterplot scales the area of scatter plot points, but in lineplot it scales width of the line plot lines. The API is dataset-oriented, meaning that in both cases you pass the variable in your dataset rather than directly specifying the matplotlib parameters to use for point area or line width.\nAnother way the relational functions differ from existing seaborn functionality is that they have better support for using numeric variables for <code>hue</code> and <code>size</code> semantics. This functionality may be propagated to other functions that can add a <code>hue</code> semantic in future versions; it has not been in this release.\nThe lineplot function also has support for statistical estimation and is replacing the older <code>tsplot</code> function, which still exists but is marked for removal in a future release. lineplot is better aligned with the API of the rest of the library and more flexible in showing relationships across additional variables by modifying the size and style semantics independently. It also has substantially improved support for date and time data, a major pain factor in <code>tsplot</code>. The cost is that some of the more esoteric options in <code>tsplot</code> for representing uncertainty (e.g. a colormapped KDE of the bootstrap distribution) have not been implemented in the new function.\nThere is quite a bit of new documentation that explains these new functions in more detail, including detailed examples of the various options in the API reference and a more verbose tutorial.\nThese functions should be considered in a \"stable beta\" state. They have been thoroughly tested, but some unknown corner cases may remain to be found. The main features are in place, but not all planned functionality has been implemented. There are planned improvements to some elements, particularly the default legend, that are a little rough around the edges in this release. Finally, some of the default behavior (e.g. the default range of point/line sizes) may change somewhat in future releases.\nUpdates to themes and palettes\nSeveral changes have been made to the seaborn style themes, context scaling, and color palettes. In general the aim of these changes was to make the seaborn styles more consistent with the style updates in matplotlib 2.0 and to leverage some of the new style parameters for better implementation of some aspects of the seaborn styles. Here is a list of the changes:\n\nReorganized and updated some axes_style/plotting_context parameters to take advantage of improvements in the matplotlib 2.0 update. The biggest change involves using several new parameterss in the \"style\" spec while moving parameters that used to implement the corresponding aesthetics to the \"context\" spec. For example, axes spines and ticks are now off instead of having their width/length zeroed out for the darkgrid style. That means the width/length of these elements can now be scaled in different contexts. The effect is a more cohesive appearance of the plots, especially in larger contexts. These changes include only minimal support for the 1.x matplotlib series. Users who are stuck on matplotlib 1.5 but wish to use seaborn styling may want to use the seaborn parameters that can be accessed through the matplotlib stylesheet interface.\nUpdated the seaborn palettes (\"deep\", \"muted\", \"colorblind\", etc.) to correspond with the new 10-color matplotlib default. The legacy palettes are now available at \"deep6\", \"muted6\", \"colorblind6\", etc. Additionally, a few individual colors were tweaked for better consistency, aesthetics, and accessibility.\nCalling color_palette (or set_palette) with a named qualitative palettes (i.e. one of the seaborn palettes, the colorbrewer qualitative palettes, or the matplotlib matplotlib tableau-derived palettes) and no specified number of colors will return all of the colors in the palette. This means that for some palettes, the returned list will have a different length than it did in previous versions.\nEnhanced color_palette to accept a parameterized specification of a cubehelix palette in in a string, prefixed with <code>\"ch:\"</code> (e.g. <code>\"ch:-.1,.2,l=.7\"</code>). Note that keyword arguments can be spelled out or referenced using only their first letter. Reversing the palette is accomplished by appending <code>\"_r\"</code>, as with other matplotlib colormaps. This specification will be accepted by any seaborn function with a <code>palette=</code> parameter.\nSlightly increased the base font sizes in plotting_context and increased the scaling factors for <code>\"talk\"</code> and <code>\"poster\"</code> contexts.\nCalling set will now call set_color_codes to re-assign the single letter color codes by default\n\nAPI changes\nA few functions have been renamed or have had changes to their default parameters.\n\nThe <code>factorplot</code> function has been renamed to catplot. The new name ditches the original R-inflected terminology to use a name that is more consistent with terminology in pandas and in seaborn itself. This change should hopefully make catplot easier to discover, and it should make more clear what its role is. <code>factorplot</code> still exists and will pass its arguments through to catplot with a warning. It may be removed eventually, but the transition will be as gradual as possible.\nThe other reason that the <code>factorplot</code> name was changed was to ease another alteration which is that the default <code>kind</code> in catplot is now <code>\"strip\"</code> (corresponding to stripplot). This plots a categorical scatter plot which is usually a much better place to start and is more consistent with the default in relplot. The old default style in <code>factorplot</code> (<code>\"point\"</code>, corresponding to pointplot) remains available if you want to show a statistical estimation.\nThe <code>lvplot</code> function has been renamed to boxenplot. The \"letter-value\" terminology that was used to name the original kind of plot is obscure, and the abbreviation to <code>lv</code> did not help anything. The new name should make the plot more discoverable by describing its format (it plots multiple boxes, also known as \"boxen\"). As with <code>factorplot</code>, the <code>lvplot</code> function still exists to provide a relatively smooth transition.\nRenamed the <code>size</code> parameter to <code>height</code> in multi-plot grid objects (FacetGrid, PairGrid, and JointGrid) along with functions that use them (<code>factorplot</code>, lmplot, pairplot, and jointplot) to avoid conflicts with the <code>size</code> parameter that is used in <code>scatterplot</code> and <code>lineplot</code> (necessary to make relplot work) and also makes the meaning of the parameter a bit more clear.\nChanged the default diagonal plots in pairplot to use `func`:kdeplot` when a <code>\"hue\"</code> dimension is used.\nDeprecated the statistical annotation component of JointGrid. The method is still available but will be removed in a future version.\nTwo older functions that were deprecated in earlier versions, <code>coefplot</code> and <code>interactplot</code>, have undergone final removal from the code base.\n\nDocumentation improvements\nThere has been some effort put into improving the documentation. The biggest change is that the introduction to the library has been completely rewritten to provide much more information and, critically, examples. In addition to the high-level motivation, the introduction also covers some important topics that are often sources of confusion, like the distinction between figure-level and axes-level functions, how datasets should be formatted for use in seaborn, and how to customize the appearance of the plots.\nOther improvements have been made throughout, most notably a thorough re-write of the categorical tutorial categorical_tutorial.\nOther small enhancements and bug fixes\n\nChanged rugplot to plot a matplotlib <code>LineCollection</code> instead of many <code>Line2D</code> objects, providing a big speedup for large arrays.\nChanged the default off-diagonal plots to use scatterplot. (Note that the <code>\"hue\"</code> currently draws three separate scatterplots instead of using the hue semantic of the scatterplot function).\nChanged color handling when using kdeplot with two variables. The default colormap for the 2D density now follows the color cycle, and the function can use <code>color</code> and <code>label</code> kwargs, adding more flexibility and avoiding a warning when using with multi-plot grids.\nAdded the <code>subplot_kws</code> parameter to PairGrid for more flexibility.\nRemoved a special case in PairGrid that defaulted to drawing stacked histograms on the diagonal axes.\nFixed jointplot/JointGrid and regplot so that they now accept list inputs.\nFixed a bug in FacetGrid when using a single row/column level or using <code>col_wrap=1</code>.\nFixed functions that set axis limits so that they preserve auto-scaling state on matplotlib 2.0.\nAvoided an error when using matplotlib backends that cannot render a canvas (e.g. PDF).\nChanged the install infrastructure to explicitly declare dependencies in a way that <code>pip</code> is aware of. This means that <code>pip install seaborn</code> will now work in an empty environment. Additionally, the dependencies are specified with strict minimal versions.\nUpdated the testing infrastructure to execute tests with pytest (although many individual tests still use nose assertion).",
     "DOI": "10.5281/zenodo.1313201",
     "publisher": "Zenodo",
-    "title": "Mwaskom/Seaborn: V0.9.0 (July 2018)",
+    "title": "mwaskom/seaborn: v0.9.0 (July 2018)",
     "URL": "https://doi.org/10.5281/zenodo.1313201",
     "version": "v0.9.0",
     "short_url": "https://doi.org/gd2xzs"
@@ -11420,13 +10626,13 @@
     "indexed": {
       "date-parts": [
         [
-          2018,
-          5,
-          11
+          2019,
+          2,
+          19
         ]
       ],
-      "date-time": "2018-05-11T13:42:58Z",
-      "timestamp": 1526046178915
+      "date-time": "2019-02-19T00:18:45Z",
+      "timestamp": 1550535525691
     },
     "posted": {
       "date-parts": [
@@ -11613,6 +10819,7 @@
       }
     ],
     "PMID": "10037751",
+    "DOI": "10.1074/jbc.274.10.6567",
     "abstract": "The GATA-3 transcription factor is required for development of the T-cell lineage and Th2 cytokine gene expression in CD4 T-cells. We have mapped the DNase-I-hypersensitive (HS) regions of the human GATA-3 gene in T-cells and non-T-cells and studied their transcriptional activities. HS I-III, located 5' from the transcriptional initiation site, were found in hematopoietic and non-hematopoietic cells, whereas HS IV-VII, located 3' from the transcriptional start site, were exclusively observed in T-cells. Among these hypersensitive sites, two transcriptional control elements were found, one in the first intron of the GATA-3 gene and the other between 8.3 and 5.9 kilobases 5' from the GATA-3 transcriptional initiation site. The first intron acted as a strong transcriptional activator in a position-dependent manner and with no cell-type specificity. The upstream regulatory element could confer T-cell specificity to the GATA-3 promoter activity, and analysis of this region revealed a 707-base pair silencer that drastically inhibited GATA-3 promoter activity in non-T-cells. Two CAGGTG E-boxes, located at the 5'- and 3'-ends of the silencer, were necessary for this silencer activity. The 3'-CAGGTG E-box could bind USF proteins, the ubiquitous repressor ZEB, or the basic helix-loop-helix proteins E2A and HEB, and we showed that a competition between ZEB and E2A/HEB proteins is involved in the silencer activity.",
     "URL": "https://www.ncbi.nlm.nih.gov/pubmed/10037751",
     "type": "article-journal",
@@ -11664,6 +10871,7 @@
       }
     ],
     "PMID": "10508188",
+    "DOI": "10.1093/intimm/11.10.1701",
     "abstract": "ZEB, an E-box binding transcriptional repressor, is an important regulator of T cell and muscle development. Targeted disruption of ZEB in mice resulted in a strong reduction of thymocytes and the few T cells that reached the mature stage were predominantly CD4(+). CD4 expression during the various stages of T cell differentiation is controlled at the transcriptional level by a complex array of regulatory elements in the CD4 gene locus, consisting of at least three enhancers, one promoter and one silencer. Here we present evidence that CD4 gene expression is negatively regulated by ZEB. We show that ZEB binds to the 5'E-box in the CD4-3 element of the proximal CD4 enhancer in competition with the transcriptional activators E12 and HEB, thereby reducing CD4 expression on CD4 single-positive but not CD4/CD8 double-positive T cells. The conversion of the CD4 proximal enhancer into a potential silencer element by the transcriptional repressor ZEB offers an additional concept of CD4 gene regulation in T cells.",
     "URL": "https://www.ncbi.nlm.nih.gov/pubmed/10508188",
     "type": "article-journal",
@@ -11728,6 +10936,7 @@
       }
     ],
     "PMID": "12538241",
+    "DOI": "10.1093/bioinformatics/19.2.212",
     "abstract": "Genome sequences and transcriptome analyses allow the correlation between gene regulation and DNA sequence features to be studied at the whole-genome level. To quantify these correlations, metrics are needed that can be applied to any sequence feature, regardless of its statistical distribution. It is also desirable for the metric values to be determined objectively, that is, without the use of subjective threshold values.",
     "URL": "https://www.ncbi.nlm.nih.gov/pubmed/12538241",
     "type": "article-journal",
@@ -11892,6 +11101,7 @@
     ],
     "PMID": "9694804",
     "PMCID": "PMC317050",
+    "DOI": "10.1101/gad.12.15.2403",
     "abstract": "Little is known about the transcription factors that mediate lineage commitment of multipotent hematopoietic precursors. One candidate is the Ets family transcription factor PU.1, which is expressed in myeloid and B cells and is required for the development of both these lineages. We show here that the factor specifically instructs transformed multipotent hematopoietic progenitors to differentiate along the myeloid lineage. This involves not only the up-regulation of myeloid-specific cell surface antigens and the acquisition of myeloid growth-factor dependence but also the down-regulation of progenitor/thrombocyte-specific cell-surface markers and GATA-1. Both effects require an intact PU.1 transactivation domain. Whereas sustained activation of an inducible form of the factor leads to myeloid lineage commitment, short-term activation leads to the formation of immature eosinophils, indicating the existence of a bilineage intermediate. Our results suggest that PU.1 induces myeloid lineage commitment by the suppression of a master regulator of nonmyeloid genes (such as GATA-1) and the concomitant activation of multiple myeloid genes.",
     "URL": "https://www.ncbi.nlm.nih.gov/pubmed/9694804",
     "type": "article-journal",
@@ -11899,89 +11109,36 @@
   },
   {
     "URL": "http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/",
-    "title": "ENCODE-DREAM in vivo Transcription Factor Binding Site Prediction Challenge - Dream Challenges",
-    "container-title": "Dream Challenges",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-01 16:26:13",
     "type": "webpage",
     "id": "19QDk82XW"
   },
   {
     "URL": "http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/",
-    "greycite-canonical-uri": null,
-    "title": "Index of /pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-21 14:44:45",
     "type": "webpage",
     "id": "6eHRNaUT"
   },
   {
     "URL": "http://www.numpy.org/",
-    "greycite-canonical-uri": null,
-    "title": "NumPy — NumPy",
-    "issued": {
-      "date-parts": [
-        [
-          2018,
-          4,
-          26
-        ]
-      ]
-    },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-21 14:18:09",
     "type": "webpage",
     "id": "oGbMixLl"
   },
   {
     "URL": "http://www.scipy.org/",
-    "greycite-canonical-uri": null,
-    "title": "SciPy.org — SciPy.org",
-    "issued": {
-      "date-parts": [
-        [
-          2018,
-          8,
-          15
-        ]
-      ]
-    },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-21 14:18:11",
-    "redirects-to": "https://www.scipy.org/",
     "type": "webpage",
     "id": "D3KtiDQL"
   },
   {
     "URL": "https://github.com/pysam-developers/pysam",
-    "title": "pysam-developers/pysam",
-    "container-title": "GitHub",
-    "author": [
-      {
-        "family": "pysam-developers",
-        "given": ""
-      }
-    ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-21 14:18:14",
     "type": "webpage",
     "id": "13M7e8OcQ"
   },
   {
     "URL": "https://pypi.org/",
-    "title": "PyPI &ndash; the Python Package Index",
-    "container-title": "PyPI",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-22 19:03:20",
     "type": "webpage",
     "id": "ycIGJh3s"
   },
   {
     "URL": "https://users.soe.ucsc.edu/~kent/improbizer/index.html",
-    "greycite-canonical-uri": null,
-    "title": "cis-Site Seeker",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-21 14:18:18",
     "type": "webpage",
     "id": "wUklcuxK"
   },
@@ -11992,10 +11149,6 @@
   },
   {
     "URL": "https://zenodo.org/",
-    "greycite-canonical-uri": null,
-    "title": "Zenodo - Research. Shared.",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-08-21 14:18:21",
     "type": "webpage",
     "id": "JnK7ipTw"
   }

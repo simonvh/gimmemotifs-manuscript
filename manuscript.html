@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Niklas Bruse" />
   <meta name="author" content="Simon J. van Heeringen" />
-  <meta name="dcterms.date" content="2018-11-20" />
+  <meta name="dcterms.date" content="2019-05-22" />
   <meta name="keywords" content="transcription factor, ChIP-seq, regulatory motif, TF motif" />
   <title>GimmeMotifs: an analysis framework for transcription factor motif analysis</title>
   <style type="text/css">
@@ -28,16 +28,18 @@
 <header>
 <h1 class="title">GimmeMotifs: an analysis framework for transcription factor motif analysis</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/dff6a130defd8c910b6a60facacf5a27c29c9e5a/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/dff6a130defd8c910b6a60facacf5a27c29c9e5a">simonvh/gimmemotifs-manuscript@dff6a13</a> on November 20, 2018. </em></small></p>
+<p><small><em> This manuscript (<a href="https://simonvh.github.io/gimmemotifs-manuscript/v/1606515af75f8750a2c76e1b7837a2a3b0db9937/">permalink</a>) was automatically generated from <a href="https://github.com/simonvh/gimmemotifs-manuscript/tree/1606515af75f8750a2c76e1b7837a2a3b0db9937">simonvh/gimmemotifs-manuscript@1606515</a> on May 22, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Niklas Bruse</strong><br><br> <small> Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands </small></p></li>
 <li><p><strong>Simon J. van Heeringen</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-0411-3219">0000-0002-0411-3219</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/simonvh">simonvh</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/svheeringen">svheeringen</a><br> <small> Radboud University, Faculty of Science, Department of Molecular Developmental Biology, Radboud Institute for Molecular Life Sciences, 6500 HB Nijmegen, The Netherlands · Funded by NWO-ALW, grant 863.12.002 </small></p></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
-<p><strong>Background:</strong> Transcription factors (TFs) bind to specific DNA sequences, TF motifs, in cis-regulatory sequences and control the expression of the diverse transcriptional programs encoded in the genome. The concerted action of TFs within the chromatin context enables precise temporal and spatial expression patterns. To understand how TFs control gene expression it is essential to model TF binding. TF motif information can help to interpret the exact role of individual regulatory elements, for instance to predict the functional impact of non-coding variants.</p>
-<p><strong>Findings:</strong> Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. Compared to the previously published version, this release adds a whole range of new functionality and analysis methods. It now includes tools for <em>de novo</em> motif discovery, motif scanning and sequence analysis, motif clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our <em>de novo</em> motif discovery pipeline we find large differences in performance between <em>de novo</em> motif finders on ChIP-seq data. Using an ensemble method such as implemented in GimmeMotifs will generally result in improved motif identification compared to a single motif finder. Finally, we demonstrate <em>maelstrom</em>, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~200 H3K27ac ChIP-seq data sets we identify TFs that play a role in hematopoietic differentiation and lineage commitment.</p>
-<p><strong>Conclusion:</strong> GimmeMotifs is a fully-featured and flexible framework for TF motif analysis. It contains both command-line tools as well as a Python API and is freely available at: <a href="https://github.com/vanheeringen-lab/gimmemotifs" class="uri">https://github.com/vanheeringen-lab/gimmemotifs</a>.</p>
+<p><strong>Motivation</strong> Transcription factors (TFs) bind to specific DNA sequences, TF motifs, in cis-regulatory sequences and control the expression of the diverse transcriptional programs encoded in the genome. The concerted action of TFs within the chromatin context enables precise temporal and spatial expression patterns. To understand how TFs control gene expression it is essential to model TF binding. TF motif information can help to interpret the exact role of individual regulatory elements, for instance to predict the functional impact of non-coding variants.</p>
+<p><strong>Results</strong> Here we present GimmeMotifs, a comprehensive computational framework for TF motif analysis. Compared to the previously published version, this release adds a whole range of new functionality and analysis methods. It now includes tools for <em>de novo</em> motif discovery, motif scanning and sequence analysis, motif clustering, calculation of performance metrics and visualization. Included with GimmeMotifs is a non-redundant database of clustered motifs. Compared to other motif databases, this collection of motifs shows competitive performance in discriminating bound from unbound sequences. Using our <em>de novo</em> motif discovery pipeline we find large differences in performance between <em>de novo</em> motif finders on ChIP-seq data. Using an ensemble method such as implemented in GimmeMotifs will generally result in improved motif identification compared to a single motif finder. Finally, we demonstrate <em>maelstrom</em>, a new ensemble method that enables comparative analysis of TF motifs between multiple high-throughput sequencing experiments, such as ChIP-seq or ATAC-seq. Using a collection of ~200 H3K27ac ChIP-seq data sets we identify TFs that play a role in hematopoietic differentiation and lineage commitment. In conclusion, GimmeMotifs is a fully-featured and flexible framework for TF motif analysis.</p>
+<p><strong>Availability and Implementation</strong> GimmeMotifs is implemented in Python and contains both command-line tools as well as a Python API. It is freely available at: <a href="https://github.com/vanheeringen-lab/gimmemotifs" class="uri">https://github.com/vanheeringen-lab/gimmemotifs</a>.</p>
+<p><strong>Contact</strong> Simon van Heeringen (s.vanheeringen@science.ru.nl)</p>
+<p><strong>Supplementary Information</strong> Supplementary information is available at <a href="https://github.com/vanheeringen-lab/gimme-analysis" class="uri">https://github.com/vanheeringen-lab/gimme-analysis</a>.</p>
 <h1 id="introduction" class="page_break_before">Introduction</h1>
 <p>The regulatory networks that determine cell and tissue identity are robust, yet remarkably flexible. Transcription factors (TFs) control the expression of genes by binding to their cognate DNA sequences, TF motifs, in cis-regulatory elements <span class="citation" data-cites="9vS8HBL6">[<a href="#ref-9vS8HBL6">1</a>]</span>. To understand how genetic variation affects binding and to elucidate the role of TFs in regulatory networks we need to be able to accurately model binding of TFs to the DNA sequence.</p>
 <p>The specificity of DNA-binding proteins can be modeled using various representations <span class="citation" data-cites="yO7FsE2K">[<a href="#ref-yO7FsE2K">2</a>]</span>. One of the most widely adopted is the position frequency matrix (PFM). This matrix, a TF motif, contains (normalized) frequencies of each nucleotide at each position in a collection of aligned binding sites. These PFMs can be derived from high-throughput experiments such as Chromatin Immunoprecipitation followed by sequencing (ChIP-seq) <span class="citation" data-cites="YuvogFWT jUNvk96Q 1FStCACaF 14naBuW39">[<a href="#ref-YuvogFWT">3</a>,<a href="#ref-jUNvk96Q">4</a>,<a href="#ref-1FStCACaF">5</a>,<a href="#ref-14naBuW39">6</a>]</span>, HT-SELEX <span class="citation" data-cites="ZFIFozC9">[<a href="#ref-ZFIFozC9">7</a>]</span> or Protein Binding Microarrays (PBMs) <span class="citation" data-cites="ZfeCID7o">[<a href="#ref-ZfeCID7o">8</a>]</span>. Through straightforward transformations a PFM can be expressed as a weight matrix, using log likelihoods, or information content, using the Kullback-Leibler divergence.</p>
@@ -411,7 +413,7 @@ Jeanne Chèneby, Marius Gheorghe, Marie Artufel, Anthony Mathelier, Benoit Balle
 <em>Nucleic Acids Research</em> (2017-11-08) <a href="https://doi.org/10.1093/nar/gkx1092" class="uri">https://doi.org/10.1093/nar/gkx1092</a></p>
 </div>
 <div id="ref-19QDk82XW">
-<p>17. <strong>ENCODE-DREAM in vivo Transcription Factor Binding Site Prediction Challenge - Dream Challenges</strong><em>Dream Challenges</em> <a href="http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/" class="uri">http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/</a></p>
+<p>17. <a href="http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/" class="uri">http://dreamchallenges.org/project/encode-dream-in-vivo-transcription-factor-binding-site-prediction-challenge/</a></p>
 </div>
 <div id="ref-PNXlUYkS">
 <p>18. <strong>Assessing computational tools for the discovery of transcription factor binding sites</strong><br />
@@ -429,7 +431,7 @@ J. Hu, B. Li, D. Kihara<br />
 <em>Nucleic Acids Research</em> (2005-09-02) <a href="https://doi.org/10.1093/nar/gki791" class="uri">https://doi.org/10.1093/nar/gki791</a></p>
 </div>
 <div id="ref-6eHRNaUT">
-<p>21. <strong>Index of /pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub</strong><a href="http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/" class="uri">http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/</a></p>
+<p>21. <a href="http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/" class="uri">http://ftp.ebi.ac.uk/pub/databases/ensembl/encode/integration_data_jan2011/byDataType/peaks/jan2011/spp/optimal/hub/</a></p>
 </div>
 <div id="ref-s6kAz7UG">
 <p>22. <strong>Rank order metrics for quantifying the association of sequence features with gene regulation.</strong><br />
@@ -443,7 +445,7 @@ Tom Lesluyes, James Johnson, Philip Machanick, Timothy L Bailey<br />
 </div>
 <div id="ref-KGmXK8UO">
 <p>24. <strong>The transcriptional network that controls growth arrest and differentiation in a human myeloid leukemia cell line</strong><br />
-Harukazu SuzukiAlistair RR Forrest, Erik van Nimwegen, Carsten O Daub, Piotr J Balwierz, Katharine M Irvine, Timo Lassmann, Timothy Ravasi, Yuki Hasegawa, … <br />
+, <br />
 <em>Nature Genetics</em> (2009-04-19) <a href="https://doi.org/10.1038/ng.375" class="uri">https://doi.org/10.1038/ng.375</a></p>
 </div>
 <div id="ref-3d6POy0h">
@@ -527,10 +529,10 @@ Björn GrüningRyan Dale, Andreas Sjödin, Brad A. Chapman, Jillian Rowe, Christ
 <em>Nature Methods</em> (2018-07) <a href="https://doi.org/10.1038/s41592-018-0046-7" class="uri">https://doi.org/10.1038/s41592-018-0046-7</a></p>
 </div>
 <div id="ref-ycIGJh3s">
-<p>41. <strong>PyPI – the Python Package Index</strong><em>PyPI</em> <a href="https://pypi.org/" class="uri">https://pypi.org/</a></p>
+<p>41. <a href="https://pypi.org/" class="uri">https://pypi.org/</a></p>
 </div>
 <div id="ref-JnK7ipTw">
-<p>42. <strong>Zenodo - Research. Shared.</strong><a href="https://zenodo.org/" class="uri">https://zenodo.org/</a></p>
+<p>42. <a href="https://zenodo.org/" class="uri">https://zenodo.org/</a></p>
 </div>
 <div id="ref-4AHAVuXG">
 <p>43. <strong>genomepy: download genomes the easy way</strong><br />
@@ -538,20 +540,18 @@ Simon J. van Heeringen<br />
 <em>The Journal of Open Source Software</em> (2017-08-15) <a href="https://doi.org/10.21105/joss.00320" class="uri">https://doi.org/10.21105/joss.00320</a></p>
 </div>
 <div id="ref-oGbMixLl">
-<p>44. <strong>NumPy — NumPy</strong>(2018-04-26) <a href="http://www.numpy.org/" class="uri">http://www.numpy.org/</a></p>
+<p>44. <a href="http://www.numpy.org/" class="uri">http://www.numpy.org/</a></p>
 </div>
 <div id="ref-D3KtiDQL">
-<p>45. <strong>SciPy.org — SciPy.org</strong>(2018-08-15) <a href="http://www.scipy.org/" class="uri">http://www.scipy.org/</a></p>
+<p>45. <a href="http://www.scipy.org/" class="uri">http://www.scipy.org/</a></p>
 </div>
 <div id="ref-WESOG7Bx">
-<p>46. <strong>Mwaskom/Seaborn: V0.9.0 (July 2018)</strong><br />
+<p>46. <strong>mwaskom/seaborn: v0.9.0 (July 2018)</strong><br />
 Michael Waskom, Olga Botvinnik, Drew O’Kane, Paul Hobson, Joel Ostblom, Saulius Lukauskas, David C Gemperline, Tom Augspurger, Yaroslav Halchenko, John B. Cole, … Adel Qalieh<br />
 <em>Zenodo</em> (2018-07-16) <a href="https://doi.org/10.5281/zenodo.1313201" class="uri">https://doi.org/10.5281/zenodo.1313201</a></p>
 </div>
 <div id="ref-13M7e8OcQ">
-<p>47. <strong>pysam-developers/pysam</strong><br />
-pysam-developers<br />
-<em>GitHub</em> <a href="https://github.com/pysam-developers/pysam" class="uri">https://github.com/pysam-developers/pysam</a></p>
+<p>47. <a href="https://github.com/pysam-developers/pysam" class="uri">https://github.com/pysam-developers/pysam</a></p>
 </div>
 <div id="ref-hNfNHk9L">
 <p>48. <strong>The Sequence Alignment/Map format and SAMtools.</strong><br />
@@ -584,10 +584,10 @@ Ming Hu, Jindan Yu, Jeremy M. G. Taylor, Arul M. Chinnaiyan, Zhaohui S. Qin<br /
 <em>Nucleic Acids Research</em> (2010-01-07) <a href="https://doi.org/10.1093/nar/gkp1180" class="uri">https://doi.org/10.1093/nar/gkp1180</a></p>
 </div>
 <div id="ref-wUklcuxK">
-<p>54. <strong>cis-Site Seeker</strong><a href="https://users.soe.ucsc.edu/~kent/improbizer/index.html" class="uri">https://users.soe.ucsc.edu/~kent/improbizer/index.html</a></p>
+<p>54. <a href="https://users.soe.ucsc.edu/~kent/improbizer/index.html" class="uri">https://users.soe.ucsc.edu/~kent/improbizer/index.html</a></p>
 </div>
 <div id="ref-aZ8ZieVF">
-<p>55. <strong>An algorithm for finding protein–DNA binding sites with applications to chromatin-immunoprecipitation microarray experiments</strong><br />
+<p>55. <strong>An algorithm for finding protein–DNA binding sites with applications to chromatin- immunoprecipitation microarray experiments</strong><br />
 X. Shirley Liu, Douglas L. Brutlag, Jun S. Liu<br />
 <em>Nature Biotechnology</em> (2002-07-08) <a href="https://doi.org/10.1038/nbt717" class="uri">https://doi.org/10.1038/nbt717</a></p>
 </div>

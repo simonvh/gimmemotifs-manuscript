@@ -1,5 +1,5 @@
 {
-  "date": "November 20, 2018",
+  "date": "May 22, 2019",
   "authors": [
     {
       "name": "Niklas Bruse",
@@ -37,7 +37,7 @@
     "repo_slug": "simonvh/gimmemotifs-manuscript",
     "repo_owner": "simonvh",
     "repo_name": "gimmemotifs-manuscript",
-    "commit": "dff6a130defd8c910b6a60facacf5a27c29c9e5a"
+    "commit": "1606515af75f8750a2c76e1b7837a2a3b0db9937"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -46,6 +46,6 @@
       "url": 9,
       "total": 79
     },
-    "word_count": 6177
+    "word_count": 6199
   }
 }
