@@ -2,7 +2,7 @@
 author-meta:
 - Niklas Bruse
 - Simon J. van Heeringen
-date-meta: '2019-05-22'
+date-meta: '2019-07-16'
 keywords:
 - transcription factor
 - ChIP-seq
@@ -19,10 +19,10 @@ title: 'GimmeMotifs: an analysis framework for transcription factor motif analys
 
 <small><em>
 This manuscript
-([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/1574eee4cf310bfa41224944aead1de0a026bc30/))
+([permalink](https://simonvh.github.io/gimmemotifs-manuscript/v/01dbbf2f77970b09ebf981175a1f2de3aa6825e1/))
 was automatically generated
-from [simonvh/gimmemotifs-manuscript@1574eee](https://github.com/simonvh/gimmemotifs-manuscript/tree/1574eee4cf310bfa41224944aead1de0a026bc30)
-on May 22, 2019.
+from [simonvh/gimmemotifs-manuscript@01dbbf2](https://github.com/simonvh/gimmemotifs-manuscript/tree/01dbbf2f77970b09ebf981175a1f2de3aa6825e1)
+on July 16, 2019.
 </em></small>
 
 ## Authors
@@ -191,13 +191,16 @@ typically have tested only a few motif finders or used only a few datasets.
 Here, we used the GimmeMotifs framework as implemented in `gimme motifs` to benchmark 14 different *de novo*
 motif finders. To evaluate the different approaches, we downloaded 495 peak
 files for 270 proteins from ENCODE [@6eHRNaUT] and
-selected the 100bp sequence centered on the summit of top 5,000 peaks. These will be the peaks most likely to contain the primary TF motif, and should provide a straightforward test-case for the *de novo* motif finders. Ranking and selecting peaks in this manner is a widely adopted practice and we use this procedure also for our benchmark. However, when analyzing ChIP-seq data in detail, it might be preferable to analyze to full complement of peaks. 
+selected the 100bp sequence centered on the summit of top 5,000 peaks. These will be the peaks most likely to contain the primary TF motif, and should provide a straightforward test-case for the *de novo* motif finders. Ranking and selecting peaks in this manner is a widely adopted practice and we use this procedure also for our benchmark. However, when analyzing ChIP-seq data in detail, it might be preferable to analyze the full complement of peaks instead of only a selection of top peaks.
 
 Of the top
 peaks, half were randomly selected as a prediction set and the other half was
-used for evaluation. As a background set we selected regions of the same length
-flanking the original peaks. This will account for sequence bias according to genomic distribution. To assess the performance, we calculated two
-metrics, the ROC AUC and the recall at 10% FDR. Figure 2A shows the distribution
+used for evaluation. If the prediction set was larger than 1,000 peaks, we used
+only 1,000 peaks for *de novo* motif prediction, as the running time will become
+prohibitive for some tools. As a background set we selected regions of the same length
+flanking the original peaks. This will account for sequence bias according to genomic distribution. For most motif finders we used default parameters, except for motif width and strand. We used all motif widths from 6 to 20 with a step size of 2, which can be specified in `gimme motifs` by setting `analysis` to `xl`. Where possible, we used both forward and reverse strand for analysis. The specific parameters used for the individual motif finders are included in the Methods. To assess the performance, we calculated two
+metrics, the ROC AUC and the recall at 10% FDR. These metrics were based on the
+score of the best motif match per sequence, with a log-odds score based on a background with equal distribution of nucleotides. For each *de novo* motif finder we selected the best scoring motif, based on the metric under evaluation. Figure 2A shows the distribution
 of the ROC AUC scores over all ENCODE peaks in a boxplot, ordered by the mean
 ROC AUC. The ROC AUC is distributed between 0.58 and 0.98, with a mean of 0.75.
 All proteins that have low ROC AUC are not sequence-specific transcription
@@ -241,8 +244,11 @@ with a mean decrease in recall of 0.11 to 0.17, as compared to the best motif.
 In addition, these programs tend to have a much more variable performance
 overall.
 
-Predicted motifs identified using MEME with different motif widths show better performance than
-running MEME with the `minw` and `maxw` options (MEME vs. MEMEW in Fig. 2B). Of
+In the benchmark we ran MEME in two different modes (MEME vs. MEMEW in Fig. 2B). 
+For the first mode we used MEME with different motif widths, with 10 motifs being
+reported per individual width. From this collection of motifs with different
+widths, the best performing motif was reported. Alternatively, we used MEME with the `minw` and `maxw` options. Here, the best motifs are selected by MEME itself. In the benchmark reported here, running MEME with various motif widths gives better results, as the both recall at 10% FDR as well the ROC AUC are higher for MEME and compared to MEMEW.
+Of
 the best performing algorithms, both MEME and BioProspector were not
 specifically developed for ChIP-seq data, however, they consistently outperform
 most methods created for ChIP-seq data. Of the ChIP-seq motif finders Homer
